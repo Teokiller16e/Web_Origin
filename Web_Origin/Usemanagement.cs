@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Collections.Generic;
+
 namespace Web_Origin
 {
     public partial class Usemanagement : Form
     {
+        public bool found;
+
         public Usemanagement()
         {
             InitializeComponent();
@@ -43,17 +48,69 @@ namespace Web_Origin
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "admin" && textBox2.Text == "admin")
-            {
-                this.Hide();
-                welcomeForm wForm = new welcomeForm();
-                wForm.Show();
-            }
-            else
-            {
-                errorMessageFunction();
-            }
+           
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");        
 
+            if (connection.State == System.Data.ConnectionState.Closed)
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand("SELECT * FROM Ekklisia.dbo.Xristes",connection);
+                //SqlCommand command = new SqlCommand("insert into User(Firstname,Lastname,Username,Password,Administrator) values('" + fir + "','" + las + "','" + usr + "','" + pass + "','" + admin + "') ",connection);
+                //int sql_query = command.ExecuteNonQuery();
+                SqlDataReader dataReader;
+                dataReader = command.ExecuteReader();
+
+                List<Models.User> xristes = new List<Models.User>();
+                // Insert when command returns not null
+                if (!dataReader.Equals(null))
+                {
+                    
+                    // loop for retrieving all the possible users from the database
+                    while (dataReader.Read())
+                    {
+                        var id = dataReader.GetInt32(0);
+                        var firstname = dataReader["Firstname"].ToString();
+                        var lastname = dataReader["Lastname"].ToString();
+                        var username = dataReader["Username"].ToString();
+                        var password = dataReader["Password"].ToString();
+                        var administrator = dataReader.GetBoolean(5);
+
+                        Models.User user = new Models.User(id, firstname, lastname, username, password, administrator);
+
+                        xristes.Add(user);
+                    }
+
+
+                }
+
+                // Decide requirements for each windows form
+                for (int i = 0; i < xristes.Count; i++)
+                {
+                    if (textBox1.Text == xristes[i].Username && textBox2.Text == xristes[i].Password && xristes[i].Administrator.Equals(true))
+                    {
+                        this.Hide();
+                        AdminForm wForm = new AdminForm();
+                        wForm.Show();
+                        found = true;
+                    }
+                    else if (textBox1.Text == xristes[i].Username && textBox2.Text == xristes[i].Password && xristes[i].Administrator.Equals(false))
+                    {
+                        this.Hide();
+                        SimpleUserForm wForm = new SimpleUserForm();
+                        wForm.Show();
+                        found = true;
+                    }
+                   
+                    
+                }
+
+                if(found.Equals(false))
+                { 
+                    errorMessageFunction();
+                }
+            }
+           
+            
         }
 
         // Pop up error message
@@ -81,5 +138,43 @@ namespace Web_Origin
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
         }
+
     }
 }
+
+
+/*
+           //Here the insert has to check to the database
+           SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");
+           connection.Open();
+
+           //SqlCommand cmd = new SqlCommand("insert into User(Firstname,Lastname,Username,Password,Administrator) values('Christos','Routsis','administrator','administrator',1)", connection);
+
+           SqlCommand Cmd = new SqlCommand("INSERT INTO User " +"(Firstname, Lastname, Username,Password,Administrator) " +
+               "VALUES(@FNAME, @LNAME, @UNAME, @PASSWORD, @ADMIN)",connection);
+
+           
+
+           int sql_query = Cmd.ExecuteNonQuery();
+
+           if (sql_query != 0)
+           {
+               MessageBox.Show("User inserted");
+           }
+           else
+           {
+               MessageBox.Show("User not inserted");
+           }
+
+
+           if (textBox1.Text == "admin" && textBox2.Text == "admin")
+           {
+               this.Hide();
+               welcomeForm wForm = new welcomeForm();
+               wForm.Show();
+           }
+           else
+           {
+               errorMessageFunction();
+           }
+           */

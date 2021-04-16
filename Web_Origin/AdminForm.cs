@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Web_Origin
 {
-    public partial class welcomeForm : Form
+    public partial class AdminForm : Form
     {
-        public welcomeForm()
+        public AdminForm()
         {
             InitializeComponent();
         }
