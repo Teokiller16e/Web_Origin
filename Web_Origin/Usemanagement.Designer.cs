@@ -84,14 +84,14 @@ namespace Web_Origin
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(279, 42);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Ορθόδοξο Ιεραποστολικό Σωματείο\r\n       Παναγία η Κοσμοσώτηρα\r\n";
+            this.label6.Text = "Ορθόδοξο Ιεραποστολικό Σωματείο\r\n       Παναγία η Κοσμοσώτειρα\r\n";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(153, 495);
+            this.label5.Location = new System.Drawing.Point(151, 488);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 17);
             this.label5.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace Web_Origin
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(160, 473);
+            this.label4.Location = new System.Drawing.Point(158, 466);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 17);
             this.label4.TabIndex = 4;
@@ -196,7 +196,7 @@ namespace Web_Origin
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(39, 473);
+            this.label7.Location = new System.Drawing.Point(39, 475);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(238, 17);
             this.label7.TabIndex = 11;
@@ -291,7 +291,7 @@ namespace Web_Origin
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label3.Location = new System.Drawing.Point(38, 134);
+            this.label3.Location = new System.Drawing.Point(86, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(273, 21);
             this.label3.TabIndex = 7;

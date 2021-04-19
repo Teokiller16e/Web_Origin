@@ -27,5 +27,15 @@ namespace Web_Origin
             Usemanagement mainMenu = new Usemanagement();
             mainMenu.Show();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
