@@ -51,6 +51,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EkklisiaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Insert_Agios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert_Agios.Designer.cs">
+      <DependentUpon>Insert_Agios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +65,12 @@
     </Compile>
     <Compile Include="SimpleUserForm.Designer.cs">
       <DependentUpon>SimpleUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Agios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Agios.Designer.cs">
+      <DependentUpon>Update_Agios.cs</DependentUpon>
     </Compile>
     <Compile Include="Usemanagement.cs">
       <SubType>Form</SubType>
@@ -72,6 +84,9 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Insert_Agios.resx">
+      <DependentUpon>Insert_Agios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -80,9 +95,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SimpleUserForm.resx">
       <DependentUpon>SimpleUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Agios.resx">
+      <DependentUpon>Update_Agios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usemanagement.resx">
       <DependentUpon>Usemanagement.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Web_Origin
 {
-    public partial class SimpleUserForm : Form
+    public partial class Insert_Agios : Form
     {
-        public SimpleUserForm()
+        public Insert_Agios()
         {
             InitializeComponent();
         }
@@ -49,10 +49,6 @@ namespace Web_Origin
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void button5_Click_1(object sender, EventArgs e)
         {
@@ -61,7 +57,7 @@ namespace Web_Origin
             mainMenu.Show();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
