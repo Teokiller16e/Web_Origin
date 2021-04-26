@@ -156,6 +156,8 @@ namespace Web_Origin
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel25.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -1092,6 +1094,8 @@ namespace Web_Origin
             // 
             this.panel2.AllowDrop = true;
             this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.label71);
             this.panel2.Controls.Add(this.label72);
             this.panel2.Controls.Add(this.label73);
@@ -1402,11 +1406,11 @@ namespace Web_Origin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(101, 75);
+            this.label2.Location = new System.Drawing.Point(81, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 12;
-            this.label2.Text = "ΙΔΙΟΤΗΤΑ";
+            this.label2.Text = "ΟΝΟΜΑ ΑΓΙΟΥ";
             // 
             // panel4
             // 
@@ -1434,6 +1438,33 @@ namespace Web_Origin
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(58, 27);
             this.panel3.TabIndex = 9;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button5.ForeColor = System.Drawing.Color.Red;
+            this.button5.Location = new System.Drawing.Point(1106, 520);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(118, 81);
+            this.button5.TabIndex = 116;
+            this.button5.Text = "Επιστροφή";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(444, 348);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(315, 91);
+            this.button3.TabIndex = 118;
+            this.button3.Text = "Ανανέωση";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // Update_Agios
             // 
@@ -1640,5 +1671,7 @@ namespace Web_Origin
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button3;
     }
 }

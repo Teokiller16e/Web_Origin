@@ -71,91 +71,90 @@ namespace Web_Origin
             this.label41 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.psifiaki_morfi = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.posotita = new System.Windows.Forms.TextBox();
             this.panel27 = new System.Windows.Forms.Panel();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.fyllada_fwtotypia = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.digital_diskos = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.hmeromhnia_ekdosis = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.iera_paraklisi_ymnografos = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.theia_leitourgeia = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.fwto_ekswfyllou = new System.Windows.Forms.Panel();
+            this.photo_ekswfyllou = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.topos_ekdosis = new System.Windows.Forms.TextBox();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.egkrisi = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.ekdotis = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.apofaseis_apokatataksews = new System.Windows.Forms.TextBox();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.plhrhs_titlos = new System.Windows.Forms.TextBox();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.mousiko_parartima_ymnografos = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.eyxes_ymnografos = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.eklogi = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.eulogitiria_ymnografos = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.orthros = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.egkwmia_ymnografos = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.megas_esperinos = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.xairetismoi_ymnografos = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.mikros_esperinos = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.eikones = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.hmeromhnia_eortis = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.idiotita = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.onoma = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel26.SuspendLayout();
@@ -164,7 +163,7 @@ namespace Web_Origin
             this.panel29.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel24.SuspendLayout();
-            this.panel16.SuspendLayout();
+            this.fwto_ekswfyllou.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel22.SuspendLayout();
@@ -183,13 +182,14 @@ namespace Web_Origin
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.label71);
             this.panel2.Controls.Add(this.label72);
             this.panel2.Controls.Add(this.label73);
@@ -246,7 +246,7 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.label33);
             this.panel2.Controls.Add(this.panel24);
             this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.panel16);
+            this.panel2.Controls.Add(this.fwto_ekswfyllou);
             this.panel2.Controls.Add(this.label29);
             this.panel2.Controls.Add(this.panel21);
             this.panel2.Controls.Add(this.panel17);
@@ -283,8 +283,6 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 40);
             this.panel2.Name = "panel2";
@@ -620,7 +618,7 @@ namespace Web_Origin
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(220, 39);
+            this.label41.Location = new System.Drawing.Point(219, 39);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(51, 13);
             this.label41.TabIndex = 75;
@@ -638,21 +636,21 @@ namespace Web_Origin
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.White;
-            this.panel25.Controls.Add(this.textBox23);
+            this.panel25.Controls.Add(this.psifiaki_morfi);
             this.panel25.Location = new System.Drawing.Point(656, 204);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(110, 27);
             this.panel25.TabIndex = 73;
             // 
-            // textBox23
+            // psifiaki_morfi
             // 
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox23.Location = new System.Drawing.Point(11, 3);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(88, 20);
-            this.textBox23.TabIndex = 8;
+            this.psifiaki_morfi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.psifiaki_morfi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.psifiaki_morfi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.psifiaki_morfi.Location = new System.Drawing.Point(11, 3);
+            this.psifiaki_morfi.Name = "psifiaki_morfi";
+            this.psifiaki_morfi.Size = new System.Drawing.Size(88, 20);
+            this.psifiaki_morfi.TabIndex = 8;
             // 
             // label35
             // 
@@ -674,40 +672,40 @@ namespace Web_Origin
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.White;
-            this.panel26.Controls.Add(this.textBox24);
+            this.panel26.Controls.Add(this.posotita);
             this.panel26.Location = new System.Drawing.Point(540, 204);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(110, 27);
             this.panel26.TabIndex = 70;
             // 
-            // textBox24
+            // posotita
             // 
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox24.Location = new System.Drawing.Point(11, 3);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(88, 20);
-            this.textBox24.TabIndex = 8;
+            this.posotita.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.posotita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.posotita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.posotita.Location = new System.Drawing.Point(11, 3);
+            this.posotita.Name = "posotita";
+            this.posotita.Size = new System.Drawing.Size(88, 20);
+            this.posotita.TabIndex = 8;
             // 
             // panel27
             // 
             this.panel27.BackColor = System.Drawing.Color.White;
-            this.panel27.Controls.Add(this.textBox25);
+            this.panel27.Controls.Add(this.fyllada_fwtotypia);
             this.panel27.Location = new System.Drawing.Point(424, 204);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(110, 27);
             this.panel27.TabIndex = 68;
             // 
-            // textBox25
+            // fyllada_fwtotypia
             // 
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox25.Location = new System.Drawing.Point(11, 3);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(88, 20);
-            this.textBox25.TabIndex = 8;
+            this.fyllada_fwtotypia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fyllada_fwtotypia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.fyllada_fwtotypia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.fyllada_fwtotypia.Location = new System.Drawing.Point(11, 3);
+            this.fyllada_fwtotypia.Name = "fyllada_fwtotypia";
+            this.fyllada_fwtotypia.Size = new System.Drawing.Size(88, 20);
+            this.fyllada_fwtotypia.TabIndex = 8;
             // 
             // label38
             // 
@@ -729,21 +727,21 @@ namespace Web_Origin
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.White;
-            this.panel28.Controls.Add(this.textBox26);
+            this.panel28.Controls.Add(this.digital_diskos);
             this.panel28.Location = new System.Drawing.Point(308, 204);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(110, 27);
             this.panel28.TabIndex = 65;
             // 
-            // textBox26
+            // digital_diskos
             // 
-            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox26.Location = new System.Drawing.Point(11, 3);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(88, 20);
-            this.textBox26.TabIndex = 8;
+            this.digital_diskos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.digital_diskos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.digital_diskos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.digital_diskos.Location = new System.Drawing.Point(11, 3);
+            this.digital_diskos.Name = "digital_diskos";
+            this.digital_diskos.Size = new System.Drawing.Size(88, 20);
+            this.digital_diskos.TabIndex = 8;
             // 
             // label40
             // 
@@ -757,21 +755,21 @@ namespace Web_Origin
             // panel29
             // 
             this.panel29.BackColor = System.Drawing.Color.White;
-            this.panel29.Controls.Add(this.textBox27);
+            this.panel29.Controls.Add(this.hmeromhnia_ekdosis);
             this.panel29.Location = new System.Drawing.Point(192, 204);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(110, 27);
             this.panel29.TabIndex = 63;
             // 
-            // textBox27
+            // hmeromhnia_ekdosis
             // 
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox27.Location = new System.Drawing.Point(11, 3);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(88, 20);
-            this.textBox27.TabIndex = 8;
+            this.hmeromhnia_ekdosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.hmeromhnia_ekdosis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.hmeromhnia_ekdosis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.hmeromhnia_ekdosis.Location = new System.Drawing.Point(11, 3);
+            this.hmeromhnia_ekdosis.Name = "hmeromhnia_ekdosis";
+            this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(88, 20);
+            this.hmeromhnia_ekdosis.TabIndex = 8;
             // 
             // label27
             // 
@@ -793,21 +791,21 @@ namespace Web_Origin
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.Controls.Add(this.textBox18);
+            this.panel20.Controls.Add(this.iera_paraklisi_ymnografos);
             this.panel20.Location = new System.Drawing.Point(1123, 66);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(110, 27);
             this.panel20.TabIndex = 60;
             // 
-            // textBox18
+            // iera_paraklisi_ymnografos
             // 
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox18.Location = new System.Drawing.Point(11, 3);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(88, 20);
-            this.textBox18.TabIndex = 8;
+            this.iera_paraklisi_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.iera_paraklisi_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.iera_paraklisi_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.iera_paraklisi_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.iera_paraklisi_ymnografos.Name = "iera_paraklisi_ymnografos";
+            this.iera_paraklisi_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.iera_paraklisi_ymnografos.TabIndex = 8;
             // 
             // label33
             // 
@@ -821,21 +819,21 @@ namespace Web_Origin
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.White;
-            this.panel24.Controls.Add(this.textBox22);
+            this.panel24.Controls.Add(this.theia_leitourgeia);
             this.panel24.Location = new System.Drawing.Point(1007, 66);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(110, 27);
             this.panel24.TabIndex = 58;
             // 
-            // textBox22
+            // theia_leitourgeia
             // 
-            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox22.Location = new System.Drawing.Point(11, 3);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(88, 20);
-            this.textBox22.TabIndex = 8;
+            this.theia_leitourgeia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.theia_leitourgeia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.theia_leitourgeia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.theia_leitourgeia.Location = new System.Drawing.Point(11, 3);
+            this.theia_leitourgeia.Name = "theia_leitourgeia";
+            this.theia_leitourgeia.Size = new System.Drawing.Size(88, 20);
+            this.theia_leitourgeia.TabIndex = 8;
             // 
             // label22
             // 
@@ -845,24 +843,24 @@ namespace Web_Origin
             this.label22.Size = new System.Drawing.Size(0, 13);
             this.label22.TabIndex = 49;
             // 
-            // panel16
+            // fwto_ekswfyllou
             // 
-            this.panel16.BackColor = System.Drawing.Color.White;
-            this.panel16.Controls.Add(this.textBox14);
-            this.panel16.Location = new System.Drawing.Point(888, 139);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(110, 27);
-            this.panel16.TabIndex = 48;
+            this.fwto_ekswfyllou.BackColor = System.Drawing.Color.White;
+            this.fwto_ekswfyllou.Controls.Add(this.photo_ekswfyllou);
+            this.fwto_ekswfyllou.Location = new System.Drawing.Point(888, 139);
+            this.fwto_ekswfyllou.Name = "fwto_ekswfyllou";
+            this.fwto_ekswfyllou.Size = new System.Drawing.Size(110, 27);
+            this.fwto_ekswfyllou.TabIndex = 48;
             // 
-            // textBox14
+            // photo_ekswfyllou
             // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox14.Location = new System.Drawing.Point(11, 3);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(88, 20);
-            this.textBox14.TabIndex = 8;
+            this.photo_ekswfyllou.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.photo_ekswfyllou.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.photo_ekswfyllou.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.photo_ekswfyllou.Location = new System.Drawing.Point(11, 3);
+            this.photo_ekswfyllou.Name = "photo_ekswfyllou";
+            this.photo_ekswfyllou.Size = new System.Drawing.Size(88, 20);
+            this.photo_ekswfyllou.TabIndex = 8;
             // 
             // label29
             // 
@@ -876,40 +874,40 @@ namespace Web_Origin
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.White;
-            this.panel21.Controls.Add(this.textBox19);
+            this.panel21.Controls.Add(this.topos_ekdosis);
             this.panel21.Location = new System.Drawing.Point(76, 204);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(110, 27);
             this.panel21.TabIndex = 56;
             // 
-            // textBox19
+            // topos_ekdosis
             // 
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox19.Location = new System.Drawing.Point(11, 3);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(88, 20);
-            this.textBox19.TabIndex = 8;
+            this.topos_ekdosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.topos_ekdosis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.topos_ekdosis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.topos_ekdosis.Location = new System.Drawing.Point(11, 3);
+            this.topos_ekdosis.Name = "topos_ekdosis";
+            this.topos_ekdosis.Size = new System.Drawing.Size(88, 20);
+            this.topos_ekdosis.TabIndex = 8;
             // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.Controls.Add(this.textBox15);
+            this.panel17.Controls.Add(this.egkrisi);
             this.panel17.Location = new System.Drawing.Point(772, 139);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(110, 27);
             this.panel17.TabIndex = 46;
             // 
-            // textBox15
+            // egkrisi
             // 
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox15.Location = new System.Drawing.Point(11, 3);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(88, 20);
-            this.textBox15.TabIndex = 8;
+            this.egkrisi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.egkrisi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.egkrisi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.egkrisi.Location = new System.Drawing.Point(11, 3);
+            this.egkrisi.Name = "egkrisi";
+            this.egkrisi.Size = new System.Drawing.Size(88, 20);
+            this.egkrisi.TabIndex = 8;
             // 
             // label30
             // 
@@ -939,78 +937,78 @@ namespace Web_Origin
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.White;
-            this.panel22.Controls.Add(this.textBox20);
+            this.panel22.Controls.Add(this.ekdotis);
             this.panel22.Location = new System.Drawing.Point(1120, 139);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(110, 27);
             this.panel22.TabIndex = 53;
             // 
-            // textBox20
+            // ekdotis
             // 
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox20.Location = new System.Drawing.Point(11, 3);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(88, 20);
-            this.textBox20.TabIndex = 8;
+            this.ekdotis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ekdotis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.ekdotis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.ekdotis.Location = new System.Drawing.Point(11, 3);
+            this.ekdotis.Name = "ekdotis";
+            this.ekdotis.Size = new System.Drawing.Size(88, 20);
+            this.ekdotis.TabIndex = 8;
             // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.White;
-            this.panel18.Controls.Add(this.textBox16);
+            this.panel18.Controls.Add(this.apofaseis_apokatataksews);
             this.panel18.Location = new System.Drawing.Point(656, 139);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(110, 27);
             this.panel18.TabIndex = 43;
             // 
-            // textBox16
+            // apofaseis_apokatataksews
             // 
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox16.Location = new System.Drawing.Point(11, 3);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(88, 20);
-            this.textBox16.TabIndex = 8;
+            this.apofaseis_apokatataksews.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.apofaseis_apokatataksews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.apofaseis_apokatataksews.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.apofaseis_apokatataksews.Location = new System.Drawing.Point(11, 3);
+            this.apofaseis_apokatataksews.Name = "apofaseis_apokatataksews";
+            this.apofaseis_apokatataksews.Size = new System.Drawing.Size(88, 20);
+            this.apofaseis_apokatataksews.TabIndex = 8;
             // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.White;
-            this.panel23.Controls.Add(this.textBox21);
+            this.panel23.Controls.Add(this.plhrhs_titlos);
             this.panel23.Location = new System.Drawing.Point(1004, 139);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(110, 27);
             this.panel23.TabIndex = 51;
             // 
-            // textBox21
+            // plhrhs_titlos
             // 
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox21.Location = new System.Drawing.Point(11, 3);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(88, 20);
-            this.textBox21.TabIndex = 8;
+            this.plhrhs_titlos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.plhrhs_titlos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.plhrhs_titlos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.plhrhs_titlos.Location = new System.Drawing.Point(11, 3);
+            this.plhrhs_titlos.Name = "plhrhs_titlos";
+            this.plhrhs_titlos.Size = new System.Drawing.Size(88, 20);
+            this.plhrhs_titlos.TabIndex = 8;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.White;
-            this.panel19.Controls.Add(this.textBox17);
+            this.panel19.Controls.Add(this.mousiko_parartima_ymnografos);
             this.panel19.Location = new System.Drawing.Point(540, 139);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(110, 27);
             this.panel19.TabIndex = 41;
             // 
-            // textBox17
+            // mousiko_parartima_ymnografos
             // 
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox17.Location = new System.Drawing.Point(11, 3);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(88, 20);
-            this.textBox17.TabIndex = 8;
+            this.mousiko_parartima_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mousiko_parartima_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.mousiko_parartima_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.mousiko_parartima_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.mousiko_parartima_ymnografos.Name = "mousiko_parartima_ymnografos";
+            this.mousiko_parartima_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.mousiko_parartima_ymnografos.TabIndex = 8;
             // 
             // label9
             // 
@@ -1040,40 +1038,40 @@ namespace Web_Origin
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Controls.Add(this.textBox10);
+            this.panel12.Controls.Add(this.eyxes_ymnografos);
             this.panel12.Location = new System.Drawing.Point(424, 139);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(110, 27);
             this.panel12.TabIndex = 38;
             // 
-            // textBox10
+            // eyxes_ymnografos
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox10.Location = new System.Drawing.Point(11, 3);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(88, 20);
-            this.textBox10.TabIndex = 8;
+            this.eyxes_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.eyxes_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.eyxes_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.eyxes_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.eyxes_ymnografos.Name = "eyxes_ymnografos";
+            this.eyxes_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.eyxes_ymnografos.TabIndex = 8;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.textBox6);
+            this.panel8.Controls.Add(this.eklogi);
             this.panel8.Location = new System.Drawing.Point(888, 66);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(110, 27);
             this.panel8.TabIndex = 28;
             // 
-            // textBox6
+            // eklogi
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox6.Location = new System.Drawing.Point(11, 3);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(88, 20);
-            this.textBox6.TabIndex = 8;
+            this.eklogi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.eklogi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.eklogi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.eklogi.Location = new System.Drawing.Point(11, 3);
+            this.eklogi.Name = "eklogi";
+            this.eklogi.Size = new System.Drawing.Size(88, 20);
+            this.eklogi.TabIndex = 8;
             // 
             // label11
             // 
@@ -1087,40 +1085,40 @@ namespace Web_Origin
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.Controls.Add(this.textBox11);
+            this.panel13.Controls.Add(this.eulogitiria_ymnografos);
             this.panel13.Location = new System.Drawing.Point(308, 139);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(110, 27);
             this.panel13.TabIndex = 36;
             // 
-            // textBox11
+            // eulogitiria_ymnografos
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox11.Location = new System.Drawing.Point(11, 3);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(88, 20);
-            this.textBox11.TabIndex = 8;
+            this.eulogitiria_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.eulogitiria_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.eulogitiria_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.eulogitiria_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.eulogitiria_ymnografos.Name = "eulogitiria_ymnografos";
+            this.eulogitiria_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.eulogitiria_ymnografos.TabIndex = 8;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.textBox7);
+            this.panel9.Controls.Add(this.orthros);
             this.panel9.Location = new System.Drawing.Point(772, 66);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(110, 27);
             this.panel9.TabIndex = 26;
             // 
-            // textBox7
+            // orthros
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox7.Location = new System.Drawing.Point(11, 3);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(88, 20);
-            this.textBox7.TabIndex = 8;
+            this.orthros.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.orthros.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.orthros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.orthros.Location = new System.Drawing.Point(11, 3);
+            this.orthros.Name = "orthros";
+            this.orthros.Size = new System.Drawing.Size(88, 20);
+            this.orthros.TabIndex = 8;
             // 
             // label12
             // 
@@ -1150,40 +1148,40 @@ namespace Web_Origin
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Controls.Add(this.textBox12);
+            this.panel14.Controls.Add(this.egkwmia_ymnografos);
             this.panel14.Location = new System.Drawing.Point(192, 139);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(110, 27);
             this.panel14.TabIndex = 33;
             // 
-            // textBox12
+            // egkwmia_ymnografos
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox12.Location = new System.Drawing.Point(11, 3);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(88, 20);
-            this.textBox12.TabIndex = 8;
+            this.egkwmia_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.egkwmia_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.egkwmia_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.egkwmia_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.egkwmia_ymnografos.Name = "egkwmia_ymnografos";
+            this.egkwmia_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.egkwmia_ymnografos.TabIndex = 8;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.textBox8);
+            this.panel10.Controls.Add(this.megas_esperinos);
             this.panel10.Location = new System.Drawing.Point(656, 66);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(110, 27);
             this.panel10.TabIndex = 23;
             // 
-            // textBox8
+            // megas_esperinos
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox8.Location = new System.Drawing.Point(11, 3);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(88, 20);
-            this.textBox8.TabIndex = 8;
+            this.megas_esperinos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.megas_esperinos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.megas_esperinos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.megas_esperinos.Location = new System.Drawing.Point(11, 3);
+            this.megas_esperinos.Name = "megas_esperinos";
+            this.megas_esperinos.Size = new System.Drawing.Size(88, 20);
+            this.megas_esperinos.TabIndex = 8;
             // 
             // label14
             // 
@@ -1197,40 +1195,40 @@ namespace Web_Origin
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Controls.Add(this.textBox13);
+            this.panel15.Controls.Add(this.xairetismoi_ymnografos);
             this.panel15.Location = new System.Drawing.Point(76, 139);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(110, 27);
             this.panel15.TabIndex = 31;
             // 
-            // textBox13
+            // xairetismoi_ymnografos
             // 
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox13.Location = new System.Drawing.Point(11, 4);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(88, 20);
-            this.textBox13.TabIndex = 8;
+            this.xairetismoi_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.xairetismoi_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.xairetismoi_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.xairetismoi_ymnografos.Location = new System.Drawing.Point(11, 4);
+            this.xairetismoi_ymnografos.Name = "xairetismoi_ymnografos";
+            this.xairetismoi_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.xairetismoi_ymnografos.TabIndex = 8;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Controls.Add(this.textBox9);
+            this.panel11.Controls.Add(this.mikros_esperinos);
             this.panel11.Location = new System.Drawing.Point(540, 66);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(110, 27);
             this.panel11.TabIndex = 21;
             // 
-            // textBox9
+            // mikros_esperinos
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox9.Location = new System.Drawing.Point(11, 3);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(88, 20);
-            this.textBox9.TabIndex = 8;
+            this.mikros_esperinos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mikros_esperinos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.mikros_esperinos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.mikros_esperinos.Location = new System.Drawing.Point(11, 3);
+            this.mikros_esperinos.Name = "mikros_esperinos";
+            this.mikros_esperinos.Size = new System.Drawing.Size(88, 20);
+            this.mikros_esperinos.TabIndex = 8;
             // 
             // label5
             // 
@@ -1252,21 +1250,21 @@ namespace Web_Origin
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.textBox4);
-            this.panel6.Location = new System.Drawing.Point(424, 66);
+            this.panel6.Controls.Add(this.eikones);
+            this.panel6.Location = new System.Drawing.Point(308, 66);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(110, 27);
             this.panel6.TabIndex = 18;
             // 
-            // textBox4
+            // eikones
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox4.Location = new System.Drawing.Point(11, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(88, 20);
-            this.textBox4.TabIndex = 8;
+            this.eikones.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.eikones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.eikones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.eikones.Location = new System.Drawing.Point(11, 3);
+            this.eikones.Name = "eikones";
+            this.eikones.Size = new System.Drawing.Size(88, 20);
+            this.eikones.TabIndex = 8;
             // 
             // label8
             // 
@@ -1280,21 +1278,22 @@ namespace Web_Origin
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.textBox5);
-            this.panel7.Location = new System.Drawing.Point(308, 66);
+            this.panel7.Controls.Add(this.hmeromhnia_eortis);
+            this.panel7.Location = new System.Drawing.Point(424, 66);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(110, 27);
             this.panel7.TabIndex = 16;
             // 
-            // textBox5
+            // hmeromhnia_eortis
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox5.Location = new System.Drawing.Point(11, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(88, 20);
-            this.textBox5.TabIndex = 8;
+            this.hmeromhnia_eortis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.hmeromhnia_eortis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.hmeromhnia_eortis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.hmeromhnia_eortis.Location = new System.Drawing.Point(11, 3);
+            this.hmeromhnia_eortis.Name = "hmeromhnia_eortis";
+            this.hmeromhnia_eortis.Size = new System.Drawing.Size(88, 20);
+            this.hmeromhnia_eortis.TabIndex = 8;
+            this.hmeromhnia_eortis.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label4
             // 
@@ -1315,78 +1314,50 @@ namespace Web_Origin
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.textBox3);
+            this.panel5.Controls.Add(this.idiotita);
             this.panel5.Location = new System.Drawing.Point(192, 66);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(110, 27);
             this.panel5.TabIndex = 13;
             // 
-            // textBox3
+            // idiotita
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox3.Location = new System.Drawing.Point(11, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(88, 20);
-            this.textBox3.TabIndex = 8;
+            this.idiotita.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idiotita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.idiotita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.idiotita.Location = new System.Drawing.Point(11, 3);
+            this.idiotita.Name = "idiotita";
+            this.idiotita.Size = new System.Drawing.Size(88, 20);
+            this.idiotita.TabIndex = 8;
+            this.idiotita.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(104, 39);
+            this.label2.Location = new System.Drawing.Point(93, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 12;
-            this.label2.Text = "ΙΔΙΟΤΗΤΑ";
+            this.label2.Text = "ΟΝΟΜΑ ΑΓΙΟΥ";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.onoma);
             this.panel4.Location = new System.Drawing.Point(76, 66);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(110, 27);
             this.panel4.TabIndex = 11;
             // 
-            // textBox2
+            // onoma
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox2.Location = new System.Drawing.Point(11, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(88, 20);
-            this.textBox2.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Α/Α";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Location = new System.Drawing.Point(12, 66);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(58, 27);
-            this.panel3.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textBox1.Location = new System.Drawing.Point(11, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(39, 20);
-            this.textBox1.TabIndex = 8;
+            this.onoma.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.onoma.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.onoma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.onoma.Location = new System.Drawing.Point(11, 3);
+            this.onoma.Name = "onoma";
+            this.onoma.Size = new System.Drawing.Size(88, 20);
+            this.onoma.TabIndex = 8;
             // 
             // button1
             // 
@@ -1438,6 +1409,34 @@ namespace Web_Origin
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button5.ForeColor = System.Drawing.Color.Red;
+            this.button5.Location = new System.Drawing.Point(1123, 501);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(118, 81);
+            this.button5.TabIndex = 115;
+            this.button5.Text = "Επιστροφή";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_2);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(476, 309);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(315, 91);
+            this.button3.TabIndex = 117;
+            this.button3.Text = "Εισαγωγή";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // Insert_Agios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1466,8 +1465,8 @@ namespace Web_Origin
             this.panel20.PerformLayout();
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
+            this.fwto_ekswfyllou.ResumeLayout(false);
+            this.fwto_ekswfyllou.PerformLayout();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             this.panel17.ResumeLayout(false);
@@ -1504,8 +1503,6 @@ namespace Web_Origin
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1519,91 +1516,88 @@ namespace Web_Origin
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox onoma;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox psifiaki_morfi;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox posotita;
         private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox fyllada_fwtotypia;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox digital_diskos;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox hmeromhnia_ekdosis;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox iera_paraklisi_ymnografos;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox theia_leitourgeia;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Panel fwto_ekswfyllou;
+        private System.Windows.Forms.TextBox photo_ekswfyllou;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox topos_ekdosis;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox egkrisi;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox ekdotis;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox apofaseis_apokatataksews;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox plhrhs_titlos;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox mousiko_parartima_ymnografos;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox eyxes_ymnografos;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox eklogi;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox eulogitiria_ymnografos;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox orthros;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox egkwmia_ymnografos;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox megas_esperinos;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox xairetismoi_ymnografos;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox mikros_esperinos;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox eikones;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox hmeromhnia_eortis;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox idiotita;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
@@ -1641,5 +1635,7 @@ namespace Web_Origin
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button3;
     }
 }

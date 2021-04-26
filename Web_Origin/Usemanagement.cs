@@ -9,7 +9,7 @@ namespace Web_Origin
     public partial class Usemanagement : Form
     {
         public bool found;
-
+        public static int Administrator;
         public Usemanagement()
         {
             InitializeComponent();
@@ -92,6 +92,7 @@ namespace Web_Origin
                         AdminForm wForm = new AdminForm();
                         wForm.Show();
                         found = true;
+                        Administrator = 1;
                     }
                     else if (textBox1.Text == xristes[i].Username && textBox2.Text == xristes[i].Password && xristes[i].Administrator.Equals(false))
                     {
@@ -99,6 +100,7 @@ namespace Web_Origin
                         SimpleUserForm wForm = new SimpleUserForm();
                         wForm.Show();
                         found = true;
+                        Administrator = 2;
                     }
                    
                     

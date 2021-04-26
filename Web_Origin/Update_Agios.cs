@@ -16,5 +16,21 @@ namespace Web_Origin
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (Usemanagement.Administrator.Equals(1))
+            {
+                this.Hide();
+                AdminForm f1 = new AdminForm();
+                f1.Show();
+            }
+            else if (Usemanagement.Administrator.Equals(2))
+            {
+                this.Hide();
+                SimpleUserForm f1 = new SimpleUserForm();
+                f1.Show();
+            }
+        }
     }
 }

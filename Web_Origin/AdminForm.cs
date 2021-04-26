@@ -38,7 +38,7 @@ namespace Web_Origin
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Usemanagement mainMenu = new Usemanagement();
+            Insert_Agios mainMenu = new Insert_Agios();
             mainMenu.Show();
 
         }
@@ -67,31 +67,15 @@ namespace Web_Origin
                     MessageBox.Show("Agios not deleted");
                 }
 
-                /*
-                List<Models.User> xristes = new List<Models.User>();
-                // Insert when command returns not null
-                if (!dataReader.Equals(null))
-                {
-
-                    // loop for retrieving all the possible users from the database
-                    while (dataReader.Read())
-                    {
-                        var id = dataReader.GetInt32(0);
-                        var firstname = dataReader["Firstname"].ToString();
-                        var lastname = dataReader["Lastname"].ToString();
-                        var username = dataReader["Username"].ToString();
-                        var password = dataReader["Password"].ToString();
-                        var administrator = dataReader.GetBoolean(5);
-
-                        Models.User user = new Models.User(id, firstname, lastname, username, password, administrator);
-
-                        xristes.Add(user);
-                    }
-                */
-
             }
+          
+        }
 
-               
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Update_Agios form1 = new Update_Agios();
+            form1.Show();
         }
     }
 }
