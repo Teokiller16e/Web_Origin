@@ -31,6 +31,7 @@ namespace Web_Origin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@ namespace Web_Origin
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -62,6 +62,19 @@ namespace Web_Origin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 530);
             this.panel1.TabIndex = 0;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(-7, 389);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(315, 35);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Αναζήτηση";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -99,7 +112,7 @@ namespace Web_Origin
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(315, 38);
             this.button4.TabIndex = 16;
-            this.button4.Text = "Διαγραφή Αγίου";
+            this.button4.Text = "Διαγραφή";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -124,7 +137,7 @@ namespace Web_Origin
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(315, 37);
             this.button3.TabIndex = 15;
-            this.button3.Text = "Αλλαγή Αγίου";
+            this.button3.Text = "Αλλαγή";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -148,7 +161,7 @@ namespace Web_Origin
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(315, 35);
             this.button2.TabIndex = 10;
-            this.button2.Text = "Εισαγωγή Αγίου";
+            this.button2.Text = "Εισαγωγή";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -176,19 +189,6 @@ namespace Web_Origin
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(-7, 389);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(315, 35);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "Αναζήτηση Αγίου";
-            this.button6.UseVisualStyleBackColor = false;
             // 
             // AdminForm
             // 

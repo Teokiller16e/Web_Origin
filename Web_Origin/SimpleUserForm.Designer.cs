@@ -130,7 +130,7 @@ namespace Web_Origin
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(315, 37);
             this.button3.TabIndex = 20;
-            this.button3.Text = "Αλλαγή Αγίου";
+            this.button3.Text = "Αλλαγή ";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -143,7 +143,7 @@ namespace Web_Origin
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(315, 35);
             this.button2.TabIndex = 18;
-            this.button2.Text = "Εισαγωγή Αγίου";
+            this.button2.Text = "Εισαγωγή";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
