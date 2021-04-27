@@ -79,5 +79,10 @@ namespace Web_Origin
             Update_Agios form1 = new Update_Agios();
             form1.Show();
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

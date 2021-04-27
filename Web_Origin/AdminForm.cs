@@ -45,6 +45,9 @@ namespace Web_Origin
 
             private void button4_Click(object sender, EventArgs e)
         {
+            var Delete_Agios = new Delete_Agios();
+            Delete_Agios.Show(this);
+
             Console.WriteLine("Testing ");
 
             SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");
@@ -76,6 +79,11 @@ namespace Web_Origin
             this.Hide();
             Update_Agios form1 = new Update_Agios();
             form1.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

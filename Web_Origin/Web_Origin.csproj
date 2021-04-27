@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delete_Agios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Agios.Designer.cs">
+      <DependentUpon>Delete_Agios.cs</DependentUpon>
+    </Compile>
     <Compile Include="EkklisiaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -60,11 +66,11 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Search.cs">
+    <Compile Include="Search_Agios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Search.Designer.cs">
-      <DependentUpon>Search.cs</DependentUpon>
+    <Compile Include="Search_Agios.Designer.cs">
+      <DependentUpon>Search_Agios.cs</DependentUpon>
     </Compile>
     <Compile Include="SimpleUserForm.cs">
       <SubType>Form</SubType>
@@ -90,6 +96,9 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Delete_Agios.resx">
+      <DependentUpon>Delete_Agios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Insert_Agios.resx">
       <DependentUpon>Insert_Agios.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,8 +112,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Search.resx">
-      <DependentUpon>Search.cs</DependentUpon>
+    <EmbeddedResource Include="Search_Agios.resx">
+      <DependentUpon>Search_Agios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SimpleUserForm.resx">
       <DependentUpon>SimpleUserForm.cs</DependentUpon>
@@ -148,7 +157,10 @@
     <Content Include="Resources\church_100px.png" />
     <Content Include="Resources\church_200px.png" />
     <Content Include="Resources\church_500px.png" />
+    <None Include="Resources\delete_96px.png" />
+    <None Include="Resources\create_200px.png" />
     <Content Include="Resources\lock_80px.png" />
+    <None Include="Resources\minimize_window_96px.png" />
     <Content Include="Resources\person_80px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

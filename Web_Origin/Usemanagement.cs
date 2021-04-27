@@ -141,6 +141,16 @@ namespace Web_Origin
         {
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var Delete_Agios = new Delete_Agios();
+            Delete_Agios.Show(this);
+        }
     }
 }
 
