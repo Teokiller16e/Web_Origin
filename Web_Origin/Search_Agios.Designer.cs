@@ -122,6 +122,7 @@ namespace Web_Origin
             this.iera_paraklisi_ymnografos = new System.Windows.Forms.TextBox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label29 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
             this.topos_ekdosis = new System.Windows.Forms.TextBox();
@@ -160,7 +161,6 @@ namespace Web_Origin
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel28.SuspendLayout();
@@ -171,6 +171,7 @@ namespace Web_Origin
             this.fwto_ekswfyllou.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel21.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -190,7 +191,6 @@ namespace Web_Origin
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // eklogi
@@ -279,6 +279,7 @@ namespace Web_Origin
             this.button3.TabIndex = 117;
             this.button3.Text = "Αναζήτηση";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // egkwmia_ymnografos
             // 
@@ -313,6 +314,7 @@ namespace Web_Origin
             this.button5.TabIndex = 115;
             this.button5.Text = "Επιστροφή";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label71
             // 
@@ -1052,6 +1054,17 @@ namespace Web_Origin
             this.panel1.Size = new System.Drawing.Size(1267, 40);
             this.panel1.TabIndex = 4;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Image = global::Web_Origin.Properties.Resources.church_500px;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 43);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1485,17 +1498,6 @@ namespace Web_Origin
             this.panel4.Size = new System.Drawing.Size(110, 27);
             this.panel4.TabIndex = 11;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Image = global::Web_Origin.Properties.Resources.church_500px;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
             // Search_Agios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1526,6 +1528,7 @@ namespace Web_Origin
             this.panel20.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             this.panel17.ResumeLayout(false);
@@ -1564,7 +1567,6 @@ namespace Web_Origin
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
