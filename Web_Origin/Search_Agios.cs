@@ -87,9 +87,7 @@ namespace Web_Origin
 
                 if (!dataReader.Equals(null))
                 {
-                    if (!dataReader.Equals(null))
-                    {
-
+                   
                         // loop for retrieving all the possible users from the database:
                         while (dataReader.Read())
                         {
@@ -138,11 +136,7 @@ namespace Web_Origin
 
             }
 
-            //Insert query
-           // SqlCommand cmd = new SqlCommand("insert into Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia,Ymnografos,
-           // Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis,  CD,Phototypia,Posotita,Mnimi_anakomidi_synaksi)" +
-            //    "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" + orthross + "','" + election + "','" + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog + "','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','" + img_eksw + "','" + title + "','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" + synaksi + "')", connection);
-         
+           
         }
     }
 }

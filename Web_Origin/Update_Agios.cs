@@ -39,52 +39,61 @@ namespace Web_Origin
             // Receive form inputs and set to variables
             string name = onoma.Text;
             string property = idiotita.Text;
-            bool photo = true;// eikones.Text;
+            bool photo = false;// eikones.Text;
             var celebration_date = hmeromhnia_eortis.Text; // only var
-            bool small = true;// mikros_esperinos.Text;
-            bool big = true;// megas_esperinos.Text;
-            bool orthross = true; //orthros.Text;
-            bool election = true;// eklogi.Text;
-            bool theia_leit = true;// theia_leitourgeia.Text;
+            bool small = false;// mikros_esperinos.Text;
+            bool big = false;// megas_esperinos.Text;
+            bool orthross = false; //orthros.Text;
+            bool election = false;// eklogi.Text;
+            bool theia_leit = false;// theia_leitourgeia.Text;
             string hymn = iera_paraklisi_ymnografos.Text;
             string xairetism = xairetismoi_ymnografos.Text;
             string egkom = egkwmia_ymnografos.Text;
             string eulog = eulogitiria_ymnografos.Text;
             string wishes = eyxes_ymnografos.Text;
             string music = mousiko_parartima_ymnografos.Text;
-            bool decision = true; // apofaseis_apokatataksews.Text;
-            bool approvement = true;// egkrisi.Text;
-            bool img_eksw = true; // photo_ekswfyllou.Text;
+            bool decision = false; // apofaseis_apokatataksews.Text;
+            bool approvement = false;// egkrisi.Text;
+            bool img_eksw = false; // photo_ekswfyllou.Text;
             string title = plhrhs_titlos.Text;
             string publishe = ekdotis.Text;
             int pub_date = 22;// hmeromhnia_ekdosis.Text;
             string pub_place = topos_ekdosis.Text;
-            bool disk = true; // digital_diskos.Text;
+            bool disk = false; // digital_diskos.Text;
             string fyllada = fyllada_fwtotypia.Text;
             int quantity = 22;// posotita.Text;
-            string synaksi = null;
-
-            //Here the insert has to check to the database
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");
-            connection.Open();
-
-            //Insert query
-            SqlCommand cmd = new SqlCommand("insert into Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia,Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis,CD,Phototypia,Posotita,Mnimi_anakomidi_synaksi)" +
-                "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" + orthross + "','" + election + "','" + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog + "','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','" + img_eksw + "','" + title + "','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" + synaksi + "')", connection);
-
-            SqlDataReader dataReader = cmd.ExecuteReader();
-
-            if (!dataReader.Equals(null))
+            string synaksi = "";    
+            
+            if (name != "" || property != "" || photo.Equals(true) || celebration_date != "" || small.Equals(true) || big.Equals(true)
+                || orthross.Equals(true) || election.Equals(true) || theia_leit.Equals(true) || hymn != "" || xairetism != "" || egkom != ""
+                || eulog != "" || wishes != "" || music != "" || decision.Equals(true) || approvement.Equals(true) || img_eksw.Equals(true)
+                || title != "" || publishe != "" || pub_date != 22 || pub_place.Equals(true) || disk.Equals(true) || fyllada != ""
+                || quantity != 22 || synaksi != "")
             {
-                MessageBox.Show("User inserted");
-                this.Hide();
-                Insert_Agios f1 = new Insert_Agios();
-                f1.Show();
+
+                //Here the insert has to check to the database
+                SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");
+                connection.Open();
+
+                //Insert query
+                SqlCommand cmd = new SqlCommand("insert into Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia,Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis,CD,Phototypia,Posotita,Mnimi_anakomidi_synaksi)" +
+                    "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" + orthross + "','" + election + "','" + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog + "','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','" + img_eksw + "','" + title + "','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" + synaksi + "')", connection);
+
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+                if (!dataReader.Equals(null))
+                {
+                    MessageBox.Show("Ο Άγιος καταχωρήθηκε στην βάση.");
+                    this.Hide();
+                    Insert_Agios f1 = new Insert_Agios();
+                    f1.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Υπήρξε κάποιο σφάλμα, προσπαθήστε ξανά.");
+                }
             }
-            else
-            {
-                MessageBox.Show("User not inserted");
-            }
+            else { MessageBox.Show("Παρακαλώ, συμπληρώστε τα κενά κελιά !"); }
 
         }
 
