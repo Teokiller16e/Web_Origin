@@ -30,6 +30,12 @@ namespace Web_Origin
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.mnhmh_anakomidi_sinaxi = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label71 = new System.Windows.Forms.Label();
@@ -154,14 +160,12 @@ namespace Web_Origin
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.mnhmh_anakomidi_sinaxi = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            comboBox1.Items.Add("Yes");
+            comboBox1.Items.Add("No");
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -189,12 +193,12 @@ namespace Web_Origin
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.label32);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label21);
@@ -301,6 +305,59 @@ namespace Web_Origin
             this.panel2.Size = new System.Drawing.Size(1266, 652);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(333, 39);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(50, 13);
+            this.label32.TabIndex = 221;
+            this.label32.Text = "ΣΥΝΑΞΗ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(308, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.TabIndex = 220;
+            this.label1.Text = "ΜΝΗΜΗ/ΑΝΑΚΟΜΙΔΗ";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(336, 39);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(0, 13);
+            this.label21.TabIndex = 219;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(336, 39);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(0, 13);
+            this.label23.TabIndex = 218;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.mnhmh_anakomidi_sinaxi);
+            this.panel3.Location = new System.Drawing.Point(308, 66);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(110, 27);
+            this.panel3.TabIndex = 217;
+            // 
+            // mnhmh_anakomidi_sinaxi
+            // 
+            this.mnhmh_anakomidi_sinaxi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mnhmh_anakomidi_sinaxi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnhmh_anakomidi_sinaxi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.mnhmh_anakomidi_sinaxi.Location = new System.Drawing.Point(11, 3);
+            this.mnhmh_anakomidi_sinaxi.Name = "mnhmh_anakomidi_sinaxi";
+            this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(88, 20);
+            this.mnhmh_anakomidi_sinaxi.TabIndex = 0;
             // 
             // button3
             // 
@@ -1440,59 +1497,6 @@ namespace Web_Origin
             this.panel1.Size = new System.Drawing.Size(1266, 40);
             this.panel1.TabIndex = 0;
             // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(333, 39);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(50, 13);
-            this.label32.TabIndex = 221;
-            this.label32.Text = "ΣΥΝΑΞΗ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(308, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 13);
-            this.label1.TabIndex = 220;
-            this.label1.Text = "ΜΝΗΜΗ/ΑΝΑΚΟΜΙΔΗ";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(336, 39);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(0, 13);
-            this.label21.TabIndex = 219;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(336, 39);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(0, 13);
-            this.label23.TabIndex = 218;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.mnhmh_anakomidi_sinaxi);
-            this.panel3.Location = new System.Drawing.Point(308, 66);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(110, 27);
-            this.panel3.TabIndex = 217;
-            // 
-            // mnhmh_anakomidi_sinaxi
-            // 
-            this.mnhmh_anakomidi_sinaxi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mnhmh_anakomidi_sinaxi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnhmh_anakomidi_sinaxi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.mnhmh_anakomidi_sinaxi.Location = new System.Drawing.Point(11, 3);
-            this.mnhmh_anakomidi_sinaxi.Name = "mnhmh_anakomidi_sinaxi";
-            this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(88, 20);
-            this.mnhmh_anakomidi_sinaxi.TabIndex = 0;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -1503,6 +1507,15 @@ namespace Web_Origin
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(76, 258);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 222;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Insert_Agios
             // 
@@ -1518,6 +1531,8 @@ namespace Web_Origin
             this.Text = "Form2";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
             this.panel26.ResumeLayout(false);
@@ -1572,8 +1587,6 @@ namespace Web_Origin
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -1712,5 +1725,6 @@ namespace Web_Origin
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox mnhmh_anakomidi_sinaxi;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

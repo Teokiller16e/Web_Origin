@@ -58,12 +58,24 @@ namespace Web_Origin
             bool img_eksw = true; // photo_ekswfyllou.Text;
             string title = plhrhs_titlos.Text;
             string publishe = ekdotis.Text;
-            int pub_date = 22;// hmeromhnia_ekdosis.Text;
+            int pub_date;
+
+            if (hmeromhnia_ekdosis.Text == "")
+            { pub_date = 0; }
+            else
+            { pub_date = Int32.Parse(hmeromhnia_ekdosis.Text); }
+
             string pub_place = topos_ekdosis.Text;
-            bool disk = true; // digital_diskos.Text;
+            bool disk = false; // digital_diskos.Text;
             string fyllada = fyllada_fwtotypia.Text;
-            int quantity = 22;// posotita.Text;
-            string synaksi = null;
+
+            int quantity;
+            if (posotita.Text == "")
+            { quantity = 0; }
+            else
+            { quantity = Int32.Parse(posotita.Text); }
+
+            string synaksi = "";
 
             SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");
 
