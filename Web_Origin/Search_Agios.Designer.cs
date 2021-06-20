@@ -29,29 +29,24 @@ namespace Web_Origin
         /// </summary>
         private void InitializeComponent()
         {
-            this.eklogi = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.mnhmh_anakomidi_sinaxi = new System.Windows.Forms.TextBox();
-            this.orthros = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.egkwmia_ymnografos = new System.Windows.Forms.TextBox();
-            this.megas_esperinos = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label71 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.eulogitiria_ymnografos = new System.Windows.Forms.TextBox();
             this.xairetismoi_ymnografos = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
-            this.eikones = new System.Windows.Forms.TextBox();
             this.label74 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
-            this.mikros_esperinos = new System.Windows.Forms.TextBox();
             this.eyxes_ymnografos = new System.Windows.Forms.TextBox();
             this.label70 = new System.Windows.Forms.Label();
             this.plhrhs_titlos = new System.Windows.Forms.TextBox();
@@ -79,9 +74,7 @@ namespace Web_Origin
             this.label51 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.idiotita = new System.Windows.Forms.TextBox();
-            this.apofaseis_apokatataksews = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.egkrisi = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.ekdotis = new System.Windows.Forms.TextBox();
@@ -100,8 +93,6 @@ namespace Web_Origin
             this.label36 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.digital_diskos = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
             this.hmeromhnia_ekdosis = new System.Windows.Forms.TextBox();
@@ -109,16 +100,10 @@ namespace Web_Origin
             this.label35 = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
             this.posotita = new System.Windows.Forms.TextBox();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.fyllada_fwtotypia = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.theia_leitourgeia = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.fwto_ekswfyllou = new System.Windows.Forms.Panel();
-            this.photo_ekswfyllou = new System.Windows.Forms.TextBox();
             this.iera_paraklisi_ymnografos = new System.Windows.Forms.TextBox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -126,34 +111,27 @@ namespace Web_Origin
             this.label29 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
             this.topos_ekdosis = new System.Windows.Forms.TextBox();
-            this.panel17 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -161,47 +139,37 @@ namespace Web_Origin
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
-            this.panel28.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel26.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.fwto_ekswfyllou.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel21.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel22.SuspendLayout();
-            this.panel18.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel12.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel13.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel14.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // eklogi
-            // 
-            this.eklogi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.eklogi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.eklogi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eklogi.Location = new System.Drawing.Point(11, 3);
-            this.eklogi.Name = "eklogi";
-            this.eklogi.Size = new System.Drawing.Size(88, 20);
-            this.eklogi.TabIndex = 8;
             // 
             // label32
             // 
@@ -256,16 +224,6 @@ namespace Web_Origin
             this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(88, 20);
             this.mnhmh_anakomidi_sinaxi.TabIndex = 0;
             // 
-            // orthros
-            // 
-            this.orthros.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.orthros.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.orthros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.orthros.Location = new System.Drawing.Point(11, 3);
-            this.orthros.Name = "orthros";
-            this.orthros.Size = new System.Drawing.Size(88, 20);
-            this.orthros.TabIndex = 8;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
@@ -290,16 +248,6 @@ namespace Web_Origin
             this.egkwmia_ymnografos.Name = "egkwmia_ymnografos";
             this.egkwmia_ymnografos.Size = new System.Drawing.Size(88, 20);
             this.egkwmia_ymnografos.TabIndex = 8;
-            // 
-            // megas_esperinos
-            // 
-            this.megas_esperinos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.megas_esperinos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.megas_esperinos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.megas_esperinos.Location = new System.Drawing.Point(11, 3);
-            this.megas_esperinos.Name = "megas_esperinos";
-            this.megas_esperinos.Size = new System.Drawing.Size(88, 20);
-            this.megas_esperinos.TabIndex = 8;
             // 
             // button5
             // 
@@ -362,16 +310,6 @@ namespace Web_Origin
             this.label72.TabIndex = 113;
             this.label72.Text = "ΕΓΚΡΙΣΗ";
             // 
-            // eikones
-            // 
-            this.eikones.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.eikones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.eikones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eikones.Location = new System.Drawing.Point(11, 3);
-            this.eikones.Name = "eikones";
-            this.eikones.Size = new System.Drawing.Size(88, 20);
-            this.eikones.TabIndex = 8;
-            // 
             // label74
             // 
             this.label74.AutoSize = true;
@@ -405,16 +343,6 @@ namespace Web_Origin
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(0, 13);
             this.label69.TabIndex = 108;
-            // 
-            // mikros_esperinos
-            // 
-            this.mikros_esperinos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mikros_esperinos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.mikros_esperinos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.mikros_esperinos.Location = new System.Drawing.Point(11, 3);
-            this.mikros_esperinos.Name = "mikros_esperinos";
-            this.mikros_esperinos.Size = new System.Drawing.Size(88, 20);
-            this.mikros_esperinos.TabIndex = 8;
             // 
             // eyxes_ymnografos
             // 
@@ -654,16 +582,6 @@ namespace Web_Origin
             this.idiotita.Size = new System.Drawing.Size(88, 20);
             this.idiotita.TabIndex = 8;
             // 
-            // apofaseis_apokatataksews
-            // 
-            this.apofaseis_apokatataksews.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.apofaseis_apokatataksews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.apofaseis_apokatataksews.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.apofaseis_apokatataksews.Location = new System.Drawing.Point(11, 3);
-            this.apofaseis_apokatataksews.Name = "apofaseis_apokatataksews";
-            this.apofaseis_apokatataksews.Size = new System.Drawing.Size(88, 20);
-            this.apofaseis_apokatataksews.TabIndex = 8;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -672,16 +590,6 @@ namespace Web_Origin
             this.label20.Size = new System.Drawing.Size(81, 13);
             this.label20.TabIndex = 86;
             this.label20.Text = "ΥΜΝΟΓΡΑΦΟΣ";
-            // 
-            // egkrisi
-            // 
-            this.egkrisi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.egkrisi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.egkrisi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.egkrisi.Location = new System.Drawing.Point(11, 3);
-            this.egkrisi.Name = "egkrisi";
-            this.egkrisi.Size = new System.Drawing.Size(88, 20);
-            this.egkrisi.TabIndex = 8;
             // 
             // label46
             // 
@@ -843,25 +751,6 @@ namespace Web_Origin
             this.label39.Size = new System.Drawing.Size(0, 13);
             this.label39.TabIndex = 66;
             // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.White;
-            this.panel28.Controls.Add(this.digital_diskos);
-            this.panel28.Location = new System.Drawing.Point(420, 229);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(110, 27);
-            this.panel28.TabIndex = 65;
-            // 
-            // digital_diskos
-            // 
-            this.digital_diskos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.digital_diskos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.digital_diskos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.digital_diskos.Location = new System.Drawing.Point(11, 3);
-            this.digital_diskos.Name = "digital_diskos";
-            this.digital_diskos.Size = new System.Drawing.Size(88, 20);
-            this.digital_diskos.TabIndex = 8;
-            // 
             // label40
             // 
             this.label40.AutoSize = true;
@@ -932,25 +821,6 @@ namespace Web_Origin
             this.posotita.Size = new System.Drawing.Size(88, 20);
             this.posotita.TabIndex = 8;
             // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.White;
-            this.panel27.Controls.Add(this.fyllada_fwtotypia);
-            this.panel27.Location = new System.Drawing.Point(536, 229);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(110, 27);
-            this.panel27.TabIndex = 68;
-            // 
-            // fyllada_fwtotypia
-            // 
-            this.fyllada_fwtotypia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.fyllada_fwtotypia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.fyllada_fwtotypia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.fyllada_fwtotypia.Location = new System.Drawing.Point(11, 3);
-            this.fyllada_fwtotypia.Name = "fyllada_fwtotypia";
-            this.fyllada_fwtotypia.Size = new System.Drawing.Size(88, 20);
-            this.fyllada_fwtotypia.TabIndex = 8;
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -977,25 +847,6 @@ namespace Web_Origin
             this.label33.TabIndex = 59;
             this.label33.Text = "ΘΕΙΑ ΛΕΙΤΟΥΡΓΙΑ";
             // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.White;
-            this.panel24.Controls.Add(this.theia_leitourgeia);
-            this.panel24.Location = new System.Drawing.Point(1119, 89);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(110, 27);
-            this.panel24.TabIndex = 58;
-            // 
-            // theia_leitourgeia
-            // 
-            this.theia_leitourgeia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.theia_leitourgeia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.theia_leitourgeia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.theia_leitourgeia.Location = new System.Drawing.Point(11, 3);
-            this.theia_leitourgeia.Name = "theia_leitourgeia";
-            this.theia_leitourgeia.Size = new System.Drawing.Size(88, 20);
-            this.theia_leitourgeia.TabIndex = 8;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -1003,25 +854,6 @@ namespace Web_Origin
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(0, 13);
             this.label22.TabIndex = 49;
-            // 
-            // fwto_ekswfyllou
-            // 
-            this.fwto_ekswfyllou.BackColor = System.Drawing.Color.White;
-            this.fwto_ekswfyllou.Controls.Add(this.photo_ekswfyllou);
-            this.fwto_ekswfyllou.Location = new System.Drawing.Point(1003, 160);
-            this.fwto_ekswfyllou.Name = "fwto_ekswfyllou";
-            this.fwto_ekswfyllou.Size = new System.Drawing.Size(110, 27);
-            this.fwto_ekswfyllou.TabIndex = 48;
-            // 
-            // photo_ekswfyllou
-            // 
-            this.photo_ekswfyllou.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.photo_ekswfyllou.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.photo_ekswfyllou.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.photo_ekswfyllou.Location = new System.Drawing.Point(11, 3);
-            this.photo_ekswfyllou.Name = "photo_ekswfyllou";
-            this.photo_ekswfyllou.Size = new System.Drawing.Size(88, 20);
-            this.photo_ekswfyllou.TabIndex = 8;
             // 
             // iera_paraklisi_ymnografos
             // 
@@ -1093,17 +925,19 @@ namespace Web_Origin
             this.topos_ekdosis.Size = new System.Drawing.Size(88, 20);
             this.topos_ekdosis.TabIndex = 8;
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.Controls.Add(this.egkrisi);
-            this.panel17.Location = new System.Drawing.Point(887, 160);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(110, 27);
-            this.panel17.TabIndex = 46;
-            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.comboBox11);
+            this.panel2.Controls.Add(this.comboBox10);
+            this.panel2.Controls.Add(this.comboBox9);
+            this.panel2.Controls.Add(this.comboBox8);
+            this.panel2.Controls.Add(this.comboBox7);
+            this.panel2.Controls.Add(this.comboBox6);
+            this.panel2.Controls.Add(this.comboBox5);
+            this.panel2.Controls.Add(this.comboBox4);
+            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.label32);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label21);
@@ -1155,48 +989,37 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.label35);
             this.panel2.Controls.Add(this.label36);
             this.panel2.Controls.Add(this.panel26);
-            this.panel2.Controls.Add(this.panel27);
             this.panel2.Controls.Add(this.label38);
             this.panel2.Controls.Add(this.label39);
-            this.panel2.Controls.Add(this.panel28);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.panel29);
             this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.label28);
             this.panel2.Controls.Add(this.panel20);
             this.panel2.Controls.Add(this.label33);
-            this.panel2.Controls.Add(this.panel24);
             this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.fwto_ekswfyllou);
             this.panel2.Controls.Add(this.label29);
             this.panel2.Controls.Add(this.panel21);
-            this.panel2.Controls.Add(this.panel17);
             this.panel2.Controls.Add(this.label30);
             this.panel2.Controls.Add(this.label31);
             this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.panel22);
-            this.panel2.Controls.Add(this.panel18);
             this.panel2.Controls.Add(this.panel23);
             this.panel2.Controls.Add(this.panel19);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.panel12);
-            this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.panel13);
-            this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.panel14);
-            this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.panel15);
-            this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.label4);
@@ -1243,15 +1066,6 @@ namespace Web_Origin
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(110, 27);
             this.panel22.TabIndex = 53;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.White;
-            this.panel18.Controls.Add(this.apofaseis_apokatataksews);
-            this.panel18.Location = new System.Drawing.Point(771, 160);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(110, 27);
-            this.panel18.TabIndex = 43;
             // 
             // panel23
             // 
@@ -1305,15 +1119,6 @@ namespace Web_Origin
             this.panel12.Size = new System.Drawing.Size(110, 27);
             this.panel12.TabIndex = 38;
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.eklogi);
-            this.panel8.Location = new System.Drawing.Point(1000, 89);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(110, 27);
-            this.panel8.TabIndex = 28;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -1331,15 +1136,6 @@ namespace Web_Origin
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(110, 27);
             this.panel13.TabIndex = 36;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.orthros);
-            this.panel9.Location = new System.Drawing.Point(884, 89);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(110, 27);
-            this.panel9.TabIndex = 26;
             // 
             // label12
             // 
@@ -1375,15 +1171,6 @@ namespace Web_Origin
             this.panel14.Size = new System.Drawing.Size(110, 27);
             this.panel14.TabIndex = 33;
             // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.megas_esperinos);
-            this.panel10.Location = new System.Drawing.Point(768, 89);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(110, 27);
-            this.panel10.TabIndex = 23;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -1402,15 +1189,6 @@ namespace Web_Origin
             this.panel15.Size = new System.Drawing.Size(110, 27);
             this.panel15.TabIndex = 31;
             // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Controls.Add(this.mikros_esperinos);
-            this.panel11.Location = new System.Drawing.Point(652, 89);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(110, 27);
-            this.panel11.TabIndex = 21;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1427,15 +1205,6 @@ namespace Web_Origin
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 19;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.eikones);
-            this.panel6.Location = new System.Drawing.Point(420, 89);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(110, 27);
-            this.panel6.TabIndex = 18;
             // 
             // label8
             // 
@@ -1498,6 +1267,116 @@ namespace Web_Origin
             this.panel4.Size = new System.Drawing.Size(110, 27);
             this.panel4.TabIndex = 11;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox1.Location = new System.Drawing.Point(536, 232);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(110, 21);
+            this.comboBox1.TabIndex = 237;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox2.Location = new System.Drawing.Point(420, 232);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(110, 21);
+            this.comboBox2.TabIndex = 238;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox3.Location = new System.Drawing.Point(1003, 164);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(110, 21);
+            this.comboBox3.TabIndex = 239;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox4.Location = new System.Drawing.Point(887, 164);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(110, 21);
+            this.comboBox4.TabIndex = 240;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox5.Location = new System.Drawing.Point(771, 164);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(110, 21);
+            this.comboBox5.TabIndex = 241;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox6.Location = new System.Drawing.Point(1116, 92);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(110, 21);
+            this.comboBox6.TabIndex = 242;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox7.Location = new System.Drawing.Point(1000, 92);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(110, 21);
+            this.comboBox7.TabIndex = 243;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox8.Location = new System.Drawing.Point(884, 92);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(110, 21);
+            this.comboBox8.TabIndex = 244;
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox9.Location = new System.Drawing.Point(768, 92);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(110, 21);
+            this.comboBox9.TabIndex = 245;
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox10.Location = new System.Drawing.Point(652, 92);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(110, 21);
+            this.comboBox10.TabIndex = 246;
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox11.Location = new System.Drawing.Point(420, 92);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(110, 21);
+            this.comboBox11.TabIndex = 247;
+            // 
             // Search_Agios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1512,18 +1391,10 @@ namespace Web_Origin
             this.panel3.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
-            this.panel28.ResumeLayout(false);
-            this.panel28.PerformLayout();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
-            this.panel27.ResumeLayout(false);
-            this.panel27.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.fwto_ekswfyllou.ResumeLayout(false);
-            this.fwto_ekswfyllou.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1531,36 +1402,22 @@ namespace Web_Origin
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -1572,30 +1429,24 @@ namespace Web_Origin
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox eklogi;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox mnhmh_anakomidi_sinaxi;
-        private System.Windows.Forms.TextBox orthros;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox egkwmia_ymnografos;
-        private System.Windows.Forms.TextBox megas_esperinos;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.TextBox eulogitiria_ymnografos;
         private System.Windows.Forms.TextBox xairetismoi_ymnografos;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.TextBox eikones;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.TextBox mikros_esperinos;
         private System.Windows.Forms.TextBox eyxes_ymnografos;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.TextBox plhrhs_titlos;
@@ -1623,9 +1474,7 @@ namespace Web_Origin
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox idiotita;
-        private System.Windows.Forms.TextBox apofaseis_apokatataksews;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox egkrisi;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label6;
@@ -1645,8 +1494,6 @@ namespace Web_Origin
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.TextBox digital_diskos;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.TextBox hmeromhnia_ekdosis;
@@ -1654,50 +1501,37 @@ namespace Web_Origin
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.TextBox posotita;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.TextBox fyllada_fwtotypia;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TextBox theia_leitourgeia;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Panel fwto_ekswfyllou;
-        private System.Windows.Forms.TextBox photo_ekswfyllou;
         private System.Windows.Forms.TextBox iera_paraklisi_ymnografos;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.TextBox topos_ekdosis;
-        private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label4;
@@ -1705,5 +1539,16 @@ namespace Web_Origin
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
