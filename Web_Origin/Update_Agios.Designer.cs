@@ -139,7 +139,6 @@ namespace Web_Origin
             this.onoma = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -236,7 +235,6 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.comboBox4);
             this.panel2.Controls.Add(this.comboBox3);
             this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.label32);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label21);
@@ -331,6 +329,7 @@ namespace Web_Origin
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1250, 613);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label32
             // 
@@ -1272,16 +1271,6 @@ namespace Web_Origin
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // comboBox2
-            // 
-            this.comboBox2.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox2.Location = new System.Drawing.Point(570, 296);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(110, 21);
-            this.comboBox2.TabIndex = 239;
-            // 
             // comboBox1
             // 
             this.comboBox1.Items.AddRange(new object[] {
@@ -1568,6 +1557,5 @@ namespace Web_Origin
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
