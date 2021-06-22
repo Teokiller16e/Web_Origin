@@ -150,6 +150,17 @@ namespace Web_Origin
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
+            comboBox1.Text = "Επιλέξτε";
+            comboBox3.Text = "Επιλέξτε";
+            comboBox4.Text = "Επιλέξτε";
+            comboBox5.Text = "Επιλέξτε";
+            comboBox6.Text = "Επιλέξτε";
+            comboBox7.Text = "Επιλέξτε";
+            comboBox8.Text = "Επιλέξτε";
+            comboBox9.Text = "Επιλέξτε";
+            comboBox10.Text = "Επιλέξτε";
+            comboBox11.Text = "Επιλέξτε";
+            comboBox12.Text = "Επιλέξτε";
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();

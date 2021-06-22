@@ -37,38 +37,51 @@ namespace Web_Origin
         private void button3_Click(object sender, EventArgs e)
         {
             // Receive form inputs and set to variables
+            int empty_space = 0; 
             string name = onoma.Text;
             string property = idiotita.Text;
-            bool photo;
+
+
+            bool photo=false;
             if (comboBox10.Text == "ΝΑΙ")
             { photo = true; }
-            else { photo = false; }
+            else if (comboBox10.Text=="ΟΧΙ"){ photo = false; }
+            else { empty_space +=1; }
+
+
             var celebration_date = hmeromhnia_eortis.Text;
             //checked
-            bool small;
+            bool small=false;
             if (comboBox9.Text == "ΝΑΙ")
             { small = true; }
-            else { small = false; }
+            else if (comboBox9.Text == "ΟΧΙ") { small = false; }
+            else { empty_space += 1; }
 
-            bool big;
+            bool big=false;
             if (comboBox8.Text == "ΝΑΙ")
             { big = true; }
-            else { big = false; }
+            else if (comboBox8.Text == "ΟΧΙ") { big = false; }
+            else { empty_space += 1; }
 
-            bool orthross;
+            bool orthross=false;
             if (comboBox7.Text == "ΝΑΙ")
             { orthross = true; }
-            else { orthross = false; }
+            else if (comboBox7.Text == "ΟΧΙ") { orthross = false; }
+            else { empty_space += 1; }
 
-            bool election;
+            bool election=false;
             if (comboBox6.Text == "ΝΑΙ")
             { election = true; }
-            else { election = false; }
+            else if (comboBox6.Text == "ΟΧΙ") { election = false; }
+            else { empty_space += 1; }
 
-            bool theia_leit;
+
+            bool theia_leit=false;
             if (comboBox5.Text == "ΝΑΙ")
             { theia_leit = true; }
-            else { theia_leit = false; }
+            else if (comboBox5.Text == "ΟΧΙ") { theia_leit = false; }
+            else { empty_space += 1; }
+
 
             string hymn = iera_paraklisi_ymnografos.Text;
             string xairetism = xairetismoi_ymnografos.Text;
@@ -77,20 +90,26 @@ namespace Web_Origin
             string wishes = eyxes_ymnografos.Text;
             string music = mousiko_parartima_ymnografos.Text;
 
-            bool decision;
+            bool decision=false;
             if (comboBox4.Text == "ΝΑΙ")
             { decision = true; }
-            else { decision = false; }
+            else if (comboBox4.Text == "ΟΧΙ") { decision = false; }
+            else { empty_space += 1; }
 
-            bool approvement;
+
+            bool approvement=false;
             if (comboBox3.Text == "ΝΑΙ")
             { approvement = true; }
-            else { approvement = false; }
+            else if (comboBox3.Text == "ΟΧΙ") { approvement = false; }
+            else { empty_space += 1; }
+
 
             bool img_eksw = false;
             if (comboBox1.Text == "ΝΑΙ")
             { img_eksw = true; }
-            else { img_eksw = false; }
+            else if (comboBox1.Text == "ΟΧΙ") { img_eksw = false; }
+            else { empty_space += 1; }
+
 
             string title = plhrhs_titlos.Text;
             string publishe = ekdotis.Text;
@@ -103,15 +122,19 @@ namespace Web_Origin
 
             string pub_place = topos_ekdosis.Text;
 
-            bool disk;
+            bool disk=false;
             if (comboBox11.Text == "ΝΑΙ")
             { disk = true; }
-            else { disk = false; }
+            else if (comboBox11.Text == "ΟΧΙ") { disk = false; }
+            else { empty_space += 1; }
 
-            bool fyllada;
+
+            bool fyllada=false;
             if (comboBox12.Text == "ΝΑΙ")
             { fyllada = true; }
-            else { fyllada = false; }
+            else if (comboBox12.Text == "ΟΧΙ") { fyllada = false; }
+            else { empty_space += 1; }
+
 
             int quantity;
             if (posotita.Text == "")
@@ -121,8 +144,11 @@ namespace Web_Origin
 
             string synaksi = "";
 
+
+            //
+
             if (name != "" && property != "" && celebration_date != "" && hymn != "" && xairetism != "" && egkom != "" && eulog != ""
-                && wishes != "" && music != "" && title != "" && publishe != "" && pub_date != 0 && quantity != 0)
+                && wishes != "" && music != "" && title != "" && publishe != "" && pub_date != 0 && quantity != 0 && empty_space==0)
             {
 
                 //Here the insert has to check to the database

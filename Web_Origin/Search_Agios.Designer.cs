@@ -139,6 +139,7 @@ namespace Web_Origin
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -150,6 +151,19 @@ namespace Web_Origin
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
+
+            comboBox1.Text = "Επιλέξτε";
+            comboBox2.Text = "Επιλέξτε";
+            comboBox3.Text = "Επιλέξτε";
+            comboBox4.Text = "Επιλέξτε";
+            comboBox5.Text = "Επιλέξτε";
+            comboBox6.Text = "Επιλέξτε";
+            comboBox7.Text = "Επιλέξτε";
+            comboBox8.Text = "Επιλέξτε";
+            comboBox9.Text = "Επιλέξτε";
+            comboBox10.Text = "Επιλέξτε";
+            comboBox11.Text = "Επιλέξτε";
+
             this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel29.SuspendLayout();
