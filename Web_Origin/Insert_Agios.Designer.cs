@@ -30,6 +30,17 @@ namespace Web_Origin
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -139,31 +150,6 @@ namespace Web_Origin
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-
-            //initialize text property
-            comboBox4.Text = "Επιλέξτε";
-            comboBox2.Text = "Επιλέξτε";
-            comboBox3.Text = "Επιλέξτε";
-            comboBox5.Text = "Επιλέξτε";
-            comboBox6.Text = "Επιλέξτε";
-            comboBox12.Text = "Επιλέξτε";
-            comboBox13.Text = "Επιλέξτε";
-            comboBox14.Text = "Επιλέξτε";
-            comboBox15.Text = "Επιλέξτε";
-            comboBox16.Text = "Επιλέξτε";
-            comboBox17.Text = "Επιλέξτε";
-
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
@@ -294,6 +280,127 @@ namespace Web_Origin
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // comboBox17
+            // 
+            this.comboBox17.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox17.Location = new System.Drawing.Point(1120, 68);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(110, 21);
+            this.comboBox17.TabIndex = 239;
+            this.comboBox17.Text = "Επιλέξτε";
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox16.Location = new System.Drawing.Point(775, 140);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(110, 21);
+            this.comboBox16.TabIndex = 238;
+            this.comboBox16.Text = "Επιλέξτε";
+            // 
+            // comboBox15
+            // 
+            this.comboBox15.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox15.Location = new System.Drawing.Point(891, 140);
+            this.comboBox15.Name = "comboBox15";
+            this.comboBox15.Size = new System.Drawing.Size(110, 21);
+            this.comboBox15.TabIndex = 237;
+            this.comboBox15.Text = "Επιλέξτε";
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox14.Location = new System.Drawing.Point(1007, 140);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(110, 21);
+            this.comboBox14.TabIndex = 236;
+            this.comboBox14.Text = "Επιλέξτε";
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox13.Location = new System.Drawing.Point(424, 209);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(110, 21);
+            this.comboBox13.TabIndex = 235;
+            this.comboBox13.Text = "Επιλέξτε";
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox12.Location = new System.Drawing.Point(540, 209);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(110, 21);
+            this.comboBox12.TabIndex = 234;
+            this.comboBox12.Text = "Επιλέξτε";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox6.Location = new System.Drawing.Point(656, 68);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(110, 21);
+            this.comboBox6.TabIndex = 228;
+            this.comboBox6.Text = "Επιλέξτε";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox5.Location = new System.Drawing.Point(772, 68);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(110, 21);
+            this.comboBox5.TabIndex = 227;
+            this.comboBox5.Text = "Επιλέξτε";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox3.Location = new System.Drawing.Point(888, 68);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(110, 21);
+            this.comboBox3.TabIndex = 226;
+            this.comboBox3.Text = "Επιλέξτε";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox2.Location = new System.Drawing.Point(1004, 68);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(110, 21);
+            this.comboBox2.TabIndex = 225;
+            this.comboBox2.Text = "Επιλέξτε";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox4.Location = new System.Drawing.Point(424, 68);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(110, 21);
+            this.comboBox4.TabIndex = 224;
+            this.comboBox4.Text = "Επιλέξτε";
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -331,6 +438,7 @@ namespace Web_Origin
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.mnhmh_anakomidi_sinaxi);
             this.panel3.Location = new System.Drawing.Point(308, 66);
             this.panel3.Name = "panel3";
@@ -342,9 +450,9 @@ namespace Web_Origin
             this.mnhmh_anakomidi_sinaxi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mnhmh_anakomidi_sinaxi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnhmh_anakomidi_sinaxi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.mnhmh_anakomidi_sinaxi.Location = new System.Drawing.Point(11, 3);
+            this.mnhmh_anakomidi_sinaxi.Location = new System.Drawing.Point(3, 3);
             this.mnhmh_anakomidi_sinaxi.Name = "mnhmh_anakomidi_sinaxi";
-            this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(88, 20);
+            this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(102, 20);
             this.mnhmh_anakomidi_sinaxi.TabIndex = 0;
             // 
             // button3
@@ -723,6 +831,7 @@ namespace Web_Origin
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.White;
+            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel25.Controls.Add(this.psifiaki_morfi);
             this.panel25.Location = new System.Drawing.Point(772, 206);
             this.panel25.Name = "panel25";
@@ -734,9 +843,9 @@ namespace Web_Origin
             this.psifiaki_morfi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.psifiaki_morfi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.psifiaki_morfi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.psifiaki_morfi.Location = new System.Drawing.Point(11, 3);
+            this.psifiaki_morfi.Location = new System.Drawing.Point(3, 3);
             this.psifiaki_morfi.Name = "psifiaki_morfi";
-            this.psifiaki_morfi.Size = new System.Drawing.Size(88, 20);
+            this.psifiaki_morfi.Size = new System.Drawing.Size(102, 20);
             this.psifiaki_morfi.TabIndex = 8;
             // 
             // label35
@@ -759,6 +868,7 @@ namespace Web_Origin
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.White;
+            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel26.Controls.Add(this.posotita);
             this.panel26.Location = new System.Drawing.Point(656, 206);
             this.panel26.Name = "panel26";
@@ -770,9 +880,9 @@ namespace Web_Origin
             this.posotita.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.posotita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.posotita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.posotita.Location = new System.Drawing.Point(11, 3);
+            this.posotita.Location = new System.Drawing.Point(3, 3);
             this.posotita.Name = "posotita";
-            this.posotita.Size = new System.Drawing.Size(88, 20);
+            this.posotita.Size = new System.Drawing.Size(102, 20);
             this.posotita.TabIndex = 8;
             // 
             // label38
@@ -804,6 +914,7 @@ namespace Web_Origin
             // panel29
             // 
             this.panel29.BackColor = System.Drawing.Color.White;
+            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel29.Controls.Add(this.hmeromhnia_ekdosis);
             this.panel29.Location = new System.Drawing.Point(308, 206);
             this.panel29.Name = "panel29";
@@ -815,9 +926,9 @@ namespace Web_Origin
             this.hmeromhnia_ekdosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hmeromhnia_ekdosis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.hmeromhnia_ekdosis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.hmeromhnia_ekdosis.Location = new System.Drawing.Point(11, 3);
+            this.hmeromhnia_ekdosis.Location = new System.Drawing.Point(3, 3);
             this.hmeromhnia_ekdosis.Name = "hmeromhnia_ekdosis";
-            this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(88, 20);
+            this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(102, 20);
             this.hmeromhnia_ekdosis.TabIndex = 8;
             // 
             // label27
@@ -840,6 +951,7 @@ namespace Web_Origin
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.White;
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel20.Controls.Add(this.iera_paraklisi_ymnografos);
             this.panel20.Location = new System.Drawing.Point(76, 137);
             this.panel20.Name = "panel20";
@@ -851,9 +963,9 @@ namespace Web_Origin
             this.iera_paraklisi_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.iera_paraklisi_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.iera_paraklisi_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.iera_paraklisi_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.iera_paraklisi_ymnografos.Location = new System.Drawing.Point(3, 3);
             this.iera_paraklisi_ymnografos.Name = "iera_paraklisi_ymnografos";
-            this.iera_paraklisi_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.iera_paraklisi_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.iera_paraklisi_ymnografos.TabIndex = 8;
             // 
             // label33
@@ -885,6 +997,7 @@ namespace Web_Origin
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.White;
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel21.Controls.Add(this.topos_ekdosis);
             this.panel21.Location = new System.Drawing.Point(192, 206);
             this.panel21.Name = "panel21";
@@ -896,9 +1009,9 @@ namespace Web_Origin
             this.topos_ekdosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.topos_ekdosis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.topos_ekdosis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.topos_ekdosis.Location = new System.Drawing.Point(11, 3);
+            this.topos_ekdosis.Location = new System.Drawing.Point(3, 3);
             this.topos_ekdosis.Name = "topos_ekdosis";
-            this.topos_ekdosis.Size = new System.Drawing.Size(88, 20);
+            this.topos_ekdosis.Size = new System.Drawing.Size(102, 20);
             this.topos_ekdosis.TabIndex = 8;
             // 
             // label30
@@ -929,6 +1042,7 @@ namespace Web_Origin
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.White;
+            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel22.Controls.Add(this.ekdotis);
             this.panel22.Location = new System.Drawing.Point(76, 206);
             this.panel22.Name = "panel22";
@@ -940,14 +1054,15 @@ namespace Web_Origin
             this.ekdotis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ekdotis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ekdotis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.ekdotis.Location = new System.Drawing.Point(11, 3);
+            this.ekdotis.Location = new System.Drawing.Point(3, 3);
             this.ekdotis.Name = "ekdotis";
-            this.ekdotis.Size = new System.Drawing.Size(88, 20);
+            this.ekdotis.Size = new System.Drawing.Size(102, 20);
             this.ekdotis.TabIndex = 8;
             // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.White;
+            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel23.Controls.Add(this.plhrhs_titlos);
             this.panel23.Location = new System.Drawing.Point(1123, 137);
             this.panel23.Name = "panel23";
@@ -959,14 +1074,15 @@ namespace Web_Origin
             this.plhrhs_titlos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.plhrhs_titlos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.plhrhs_titlos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.plhrhs_titlos.Location = new System.Drawing.Point(11, 3);
+            this.plhrhs_titlos.Location = new System.Drawing.Point(3, 3);
             this.plhrhs_titlos.Name = "plhrhs_titlos";
-            this.plhrhs_titlos.Size = new System.Drawing.Size(88, 20);
+            this.plhrhs_titlos.Size = new System.Drawing.Size(102, 20);
             this.plhrhs_titlos.TabIndex = 8;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.White;
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Controls.Add(this.mousiko_parartima_ymnografos);
             this.panel19.Location = new System.Drawing.Point(659, 137);
             this.panel19.Name = "panel19";
@@ -978,9 +1094,9 @@ namespace Web_Origin
             this.mousiko_parartima_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mousiko_parartima_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.mousiko_parartima_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.mousiko_parartima_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.mousiko_parartima_ymnografos.Location = new System.Drawing.Point(3, 3);
             this.mousiko_parartima_ymnografos.Name = "mousiko_parartima_ymnografos";
-            this.mousiko_parartima_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.mousiko_parartima_ymnografos.Size = new System.Drawing.Size(101, 20);
             this.mousiko_parartima_ymnografos.TabIndex = 8;
             // 
             // label9
@@ -1011,6 +1127,7 @@ namespace Web_Origin
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.eyxes_ymnografos);
             this.panel12.Location = new System.Drawing.Point(543, 137);
             this.panel12.Name = "panel12";
@@ -1022,9 +1139,9 @@ namespace Web_Origin
             this.eyxes_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eyxes_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.eyxes_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eyxes_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.eyxes_ymnografos.Location = new System.Drawing.Point(3, 3);
             this.eyxes_ymnografos.Name = "eyxes_ymnografos";
-            this.eyxes_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.eyxes_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.eyxes_ymnografos.TabIndex = 8;
             // 
             // label11
@@ -1039,6 +1156,7 @@ namespace Web_Origin
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.eulogitiria_ymnografos);
             this.panel13.Location = new System.Drawing.Point(427, 137);
             this.panel13.Name = "panel13";
@@ -1050,10 +1168,11 @@ namespace Web_Origin
             this.eulogitiria_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eulogitiria_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.eulogitiria_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eulogitiria_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.eulogitiria_ymnografos.Location = new System.Drawing.Point(3, 3);
             this.eulogitiria_ymnografos.Name = "eulogitiria_ymnografos";
-            this.eulogitiria_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.eulogitiria_ymnografos.Size = new System.Drawing.Size(101, 20);
             this.eulogitiria_ymnografos.TabIndex = 8;
+            this.eulogitiria_ymnografos.TextChanged += new System.EventHandler(this.eulogitiria_ymnografos_TextChanged);
             // 
             // label12
             // 
@@ -1083,6 +1202,7 @@ namespace Web_Origin
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.egkwmia_ymnografos);
             this.panel14.Location = new System.Drawing.Point(311, 137);
             this.panel14.Name = "panel14";
@@ -1094,9 +1214,9 @@ namespace Web_Origin
             this.egkwmia_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.egkwmia_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.egkwmia_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.egkwmia_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.egkwmia_ymnografos.Location = new System.Drawing.Point(3, 3);
             this.egkwmia_ymnografos.Name = "egkwmia_ymnografos";
-            this.egkwmia_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.egkwmia_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.egkwmia_ymnografos.TabIndex = 8;
             // 
             // label14
@@ -1111,6 +1231,7 @@ namespace Web_Origin
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.White;
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.xairetismoi_ymnografos);
             this.panel15.Location = new System.Drawing.Point(195, 137);
             this.panel15.Name = "panel15";
@@ -1122,9 +1243,9 @@ namespace Web_Origin
             this.xairetismoi_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.xairetismoi_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.xairetismoi_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.xairetismoi_ymnografos.Location = new System.Drawing.Point(11, 4);
+            this.xairetismoi_ymnografos.Location = new System.Drawing.Point(3, 4);
             this.xairetismoi_ymnografos.Name = "xairetismoi_ymnografos";
-            this.xairetismoi_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.xairetismoi_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.xairetismoi_ymnografos.TabIndex = 8;
             // 
             // label5
@@ -1156,6 +1277,7 @@ namespace Web_Origin
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.hmeromhnia_eortis);
             this.panel7.Location = new System.Drawing.Point(540, 66);
             this.panel7.Name = "panel7";
@@ -1167,9 +1289,9 @@ namespace Web_Origin
             this.hmeromhnia_eortis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hmeromhnia_eortis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.hmeromhnia_eortis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.hmeromhnia_eortis.Location = new System.Drawing.Point(11, 3);
+            this.hmeromhnia_eortis.Location = new System.Drawing.Point(3, 3);
             this.hmeromhnia_eortis.Name = "hmeromhnia_eortis";
-            this.hmeromhnia_eortis.Size = new System.Drawing.Size(88, 20);
+            this.hmeromhnia_eortis.Size = new System.Drawing.Size(102, 20);
             this.hmeromhnia_eortis.TabIndex = 8;
             this.hmeromhnia_eortis.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
@@ -1192,6 +1314,7 @@ namespace Web_Origin
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.idiotita);
             this.panel5.Location = new System.Drawing.Point(192, 66);
             this.panel5.Name = "panel5";
@@ -1203,9 +1326,9 @@ namespace Web_Origin
             this.idiotita.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.idiotita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.idiotita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.idiotita.Location = new System.Drawing.Point(11, 3);
+            this.idiotita.Location = new System.Drawing.Point(2, 3);
             this.idiotita.Name = "idiotita";
-            this.idiotita.Size = new System.Drawing.Size(88, 20);
+            this.idiotita.Size = new System.Drawing.Size(103, 20);
             this.idiotita.TabIndex = 8;
             this.idiotita.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -1221,6 +1344,7 @@ namespace Web_Origin
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.onoma);
             this.panel4.Location = new System.Drawing.Point(76, 66);
             this.panel4.Name = "panel4";
@@ -1232,9 +1356,9 @@ namespace Web_Origin
             this.onoma.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.onoma.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.onoma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.onoma.Location = new System.Drawing.Point(11, 3);
+            this.onoma.Location = new System.Drawing.Point(3, 3);
             this.onoma.Name = "onoma";
-            this.onoma.Size = new System.Drawing.Size(88, 20);
+            this.onoma.Size = new System.Drawing.Size(102, 20);
             this.onoma.TabIndex = 8;
             // 
             // button1
@@ -1286,116 +1410,6 @@ namespace Web_Origin
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox4.Location = new System.Drawing.Point(424, 68);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(110, 21);
-            this.comboBox4.TabIndex = 224;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox2.Location = new System.Drawing.Point(1004, 68);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(110, 21);
-            this.comboBox2.TabIndex = 225;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox3.Location = new System.Drawing.Point(888, 68);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(110, 21);
-            this.comboBox3.TabIndex = 226;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox5.Location = new System.Drawing.Point(772, 68);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(110, 21);
-            this.comboBox5.TabIndex = 227;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox6.Location = new System.Drawing.Point(656, 68);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(110, 21);
-            this.comboBox6.TabIndex = 228;
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox12.Location = new System.Drawing.Point(540, 209);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(110, 21);
-            this.comboBox12.TabIndex = 234;
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox13.Location = new System.Drawing.Point(424, 209);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(110, 21);
-            this.comboBox13.TabIndex = 235;
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox14.Location = new System.Drawing.Point(1007, 140);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(110, 21);
-            this.comboBox14.TabIndex = 236;
-            // 
-            // comboBox15
-            // 
-            this.comboBox15.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox15.Location = new System.Drawing.Point(891, 140);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(110, 21);
-            this.comboBox15.TabIndex = 237;
-            // 
-            // comboBox16
-            // 
-            this.comboBox16.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox16.Location = new System.Drawing.Point(775, 140);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(110, 21);
-            this.comboBox16.TabIndex = 238;
-            // 
-            // comboBox17
-            // 
-            this.comboBox17.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox17.Location = new System.Drawing.Point(1120, 68);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(110, 21);
-            this.comboBox17.TabIndex = 239;
             // 
             // Insert_Agios
             // 

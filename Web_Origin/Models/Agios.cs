@@ -9,7 +9,7 @@ namespace Web_Origin.Models
     class Agios
     {
 
-        public int ID { get; set; }
+        public int? ID { get; set; }
         public string Onoma { get; set; }
         public string Idiotita { get; set; }
         public Boolean Eikona { get; set; }

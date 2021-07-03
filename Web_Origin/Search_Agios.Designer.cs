@@ -112,6 +112,17 @@ namespace Web_Origin
             this.panel21 = new System.Windows.Forms.Panel();
             this.topos_ekdosis = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -139,31 +150,9 @@ namespace Web_Origin
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-
-            comboBox1.Text = "Επιλέξτε";
-            comboBox2.Text = "Επιλέξτε";
-            comboBox3.Text = "Επιλέξτε";
-            comboBox4.Text = "Επιλέξτε";
-            comboBox5.Text = "Επιλέξτε";
-            comboBox6.Text = "Επιλέξτε";
-            comboBox7.Text = "Επιλέξτε";
-            comboBox8.Text = "Επιλέξτε";
-            comboBox9.Text = "Επιλέξτε";
-            comboBox10.Text = "Επιλέξτε";
-            comboBox11.Text = "Επιλέξτε";
-
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.IDtextBox = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel29.SuspendLayout();
@@ -183,6 +172,7 @@ namespace Web_Origin
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label32
@@ -941,6 +931,8 @@ namespace Web_Origin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label37);
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.comboBox11);
             this.panel2.Controls.Add(this.comboBox10);
             this.panel2.Controls.Add(this.comboBox9);
@@ -1046,6 +1038,127 @@ namespace Web_Origin
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1267, 647);
             this.panel2.TabIndex = 5;
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox11.Location = new System.Drawing.Point(420, 92);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(110, 21);
+            this.comboBox11.TabIndex = 247;
+            this.comboBox11.Text = "Επιλέξτε";
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox10.Location = new System.Drawing.Point(652, 92);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(110, 21);
+            this.comboBox10.TabIndex = 246;
+            this.comboBox10.Text = "Επιλέξτε";
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox9.Location = new System.Drawing.Point(768, 92);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(110, 21);
+            this.comboBox9.TabIndex = 245;
+            this.comboBox9.Text = "Επιλέξτε";
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox8.Location = new System.Drawing.Point(884, 92);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(110, 21);
+            this.comboBox8.TabIndex = 244;
+            this.comboBox8.Text = "Επιλέξτε";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox7.Location = new System.Drawing.Point(1000, 92);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(110, 21);
+            this.comboBox7.TabIndex = 243;
+            this.comboBox7.Text = "Επιλέξτε";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox6.Location = new System.Drawing.Point(1116, 92);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(110, 21);
+            this.comboBox6.TabIndex = 242;
+            this.comboBox6.Text = "Επιλέξτε";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox5.Location = new System.Drawing.Point(771, 164);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(110, 21);
+            this.comboBox5.TabIndex = 241;
+            this.comboBox5.Text = "Επιλέξτε";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox4.Location = new System.Drawing.Point(887, 164);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(110, 21);
+            this.comboBox4.TabIndex = 240;
+            this.comboBox4.Text = "Επιλέξτε";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox3.Location = new System.Drawing.Point(1003, 164);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(110, 21);
+            this.comboBox3.TabIndex = 239;
+            this.comboBox3.Text = "Επιλέξτε";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox2.Location = new System.Drawing.Point(420, 232);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(110, 21);
+            this.comboBox2.TabIndex = 238;
+            this.comboBox2.Text = "Επιλέξτε";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Items.AddRange(new object[] {
+            "ΝΑΙ",
+            "ΟΧΙ"});
+            this.comboBox1.Location = new System.Drawing.Point(536, 232);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(110, 21);
+            this.comboBox1.TabIndex = 237;
+            this.comboBox1.Text = "Επιλέξτε";
             // 
             // label30
             // 
@@ -1281,115 +1394,35 @@ namespace Web_Origin
             this.panel4.Size = new System.Drawing.Size(110, 27);
             this.panel4.TabIndex = 11;
             // 
-            // comboBox1
+            // label37
             // 
-            this.comboBox1.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox1.Location = new System.Drawing.Point(536, 232);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(110, 21);
-            this.comboBox1.TabIndex = 237;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(780, 298);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(26, 13);
+            this.label37.TabIndex = 249;
+            this.label37.Text = "A/A";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
-            // comboBox2
+            // panel6
             // 
-            this.comboBox2.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox2.Location = new System.Drawing.Point(420, 232);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(110, 21);
-            this.comboBox2.TabIndex = 238;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.IDtextBox);
+            this.panel6.Location = new System.Drawing.Point(774, 322);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(110, 27);
+            this.panel6.TabIndex = 248;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // comboBox3
+            // IDtextBox
             // 
-            this.comboBox3.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox3.Location = new System.Drawing.Point(1003, 164);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(110, 21);
-            this.comboBox3.TabIndex = 239;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox4.Location = new System.Drawing.Point(887, 164);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(110, 21);
-            this.comboBox4.TabIndex = 240;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox5.Location = new System.Drawing.Point(771, 164);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(110, 21);
-            this.comboBox5.TabIndex = 241;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox6.Location = new System.Drawing.Point(1116, 92);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(110, 21);
-            this.comboBox6.TabIndex = 242;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox7.Location = new System.Drawing.Point(1000, 92);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(110, 21);
-            this.comboBox7.TabIndex = 243;
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox8.Location = new System.Drawing.Point(884, 92);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(110, 21);
-            this.comboBox8.TabIndex = 244;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox9.Location = new System.Drawing.Point(768, 92);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(110, 21);
-            this.comboBox9.TabIndex = 245;
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox10.Location = new System.Drawing.Point(652, 92);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(110, 21);
-            this.comboBox10.TabIndex = 246;
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.Items.AddRange(new object[] {
-            "ΝΑΙ",
-            "ΟΧΙ"});
-            this.comboBox11.Location = new System.Drawing.Point(420, 92);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(110, 21);
-            this.comboBox11.TabIndex = 247;
+            this.IDtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.IDtextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.IDtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.IDtextBox.Location = new System.Drawing.Point(11, 3);
+            this.IDtextBox.Name = "IDtextBox";
+            this.IDtextBox.Size = new System.Drawing.Size(88, 20);
+            this.IDtextBox.TabIndex = 8;
             // 
             // Search_Agios
             // 
@@ -1438,6 +1471,8 @@ namespace Web_Origin
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1564,5 +1599,8 @@ namespace Web_Origin
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox IDtextBox;
     }
 }

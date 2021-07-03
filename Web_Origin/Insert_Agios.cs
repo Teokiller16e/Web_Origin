@@ -246,5 +246,10 @@ namespace Web_Origin
         {
 
         }
+
+        private void eulogitiria_ymnografos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
