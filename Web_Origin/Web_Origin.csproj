@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChurchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChurchDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Delete_Agios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +133,17 @@
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ChurchDataSet.xsc">
+      <DependentUpon>ChurchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChurchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChurchDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChurchDataSet.xss">
+      <DependentUpon>ChurchDataSet.xsd</DependentUpon>
+    </None>
     <None Include="EkklisiaDataSet.xsc">
       <DependentUpon>EkklisiaDataSet.xsd</DependentUpon>
     </None>

@@ -48,14 +48,16 @@ namespace Web_Origin
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");        
+
+            //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");        
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+
 
             if (connection.State == System.Data.ConnectionState.Closed)
             {
                 connection.Open();
-                SqlCommand command = new SqlCommand("SELECT * FROM Ekklisia.dbo.Xristes",connection);
-                //SqlCommand command = new SqlCommand("insert into User(Firstname,Lastname,Username,Password,Administrator) values('" + fir + "','" + las + "','" + usr + "','" + pass + "','" + admin + "') ",connection);
+                // SqlCommand command = new SqlCommand("SELECT * FROM Ekklisia.dbo.Xristes",connection);
+                SqlCommand command = new SqlCommand("SELECT * FROM Church.dbo.Xristes", connection);
                 //int sql_query = command.ExecuteNonQuery();
                 SqlDataReader dataReader;
                 dataReader = command.ExecuteReader();

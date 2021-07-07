@@ -43,5 +43,15 @@ namespace Web_Origin.Properties {
                 return ((string)(this["EkklisiaConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True")]
+        public string ChurchConnectionString {
+            get {
+                return ((string)(this["ChurchConnectionString"]));
+            }
+        }
     }
 }

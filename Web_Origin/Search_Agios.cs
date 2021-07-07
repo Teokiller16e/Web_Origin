@@ -38,56 +38,36 @@ namespace Web_Origin
         private void button3_Click(object sender, EventArgs e)
         {
             // Receive form inputs and set to variables
-            int empty_spaces = 0;
-
             string name = onoma.Text;
             string property = idiotita.Text;
 
             Boolean photo=false;
             if (comboBox11.Text == "ΝΑΙ")
             { photo = true; }
-            else if (comboBox11.Text == "ΟΧΙ")
-            { photo = false; }
-            else { empty_spaces += 1; }
 
             var celebration_date = hmeromhnia_eortis.Text;
 
             Boolean small =false;
             if (comboBox10.Text == "ΝΑΙ")
             { small = true; }
-            else if (comboBox10.Text == "ΟΧΙ")
-            { small = false; }
-            else { empty_spaces += 1; }
 
             Boolean big =false;
             if (comboBox9.Text == "ΝΑΙ")
             { big = true; }
-            else if (comboBox9.Text == "ΟΧΙ")
-            { big = false; }
-            else { empty_spaces += 1; }
 
             Boolean orthross =false;
             if (comboBox8.Text == "ΝΑΙ")
             { orthross = true; }
-            else if (comboBox8.Text == "ΟΧΙ")
-            { orthross = false; }
-            else { empty_spaces += 1; }
 
 
             Boolean election =false;
             if (comboBox7.Text == "ΝΑΙ")
             { election = true; }
-            else if (comboBox7.Text == "ΟΧΙ")
-            { election = false; }
-            else { empty_spaces += 1; }
 
 
             Boolean theia_leit =false;
             if (comboBox6.Text == "ΝΑΙ")
             { theia_leit = true; }
-            else if (comboBox6.Text == "ΟΧΙ")
-            { theia_leit = false; }
-            else { empty_spaces += 1; }
 
 
             string hymn = iera_paraklisi_ymnografos.Text;
@@ -100,24 +80,15 @@ namespace Web_Origin
             Boolean decision =false;
             if (comboBox5.Text == "ΝΑΙ")
             { decision = true; }
-            else if (comboBox5.Text == "ΟΧΙ")
-            { decision = false; }
-            else { empty_spaces += 1; }
 
             Boolean approvement =false;
             if (comboBox4.Text == "ΝΑΙ")
             { approvement = true; }
-            else if (comboBox4.Text == "ΟΧΙ")
-            { approvement = false; }
-            else { empty_spaces += 1; }
 
 
             Boolean img_eksw = false;
             if (comboBox3.Text == "ΝΑΙ")
             { img_eksw = true; }
-            else if (comboBox3.Text == "ΟΧΙ")
-            { img_eksw = false; }
-            else { empty_spaces += 1; }
 
 
             string title = plhrhs_titlos.Text;
@@ -134,17 +105,12 @@ namespace Web_Origin
             Boolean disk =false;
             if (comboBox2.Text == "ΝΑΙ")
             { disk = true; }
-            else if (comboBox2.Text == "ΟΧΙ")
-            { disk = false; }
-            else { empty_spaces += 1; }
 
 
             Boolean fyllada =false;
             if (comboBox1.Text == "ΝΑΙ")
             { fyllada = true; }
-            else if (comboBox1.Text == "ΟΧΙ")
-            { fyllada = false; }
-            else { empty_spaces += 1; }
+            
 
             int aukson_ar;
             if (IDtextBox.Text == "")
@@ -234,345 +200,242 @@ namespace Web_Origin
                         {
                             MessageBox.Show("Η αναζήτηση ολοκληρώθηκε με επιτυχία !!");
                             List<Agios> returnedAgioi = new List<Agios>();
-                            bool flagAccepted;
+                        //Initialize counters
+                            int out_if;
+                            int in_if;
 
                             for (int i = 0; i < agioi.Count; i++) // 
                             {
-                                flagAccepted = false;
+                                out_if = 0;
+                                in_if = 0;
 
                                 if (name != "")
                                 {
+                                    out_if++;
                                     if (name == agioi[i].Onoma)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    {in_if++;}
                                 }
 
                                 if (property != "")
                                 {
+                                    out_if++;
                                     if (property == agioi[i].Idiotita)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
 
                                 if (comboBox11.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (photo == agioi[i].Eikona)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (hmeromhnia_eortis.Text !="")
                                 {
+                                    out_if++;
                                     DateTime cel_date = Convert.ToDateTime(celebration_date);
                                     if (cel_date == agioi[i].Date_Eortis)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox10.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (small == agioi[i].Mikros_esperinos)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox9.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (big == agioi[i].Megalos_esperinos)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox8.Text != "Επιλέξτε")
                                 {
+
+                                    out_if++;
                                     if (orthross == agioi[i].Orthros)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox7.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (election == agioi[i].Eklogi)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox6.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (theia_leit == agioi[i].Theia_leitourgeia)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (hymn != "")
                                 {
+                                    out_if++;
                                     if (hymn == agioi[i].Ymnografos)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (xairetism != "")
                                 {
+                                    out_if++;
                                     if (xairetism == agioi[i].Xairetismoi)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (egkom != "")
                                 {
+                                    out_if++;
                                     if (egkom == agioi[i].Egkomia)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (eulog != "")
                                 {
+                                    out_if++;
                                     if (eulog  == agioi[i].Eulogitaria)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (wishes != "")
                                 {
+                                    out_if++;
                                     if (wishes == agioi[i].Eyxes)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (music != "")
                                 {
+                                    out_if++;
                                     if (music == agioi[i].Mousiko_parartima)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox5.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (decision == agioi[i].Apofasi)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox4.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (approvement == agioi[i].Egkrisi)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox3.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (img_eksw == agioi[i].Eikona_ekswfyllou)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (title != "")
                                 {
+                                    out_if++;
                                     if (title == agioi[i].Plhrhs_titlos)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (publishe != "")
                                 {
+                                    out_if++;
                                     if (publishe == agioi[i].Ekdotis)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (hmeromhnia_ekdosis.Text != "")
                                 {
+                                    out_if++;
                                     if (pub_date == agioi[i].Date_ekdosis)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (pub_place != "")
                                 {
+                                    out_if++;
                                     if (pub_place == agioi[i].Topos_ekdosis)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox2.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (disk == agioi[i].CD)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (comboBox1.Text != "Επιλέξτε")
                                 {
+                                    out_if++;
                                     if (fyllada == agioi[i].Phototypia)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (posotita.Text != "")
                                 {
+                                    out_if++;
                                     if (quantity == agioi[i].Posotita)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (synaksi != "")
                                 {
+                                    out_if++;
                                     if (synaksi == agioi[i].Mnimi_anakomidi_synaksi)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
 
                                 if (IDtextBox.Text != "")
                                 {
+                                    out_if++;
                                     if ( aukson_ar == agioi[i].ID)
-                                    {
-                                        flagAccepted = true;
-                                    }
-                                    else
-                                    {
-                                        flagAccepted = false;
-                                    }
+                                    { in_if++; }
+
                                 }
-                                 // leipei h metathesi eortis
-                                if (flagAccepted == true)
+                            // leipei h metathesi eortis
+                                if (out_if == in_if)
                                 {
                                     returnedAgioi.Add(agioi[i]);
                                 }
                             }
+
+                            // Just testing for loop to print all the outcome names:
                             for (int i = 0; i < returnedAgioi.Count; i++)
-                            { Console.WriteLine("Onoma {returnedAgioi[i].Onoma}"); }
+                            { Console.WriteLine(returnedAgioi[i].Onoma); }
                         }
                     }
                     else

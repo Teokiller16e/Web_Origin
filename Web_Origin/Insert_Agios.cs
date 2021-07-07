@@ -92,52 +92,36 @@ namespace Web_Origin
         private void button3_Click_1(object sender, EventArgs e)
         {
             // Receive form inputs and set to variables
-            int empty_spaces = 0;
-            string  name = onoma.Text;
+            var name = onoma.Text;
+
+            //string name = N+onoma.Text;
             string  property = idiotita.Text;
 
             bool photo = false ;
             if(comboBox4.Text == "ΝΑΙ")
             { photo = true; }
-            else if (comboBox4.Text == "ΟΧΙ"){ photo = false; }
-            else { empty_spaces += 1; }
 
-            var celebration_date = hmeromhnia_eortis.Text; 
+            var celebration_date = hmeromhnia_eortis.Text+"-1970"; 
             //checked
             bool small =false;
             if (comboBox6.Text == "ΝΑΙ")
             { small = true; }
-            else if (comboBox6.Text == "ΟΧΙ") { small = false; }
-            else { empty_spaces += 1; }
-
 
             bool big = false ;
             if (comboBox5.Text == "ΝΑΙ")
             { big = true; }
-            else if (comboBox5.Text == "ΟΧΙ") { big = false; }
-            else { empty_spaces += 1; }
-
 
             bool orthross = false;
             if (comboBox3.Text == "ΝΑΙ")
             { orthross = true; }
-            else if (comboBox3.Text == "ΟΧΙ") { orthross = false; }
-            else { empty_spaces += 1; }
-
 
             bool election = false;
             if (comboBox2.Text == "ΝΑΙ")
             { election = true; }
-            else if (comboBox2.Text == "ΟΧΙ") { election = false; }
-            else { empty_spaces += 1; }
-
-
+            
             bool theia_leit = false;
             if (comboBox17.Text == "ΝΑΙ")
             { theia_leit = true; }
-            else if (comboBox17.Text == "ΟΧΙ") { theia_leit = false; }
-            else { empty_spaces += 1; }
-
 
             string hymn = iera_paraklisi_ymnografos.Text;
             string xairetism = xairetismoi_ymnografos.Text;
@@ -149,20 +133,17 @@ namespace Web_Origin
             bool decision=false;
             if (comboBox16.Text == "ΝΑΙ")
             { decision = true; }
-            else if (comboBox16.Text == "ΟΧΙ") { decision = false; }
-            else { empty_spaces += 1; }
+           
 
             bool approvement=false;
             if (comboBox15.Text == "ΝΑΙ")
             { approvement = true; }
-            else if (comboBox15.Text == "ΟΧΙ") { approvement = false; }
-            else { empty_spaces += 1; }
+           
 
             bool img_eksw = false; 
             if (comboBox14.Text == "ΝΑΙ")
             { img_eksw = true; }
-            else if (comboBox14.Text == "ΟΧΙ") { img_eksw = false; }
-            else { empty_spaces += 1; }
+           
 
             string title = plhrhs_titlos.Text;
             string publishe = ekdotis.Text;
@@ -178,14 +159,12 @@ namespace Web_Origin
             bool disk=false;
             if (comboBox13.Text == "ΝΑΙ")
             { disk = true; }
-            else if (comboBox13.Text == "ΟΧΙ") { disk = false; }
-            else { empty_spaces += 1; }
+            
 
             bool fyllada=false;
             if (comboBox12.Text == "ΝΑΙ")
             { fyllada = true; }
-            else if (comboBox12.Text == "ΟΧΙ") { fyllada = false; }
-            else { empty_spaces += 1; }
+            
 
             int quantity;
             if (posotita.Text == "")
@@ -195,8 +174,7 @@ namespace Web_Origin
 
             string synaksi = "";
 
-            if (name != "" && property != "" && celebration_date != "" &&  hymn != "" && xairetism != "" && egkom != "" && eulog != ""
-                && wishes != "" && music != "" && title != "" && publishe != "" && pub_date != 0 && quantity != 0 && empty_spaces == 0)
+            if (name != "" && property != "" && celebration_date != "" &&  synaksi == "")// σύναξη προσωρινό
             {
 
                 //Here the insert has to check to the database
@@ -204,12 +182,12 @@ namespace Web_Origin
                 connection.Open();
 
                 //Insert query
-                SqlCommand cmd = new SqlCommand("insert into Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia,Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis,CD,Phototypia,Posotita,Mnimi_anakomidi_synaksi)" +
-                    "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" +
-                    orthross + "','" + election + "','" + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog +
-                    "','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','" + img_eksw + "','" + title +
-                    "','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" +
-                    quantity + "','" + synaksi + "')", connection);
+                SqlCommand cmd = new SqlCommand("insert into Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia," +
+                    "Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis,CD,Phototypia," +
+                    "Posotita,Mnimi_anakomidi_synaksi)" +
+                    "values ('" +name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" +orthross + "','" + election + "','"
+                    + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog +"','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','"
+                    + img_eksw + "','" + title +"','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" + synaksi + "')", connection);
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
@@ -227,7 +205,7 @@ namespace Web_Origin
             }
             else 
             {
-                MessageBox.Show("Παρακαλώ, συμπληρώστε τα κενά κελιά !");
+                MessageBox.Show("Τα κελιά (Όνομα,Ιδιότητε και Ημερομηνία Εορτής είναι υποχρεωτικά !");
             }
           
         }
