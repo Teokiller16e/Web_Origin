@@ -1304,6 +1304,7 @@ namespace Web_Origin
             this.hmeromhnia_eortis.Name = "hmeromhnia_eortis";
             this.hmeromhnia_eortis.Size = new System.Drawing.Size(88, 20);
             this.hmeromhnia_eortis.TabIndex = 8;
+            this.hmeromhnia_eortis.Tag = "";
             // 
             // label4
             // 
@@ -1426,6 +1427,7 @@ namespace Web_Origin
             this.MetathesiEortis.Name = "MetathesiEortis";
             this.MetathesiEortis.Size = new System.Drawing.Size(88, 20);
             this.MetathesiEortis.TabIndex = 8;
+            this.MetathesiEortis.Text = "ΜΜ-ΗΗ";
             // 
             // Update_Agios
             // 
