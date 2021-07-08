@@ -150,6 +150,9 @@ namespace Web_Origin
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.MetathesiEortis = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
@@ -169,10 +172,13 @@ namespace Web_Origin
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label37);
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.comboBox17);
             this.panel2.Controls.Add(this.comboBox16);
             this.panel2.Controls.Add(this.comboBox15);
@@ -1411,6 +1417,36 @@ namespace Web_Origin
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(934, 301);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(107, 13);
+            this.label37.TabIndex = 254;
+            this.label37.Text = "ΜΕΤΑΘΕΣΗ  ΕΟΡΤΗΣ";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.MetathesiEortis);
+            this.panel6.Location = new System.Drawing.Point(933, 325);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(110, 27);
+            this.panel6.TabIndex = 253;
+            // 
+            // MetathesiEortis
+            // 
+            this.MetathesiEortis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MetathesiEortis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.MetathesiEortis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.MetathesiEortis.Location = new System.Drawing.Point(3, 3);
+            this.MetathesiEortis.Name = "MetathesiEortis";
+            this.MetathesiEortis.Size = new System.Drawing.Size(104, 20);
+            this.MetathesiEortis.TabIndex = 8;
+            this.MetathesiEortis.Text = "ΜΜ-ΗΗ";
+            // 
             // Insert_Agios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1460,6 +1496,8 @@ namespace Web_Origin
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1586,5 +1624,8 @@ namespace Web_Origin
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox MetathesiEortis;
     }
 }

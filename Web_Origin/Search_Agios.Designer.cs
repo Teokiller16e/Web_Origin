@@ -112,6 +112,12 @@ namespace Web_Origin
             this.panel21 = new System.Windows.Forms.Panel();
             this.topos_ekdosis = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label64 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.MetathesiEortis = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.IDtextBox = new System.Windows.Forms.TextBox();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
@@ -150,9 +156,6 @@ namespace Web_Origin
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.IDtextBox = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel29.SuspendLayout();
@@ -162,6 +165,8 @@ namespace Web_Origin
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel21.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -172,7 +177,6 @@ namespace Web_Origin
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label32
@@ -212,6 +216,7 @@ namespace Web_Origin
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.mnhmh_anakomidi_sinaxi);
             this.panel3.Location = new System.Drawing.Point(304, 89);
             this.panel3.Name = "panel3";
@@ -223,10 +228,11 @@ namespace Web_Origin
             this.mnhmh_anakomidi_sinaxi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mnhmh_anakomidi_sinaxi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnhmh_anakomidi_sinaxi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.mnhmh_anakomidi_sinaxi.Location = new System.Drawing.Point(11, 3);
+            this.mnhmh_anakomidi_sinaxi.Location = new System.Drawing.Point(3, 3);
             this.mnhmh_anakomidi_sinaxi.Name = "mnhmh_anakomidi_sinaxi";
-            this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(88, 20);
+            this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(104, 20);
             this.mnhmh_anakomidi_sinaxi.TabIndex = 0;
+            this.mnhmh_anakomidi_sinaxi.TextChanged += new System.EventHandler(this.mnhmh_anakomidi_sinaxi_TextChanged);
             // 
             // button3
             // 
@@ -248,10 +254,11 @@ namespace Web_Origin
             this.egkwmia_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.egkwmia_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.egkwmia_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.egkwmia_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.egkwmia_ymnografos.Location = new System.Drawing.Point(4, 3);
             this.egkwmia_ymnografos.Name = "egkwmia_ymnografos";
-            this.egkwmia_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.egkwmia_ymnografos.Size = new System.Drawing.Size(103, 20);
             this.egkwmia_ymnografos.TabIndex = 8;
+            this.egkwmia_ymnografos.TextChanged += new System.EventHandler(this.egkwmia_ymnografos_TextChanged);
             // 
             // button5
             // 
@@ -290,20 +297,22 @@ namespace Web_Origin
             this.eulogitiria_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eulogitiria_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.eulogitiria_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eulogitiria_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.eulogitiria_ymnografos.Location = new System.Drawing.Point(3, 3);
             this.eulogitiria_ymnografos.Name = "eulogitiria_ymnografos";
-            this.eulogitiria_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.eulogitiria_ymnografos.Size = new System.Drawing.Size(104, 20);
             this.eulogitiria_ymnografos.TabIndex = 8;
+            this.eulogitiria_ymnografos.TextChanged += new System.EventHandler(this.eulogitiria_ymnografos_TextChanged);
             // 
             // xairetismoi_ymnografos
             // 
             this.xairetismoi_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.xairetismoi_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.xairetismoi_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.xairetismoi_ymnografos.Location = new System.Drawing.Point(11, 4);
+            this.xairetismoi_ymnografos.Location = new System.Drawing.Point(3, 4);
             this.xairetismoi_ymnografos.Name = "xairetismoi_ymnografos";
-            this.xairetismoi_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.xairetismoi_ymnografos.Size = new System.Drawing.Size(104, 20);
             this.xairetismoi_ymnografos.TabIndex = 8;
+            this.xairetismoi_ymnografos.TextChanged += new System.EventHandler(this.xairetismoi_ymnografos_TextChanged);
             // 
             // label72
             // 
@@ -353,10 +362,11 @@ namespace Web_Origin
             this.eyxes_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eyxes_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.eyxes_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eyxes_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.eyxes_ymnografos.Location = new System.Drawing.Point(3, 3);
             this.eyxes_ymnografos.Name = "eyxes_ymnografos";
-            this.eyxes_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.eyxes_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.eyxes_ymnografos.TabIndex = 8;
+            this.eyxes_ymnografos.TextChanged += new System.EventHandler(this.eyxes_ymnografos_TextChanged);
             // 
             // label70
             // 
@@ -371,10 +381,11 @@ namespace Web_Origin
             this.plhrhs_titlos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.plhrhs_titlos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.plhrhs_titlos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.plhrhs_titlos.Location = new System.Drawing.Point(11, 3);
+            this.plhrhs_titlos.Location = new System.Drawing.Point(3, 3);
             this.plhrhs_titlos.Name = "plhrhs_titlos";
-            this.plhrhs_titlos.Size = new System.Drawing.Size(88, 20);
+            this.plhrhs_titlos.Size = new System.Drawing.Size(104, 20);
             this.plhrhs_titlos.TabIndex = 8;
+            this.plhrhs_titlos.TextChanged += new System.EventHandler(this.plhrhs_titlos_TextChanged);
             // 
             // label65
             // 
@@ -440,19 +451,20 @@ namespace Web_Origin
             this.mousiko_parartima_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mousiko_parartima_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.mousiko_parartima_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.mousiko_parartima_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.mousiko_parartima_ymnografos.Location = new System.Drawing.Point(3, 3);
             this.mousiko_parartima_ymnografos.Name = "mousiko_parartima_ymnografos";
-            this.mousiko_parartima_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.mousiko_parartima_ymnografos.Size = new System.Drawing.Size(104, 20);
             this.mousiko_parartima_ymnografos.TabIndex = 8;
+            this.mousiko_parartima_ymnografos.TextChanged += new System.EventHandler(this.mousiko_parartima_ymnografos_TextChanged);
             // 
             // hmeromhnia_eortis
             // 
             this.hmeromhnia_eortis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hmeromhnia_eortis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.hmeromhnia_eortis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.hmeromhnia_eortis.Location = new System.Drawing.Point(11, 3);
+            this.hmeromhnia_eortis.Location = new System.Drawing.Point(3, 3);
             this.hmeromhnia_eortis.Name = "hmeromhnia_eortis";
-            this.hmeromhnia_eortis.Size = new System.Drawing.Size(88, 20);
+            this.hmeromhnia_eortis.Size = new System.Drawing.Size(104, 20);
             this.hmeromhnia_eortis.TabIndex = 8;
             // 
             // label56
@@ -469,10 +481,11 @@ namespace Web_Origin
             this.onoma.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.onoma.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.onoma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.onoma.Location = new System.Drawing.Point(11, 3);
+            this.onoma.Location = new System.Drawing.Point(3, 3);
             this.onoma.Name = "onoma";
-            this.onoma.Size = new System.Drawing.Size(88, 20);
+            this.onoma.Size = new System.Drawing.Size(104, 20);
             this.onoma.TabIndex = 8;
+            this.onoma.TextChanged += new System.EventHandler(this.onoma_TextChanged);
             // 
             // label57
             // 
@@ -581,10 +594,11 @@ namespace Web_Origin
             this.idiotita.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.idiotita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.idiotita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.idiotita.Location = new System.Drawing.Point(11, 3);
+            this.idiotita.Location = new System.Drawing.Point(3, 3);
             this.idiotita.Name = "idiotita";
-            this.idiotita.Size = new System.Drawing.Size(88, 20);
+            this.idiotita.Size = new System.Drawing.Size(104, 20);
             this.idiotita.TabIndex = 8;
+            this.idiotita.TextChanged += new System.EventHandler(this.idiotita_TextChanged);
             // 
             // label20
             // 
@@ -619,10 +633,11 @@ namespace Web_Origin
             this.ekdotis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ekdotis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ekdotis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.ekdotis.Location = new System.Drawing.Point(11, 3);
+            this.ekdotis.Location = new System.Drawing.Point(3, 3);
             this.ekdotis.Name = "ekdotis";
-            this.ekdotis.Size = new System.Drawing.Size(88, 20);
+            this.ekdotis.Size = new System.Drawing.Size(104, 20);
             this.ekdotis.TabIndex = 8;
+            this.ekdotis.TextChanged += new System.EventHandler(this.ekdotis_TextChanged);
             // 
             // label47
             // 
@@ -714,6 +729,7 @@ namespace Web_Origin
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.White;
+            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel25.Controls.Add(this.psifiaki_morfi);
             this.panel25.Location = new System.Drawing.Point(768, 229);
             this.panel25.Name = "panel25";
@@ -725,9 +741,9 @@ namespace Web_Origin
             this.psifiaki_morfi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.psifiaki_morfi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.psifiaki_morfi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.psifiaki_morfi.Location = new System.Drawing.Point(11, 3);
+            this.psifiaki_morfi.Location = new System.Drawing.Point(3, 3);
             this.psifiaki_morfi.Name = "psifiaki_morfi";
-            this.psifiaki_morfi.Size = new System.Drawing.Size(88, 20);
+            this.psifiaki_morfi.Size = new System.Drawing.Size(103, 20);
             this.psifiaki_morfi.TabIndex = 8;
             // 
             // label36
@@ -767,6 +783,7 @@ namespace Web_Origin
             // panel29
             // 
             this.panel29.BackColor = System.Drawing.Color.White;
+            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel29.Controls.Add(this.hmeromhnia_ekdosis);
             this.panel29.Location = new System.Drawing.Point(304, 229);
             this.panel29.Name = "panel29";
@@ -778,10 +795,11 @@ namespace Web_Origin
             this.hmeromhnia_ekdosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hmeromhnia_ekdosis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.hmeromhnia_ekdosis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.hmeromhnia_ekdosis.Location = new System.Drawing.Point(11, 3);
+            this.hmeromhnia_ekdosis.Location = new System.Drawing.Point(4, 3);
             this.hmeromhnia_ekdosis.Name = "hmeromhnia_ekdosis";
-            this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(88, 20);
+            this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(103, 20);
             this.hmeromhnia_ekdosis.TabIndex = 8;
+            this.hmeromhnia_ekdosis.TextChanged += new System.EventHandler(this.hmeromhnia_ekdosis_TextChanged);
             // 
             // button1
             // 
@@ -809,6 +827,7 @@ namespace Web_Origin
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.White;
+            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel26.Controls.Add(this.posotita);
             this.panel26.Location = new System.Drawing.Point(652, 229);
             this.panel26.Name = "panel26";
@@ -820,10 +839,11 @@ namespace Web_Origin
             this.posotita.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.posotita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.posotita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.posotita.Location = new System.Drawing.Point(11, 3);
+            this.posotita.Location = new System.Drawing.Point(3, 3);
             this.posotita.Name = "posotita";
-            this.posotita.Size = new System.Drawing.Size(88, 20);
+            this.posotita.Size = new System.Drawing.Size(103, 20);
             this.posotita.TabIndex = 8;
+            this.posotita.TextChanged += new System.EventHandler(this.posotita_TextChanged);
             // 
             // label27
             // 
@@ -864,14 +884,16 @@ namespace Web_Origin
             this.iera_paraklisi_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.iera_paraklisi_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.iera_paraklisi_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.iera_paraklisi_ymnografos.Location = new System.Drawing.Point(11, 3);
+            this.iera_paraklisi_ymnografos.Location = new System.Drawing.Point(4, 3);
             this.iera_paraklisi_ymnografos.Name = "iera_paraklisi_ymnografos";
-            this.iera_paraklisi_ymnografos.Size = new System.Drawing.Size(88, 20);
+            this.iera_paraklisi_ymnografos.Size = new System.Drawing.Size(100, 20);
             this.iera_paraklisi_ymnografos.TabIndex = 8;
+            this.iera_paraklisi_ymnografos.TextChanged += new System.EventHandler(this.iera_paraklisi_ymnografos_TextChanged);
             // 
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.White;
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel20.Controls.Add(this.iera_paraklisi_ymnografos);
             this.panel20.Location = new System.Drawing.Point(72, 160);
             this.panel20.Name = "panel20";
@@ -913,6 +935,7 @@ namespace Web_Origin
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.White;
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel21.Controls.Add(this.topos_ekdosis);
             this.panel21.Location = new System.Drawing.Point(188, 229);
             this.panel21.Name = "panel21";
@@ -924,13 +947,16 @@ namespace Web_Origin
             this.topos_ekdosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.topos_ekdosis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.topos_ekdosis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.topos_ekdosis.Location = new System.Drawing.Point(11, 3);
+            this.topos_ekdosis.Location = new System.Drawing.Point(4, 3);
             this.topos_ekdosis.Name = "topos_ekdosis";
-            this.topos_ekdosis.Size = new System.Drawing.Size(88, 20);
+            this.topos_ekdosis.Size = new System.Drawing.Size(103, 20);
             this.topos_ekdosis.TabIndex = 8;
+            this.topos_ekdosis.TextChanged += new System.EventHandler(this.topos_ekdosis_TextChanged);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label64);
+            this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.comboBox11);
@@ -1038,6 +1064,67 @@ namespace Web_Origin
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1267, 647);
             this.panel2.TabIndex = 5;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(579, 298);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(107, 13);
+            this.label64.TabIndex = 256;
+            this.label64.Text = "ΜΕΤΑΘΕΣΗ  ΕΟΡΤΗΣ";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.MetathesiEortis);
+            this.panel8.Location = new System.Drawing.Point(578, 322);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(110, 27);
+            this.panel8.TabIndex = 255;
+            // 
+            // MetathesiEortis
+            // 
+            this.MetathesiEortis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MetathesiEortis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.MetathesiEortis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.MetathesiEortis.Location = new System.Drawing.Point(3, 3);
+            this.MetathesiEortis.Name = "MetathesiEortis";
+            this.MetathesiEortis.Size = new System.Drawing.Size(104, 20);
+            this.MetathesiEortis.TabIndex = 8;
+            this.MetathesiEortis.Text = "ΜΜ-ΗΗ";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(813, 297);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(26, 13);
+            this.label37.TabIndex = 249;
+            this.label37.Text = "A/A";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.IDtextBox);
+            this.panel6.Location = new System.Drawing.Point(774, 322);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(110, 27);
+            this.panel6.TabIndex = 248;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // IDtextBox
+            // 
+            this.IDtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.IDtextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.IDtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.IDtextBox.Location = new System.Drawing.Point(3, 3);
+            this.IDtextBox.Name = "IDtextBox";
+            this.IDtextBox.Size = new System.Drawing.Size(104, 20);
+            this.IDtextBox.TabIndex = 8;
             // 
             // comboBox11
             // 
@@ -1188,6 +1275,7 @@ namespace Web_Origin
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.White;
+            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel22.Controls.Add(this.ekdotis);
             this.panel22.Location = new System.Drawing.Point(72, 229);
             this.panel22.Name = "panel22";
@@ -1197,6 +1285,7 @@ namespace Web_Origin
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.White;
+            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel23.Controls.Add(this.plhrhs_titlos);
             this.panel23.Location = new System.Drawing.Point(1119, 160);
             this.panel23.Name = "panel23";
@@ -1206,6 +1295,7 @@ namespace Web_Origin
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.White;
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Controls.Add(this.mousiko_parartima_ymnografos);
             this.panel19.Location = new System.Drawing.Point(655, 160);
             this.panel19.Name = "panel19";
@@ -1240,6 +1330,7 @@ namespace Web_Origin
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.eyxes_ymnografos);
             this.panel12.Location = new System.Drawing.Point(539, 160);
             this.panel12.Name = "panel12";
@@ -1258,6 +1349,7 @@ namespace Web_Origin
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.eulogitiria_ymnografos);
             this.panel13.Location = new System.Drawing.Point(423, 160);
             this.panel13.Name = "panel13";
@@ -1292,6 +1384,7 @@ namespace Web_Origin
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.egkwmia_ymnografos);
             this.panel14.Location = new System.Drawing.Point(307, 160);
             this.panel14.Name = "panel14";
@@ -1310,6 +1403,7 @@ namespace Web_Origin
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.White;
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.xairetismoi_ymnografos);
             this.panel15.Location = new System.Drawing.Point(191, 160);
             this.panel15.Name = "panel15";
@@ -1345,6 +1439,7 @@ namespace Web_Origin
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.hmeromhnia_eortis);
             this.panel7.Location = new System.Drawing.Point(536, 89);
             this.panel7.Name = "panel7";
@@ -1370,6 +1465,7 @@ namespace Web_Origin
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.idiotita);
             this.panel5.Location = new System.Drawing.Point(188, 89);
             this.panel5.Name = "panel5";
@@ -1388,41 +1484,12 @@ namespace Web_Origin
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.onoma);
             this.panel4.Location = new System.Drawing.Point(72, 89);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(110, 27);
             this.panel4.TabIndex = 11;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(780, 298);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(26, 13);
-            this.label37.TabIndex = 249;
-            this.label37.Text = "A/A";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.IDtextBox);
-            this.panel6.Location = new System.Drawing.Point(774, 322);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(110, 27);
-            this.panel6.TabIndex = 248;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
-            // IDtextBox
-            // 
-            this.IDtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.IDtextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.IDtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.IDtextBox.Location = new System.Drawing.Point(11, 3);
-            this.IDtextBox.Name = "IDtextBox";
-            this.IDtextBox.Size = new System.Drawing.Size(88, 20);
-            this.IDtextBox.TabIndex = 8;
             // 
             // Search_Agios
             // 
@@ -1451,6 +1518,10 @@ namespace Web_Origin
             this.panel21.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             this.panel23.ResumeLayout(false);
@@ -1471,8 +1542,6 @@ namespace Web_Origin
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1602,5 +1671,8 @@ namespace Web_Origin
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox IDtextBox;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox MetathesiEortis;
     }
 }

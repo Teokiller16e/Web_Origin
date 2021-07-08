@@ -35,6 +35,7 @@ namespace Web_Origin.Models
         public Boolean CD { get; set; }
         public Boolean Phototypia { get; set; }
         public int Posotita { get; set; }
+        public string Metathesi_eortis { get; set; }
         public string Mnimi_anakomidi_synaksi { get; set; }
 
         // Default
@@ -43,7 +44,7 @@ namespace Web_Origin.Models
         // Constructor:
         public Agios(int ID, string Onoma, string Idiotita,Boolean Eikona,DateTime Date_Eortis,Boolean Mikros_esperinos,Boolean Megalos_esperinos, Boolean Orthros, Boolean Eklogi,
             Boolean Theia_leitourgeia,string Ymnografos, string Xairetismoi, string Egkomia,string Eulogitaria, string Eyxes, string Mousiko_parartima, Boolean Apofasi, Boolean Egkrisi, 
-            Boolean Eikona_ekswfyllou, string Plhrhs_titlos, string Ekdotis,string Topos_ekdosis, int Date_ekdosis,Boolean CD, Boolean Phototypia, int Posotita,
+            Boolean Eikona_ekswfyllou, string Plhrhs_titlos, string Ekdotis,string Topos_ekdosis, int Date_ekdosis,Boolean CD, Boolean Phototypia, int Posotita,string Metathesi_eortis,
             string Mnimi_anakomidi_synaksi)
         {
             this.ID = ID;
@@ -72,6 +73,7 @@ namespace Web_Origin.Models
             this.CD = CD;
             this.Phototypia = Phototypia;
             this.Posotita = Posotita;
+            this.Metathesi_eortis = Metathesi_eortis;
             this.Mnimi_anakomidi_synaksi = Mnimi_anakomidi_synaksi;
         }
 

@@ -101,7 +101,7 @@ namespace Web_Origin
             if(comboBox4.Text == "ΝΑΙ")
             { photo = true; }
 
-            var celebration_date = hmeromhnia_eortis.Text+"-1970"; 
+            var celebration_date = hmeromhnia_eortis.Text; 
             //checked
             bool small =false;
             if (comboBox6.Text == "ΝΑΙ")
@@ -174,20 +174,24 @@ namespace Web_Origin
 
             string synaksi = "";
 
-            if (name != "" && property != "" && celebration_date != "" &&  synaksi == "")// σύναξη προσωρινό
-            {
+            string metathesi_eortis = MetathesiEortis.Text;
 
+
+            if (name != "" && property != "" && celebration_date != "" )// σύναξη προσωρινό
+            {
+                celebration_date = celebration_date + "-1970";
                 //Here the insert has to check to the database
-                SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");
+                SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
                 connection.Open();
 
                 //Insert query
                 SqlCommand cmd = new SqlCommand("insert into Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia," +
                     "Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis,CD,Phototypia," +
-                    "Posotita,Mnimi_anakomidi_synaksi)" +
-                    "values ('" +name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" +orthross + "','" + election + "','"
-                    + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog +"','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','"
-                    + img_eksw + "','" + title +"','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" + synaksi + "')", connection);
+                    "Posotita,Metathesi_Eortis,Mnimi_anakomidi_synaksi)" +
+                    "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" + orthross + "','" + election + "','"
+                    + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog + "','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','"
+                    + img_eksw + "','" + title + "','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" +
+                    metathesi_eortis + "','" + synaksi + "')", connection);
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
