@@ -969,7 +969,6 @@ namespace Web_Origin
             this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(102, 20);
             this.hmeromhnia_ekdosis.TabIndex = 8;
             this.hmeromhnia_ekdosis.Text = "MMMM";
-            this.hmeromhnia_ekdosis.Enter += new System.EventHandler(this.hmeromhnia_ekdosis);
             // 
             // label27
             // 

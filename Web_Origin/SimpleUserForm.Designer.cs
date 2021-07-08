@@ -58,6 +58,7 @@ namespace Web_Origin
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
@@ -71,6 +72,7 @@ namespace Web_Origin
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(450, 40);
             this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label2
             // 
@@ -82,6 +84,7 @@ namespace Web_Origin
             this.label2.Size = new System.Drawing.Size(199, 22);
             this.label2.TabIndex = 7;
             this.label2.Text = "Γενικές Πληροφορίες\r\n";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button7
             // 
@@ -96,6 +99,7 @@ namespace Web_Origin
             this.button7.TabIndex = 0;
             this.button7.Text = "X";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button4
             // 
@@ -122,6 +126,7 @@ namespace Web_Origin
             this.label3.Size = new System.Drawing.Size(139, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "Φόρμα Αλλαγής";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // label6
             // 
@@ -133,6 +138,7 @@ namespace Web_Origin
             this.label6.Size = new System.Drawing.Size(279, 42);
             this.label6.TabIndex = 6;
             this.label6.Text = "Ορθόδοξο Ιεραποστολικό Σωματείο\r\n       Παναγία η Κοσμοσώτειρα\r\n";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel1
             // 
@@ -193,6 +199,7 @@ namespace Web_Origin
             this.label1.Size = new System.Drawing.Size(142, 19);
             this.label1.TabIndex = 17;
             this.label1.Text = "Καλώς Ορίσατε ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button3
             // 
