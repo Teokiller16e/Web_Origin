@@ -182,7 +182,7 @@ namespace Web_Origin
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(329, 62);
+            this.label32.Location = new System.Drawing.Point(443, 62);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(50, 13);
             this.label32.TabIndex = 221;
@@ -200,7 +200,7 @@ namespace Web_Origin
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(332, 62);
+            this.label21.Location = new System.Drawing.Point(446, 62);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(0, 13);
             this.label21.TabIndex = 219;
@@ -208,7 +208,7 @@ namespace Web_Origin
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(332, 62);
+            this.label23.Location = new System.Drawing.Point(446, 62);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(0, 13);
             this.label23.TabIndex = 218;
@@ -218,7 +218,7 @@ namespace Web_Origin
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.mnhmh_anakomidi_sinaxi);
-            this.panel3.Location = new System.Drawing.Point(304, 89);
+            this.panel3.Location = new System.Drawing.Point(418, 89);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(110, 27);
             this.panel3.TabIndex = 217;
@@ -278,7 +278,7 @@ namespace Web_Origin
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(907, 142);
+            this.label71.Location = new System.Drawing.Point(1139, 145);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(79, 13);
             this.label71.TabIndex = 114;
@@ -287,7 +287,7 @@ namespace Web_Origin
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(913, 134);
+            this.label73.Location = new System.Drawing.Point(1145, 137);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(0, 13);
             this.label73.TabIndex = 112;
@@ -317,7 +317,7 @@ namespace Web_Origin
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(919, 125);
+            this.label72.Location = new System.Drawing.Point(1151, 128);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(48, 13);
             this.label72.TabIndex = 113;
@@ -326,7 +326,7 @@ namespace Web_Origin
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(919, 133);
+            this.label74.Location = new System.Drawing.Point(1151, 136);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(0, 13);
             this.label74.TabIndex = 111;
@@ -334,7 +334,7 @@ namespace Web_Origin
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(1021, 142);
+            this.label24.Location = new System.Drawing.Point(90, 211);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(76, 13);
             this.label24.TabIndex = 110;
@@ -343,7 +343,7 @@ namespace Web_Origin
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(1035, 125);
+            this.label68.Location = new System.Drawing.Point(104, 194);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(39, 13);
             this.label68.TabIndex = 109;
@@ -352,7 +352,7 @@ namespace Web_Origin
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(1032, 134);
+            this.label69.Location = new System.Drawing.Point(101, 203);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(0, 13);
             this.label69.TabIndex = 108;
@@ -371,7 +371,7 @@ namespace Web_Origin
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(1038, 133);
+            this.label70.Location = new System.Drawing.Point(107, 202);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(0, 13);
             this.label70.TabIndex = 107;
@@ -390,7 +390,7 @@ namespace Web_Origin
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(1131, 134);
+            this.label65.Location = new System.Drawing.Point(200, 203);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(87, 13);
             this.label65.TabIndex = 105;
@@ -399,7 +399,7 @@ namespace Web_Origin
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(1141, 134);
+            this.label66.Location = new System.Drawing.Point(210, 203);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(0, 13);
             this.label66.TabIndex = 104;
@@ -407,7 +407,7 @@ namespace Web_Origin
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(1147, 133);
+            this.label67.Location = new System.Drawing.Point(216, 202);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(0, 13);
             this.label67.TabIndex = 103;
@@ -415,7 +415,7 @@ namespace Web_Origin
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(779, 142);
+            this.label60.Location = new System.Drawing.Point(1011, 145);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(97, 13);
             this.label60.TabIndex = 102;
@@ -424,7 +424,7 @@ namespace Web_Origin
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(793, 125);
+            this.label61.Location = new System.Drawing.Point(1025, 128);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(61, 13);
             this.label61.TabIndex = 101;
@@ -433,7 +433,7 @@ namespace Web_Origin
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(790, 134);
+            this.label62.Location = new System.Drawing.Point(1022, 137);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(0, 13);
             this.label62.TabIndex = 100;
@@ -441,7 +441,7 @@ namespace Web_Origin
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(796, 133);
+            this.label63.Location = new System.Drawing.Point(1028, 136);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(0, 13);
             this.label63.TabIndex = 99;
@@ -470,7 +470,7 @@ namespace Web_Origin
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(675, 142);
+            this.label56.Location = new System.Drawing.Point(907, 145);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(65, 13);
             this.label56.TabIndex = 98;
@@ -490,7 +490,7 @@ namespace Web_Origin
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(647, 125);
+            this.label57.Location = new System.Drawing.Point(879, 128);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(118, 13);
             this.label57.TabIndex = 97;
@@ -499,7 +499,7 @@ namespace Web_Origin
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(679, 134);
+            this.label58.Location = new System.Drawing.Point(911, 137);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(0, 13);
             this.label58.TabIndex = 96;
@@ -507,7 +507,7 @@ namespace Web_Origin
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(685, 133);
+            this.label59.Location = new System.Drawing.Point(917, 136);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(0, 13);
             this.label59.TabIndex = 95;
@@ -515,7 +515,7 @@ namespace Web_Origin
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(550, 142);
+            this.label52.Location = new System.Drawing.Point(782, 145);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(81, 13);
             this.label52.TabIndex = 94;
@@ -524,7 +524,7 @@ namespace Web_Origin
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(564, 125);
+            this.label53.Location = new System.Drawing.Point(796, 128);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(53, 13);
             this.label53.TabIndex = 93;
@@ -533,7 +533,7 @@ namespace Web_Origin
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(561, 134);
+            this.label54.Location = new System.Drawing.Point(793, 137);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(0, 13);
             this.label54.TabIndex = 92;
@@ -541,7 +541,7 @@ namespace Web_Origin
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(567, 133);
+            this.label55.Location = new System.Drawing.Point(799, 136);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(0, 13);
             this.label55.TabIndex = 91;
@@ -549,7 +549,7 @@ namespace Web_Origin
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(558, 213);
+            this.label48.Location = new System.Drawing.Point(794, 213);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(69, 13);
             this.label48.TabIndex = 90;
@@ -558,7 +558,7 @@ namespace Web_Origin
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(563, 196);
+            this.label49.Location = new System.Drawing.Point(799, 196);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(60, 13);
             this.label49.TabIndex = 89;
@@ -567,7 +567,7 @@ namespace Web_Origin
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(569, 205);
+            this.label50.Location = new System.Drawing.Point(805, 205);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(0, 13);
             this.label50.TabIndex = 88;
@@ -575,7 +575,7 @@ namespace Web_Origin
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(575, 204);
+            this.label51.Location = new System.Drawing.Point(811, 204);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(0, 13);
             this.label51.TabIndex = 87;
@@ -583,7 +583,7 @@ namespace Web_Origin
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(438, 125);
+            this.label26.Location = new System.Drawing.Point(670, 128);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(77, 13);
             this.label26.TabIndex = 85;
@@ -603,7 +603,7 @@ namespace Web_Origin
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(436, 142);
+            this.label20.Location = new System.Drawing.Point(668, 145);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(81, 13);
             this.label20.TabIndex = 86;
@@ -612,7 +612,7 @@ namespace Web_Origin
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(447, 134);
+            this.label46.Location = new System.Drawing.Point(679, 137);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(0, 13);
             this.label46.TabIndex = 84;
@@ -642,7 +642,7 @@ namespace Web_Origin
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(453, 133);
+            this.label47.Location = new System.Drawing.Point(685, 136);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(0, 13);
             this.label47.TabIndex = 83;
@@ -650,7 +650,7 @@ namespace Web_Origin
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(318, 142);
+            this.label15.Location = new System.Drawing.Point(550, 145);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(81, 13);
             this.label15.TabIndex = 82;
@@ -659,7 +659,7 @@ namespace Web_Origin
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(333, 125);
+            this.label17.Location = new System.Drawing.Point(565, 128);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(51, 13);
             this.label17.TabIndex = 81;
@@ -668,7 +668,7 @@ namespace Web_Origin
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(329, 134);
+            this.label18.Location = new System.Drawing.Point(561, 137);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(0, 13);
             this.label18.TabIndex = 80;
@@ -676,7 +676,7 @@ namespace Web_Origin
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(203, 142);
+            this.label43.Location = new System.Drawing.Point(435, 145);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(81, 13);
             this.label43.TabIndex = 79;
@@ -685,7 +685,7 @@ namespace Web_Origin
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(209, 125);
+            this.label44.Location = new System.Drawing.Point(441, 128);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(68, 13);
             this.label44.TabIndex = 78;
@@ -694,7 +694,7 @@ namespace Web_Origin
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(214, 134);
+            this.label45.Location = new System.Drawing.Point(446, 137);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(0, 13);
             this.label45.TabIndex = 77;
@@ -702,7 +702,7 @@ namespace Web_Origin
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(89, 141);
+            this.label42.Location = new System.Drawing.Point(321, 144);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(81, 13);
             this.label42.TabIndex = 76;
@@ -711,7 +711,7 @@ namespace Web_Origin
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(215, 62);
+            this.label41.Location = new System.Drawing.Point(329, 62);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(51, 13);
             this.label41.TabIndex = 75;
@@ -720,7 +720,7 @@ namespace Web_Origin
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(774, 205);
+            this.label34.Location = new System.Drawing.Point(1010, 205);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(96, 13);
             this.label34.TabIndex = 74;
@@ -731,7 +731,7 @@ namespace Web_Origin
             this.panel25.BackColor = System.Drawing.Color.White;
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel25.Controls.Add(this.psifiaki_morfi);
-            this.panel25.Location = new System.Drawing.Point(768, 229);
+            this.panel25.Location = new System.Drawing.Point(1004, 229);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(110, 27);
             this.panel25.TabIndex = 73;
@@ -749,7 +749,7 @@ namespace Web_Origin
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(680, 202);
+            this.label36.Location = new System.Drawing.Point(916, 202);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(0, 13);
             this.label36.TabIndex = 71;
@@ -757,7 +757,7 @@ namespace Web_Origin
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(428, 202);
+            this.label38.Location = new System.Drawing.Point(664, 202);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(100, 13);
             this.label38.TabIndex = 67;
@@ -766,7 +766,7 @@ namespace Web_Origin
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(448, 202);
+            this.label39.Location = new System.Drawing.Point(684, 202);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(0, 13);
             this.label39.TabIndex = 66;
@@ -774,7 +774,7 @@ namespace Web_Origin
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(315, 202);
+            this.label40.Location = new System.Drawing.Point(551, 202);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(93, 13);
             this.label40.TabIndex = 64;
@@ -785,7 +785,7 @@ namespace Web_Origin
             this.panel29.BackColor = System.Drawing.Color.White;
             this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel29.Controls.Add(this.hmeromhnia_ekdosis);
-            this.panel29.Location = new System.Drawing.Point(304, 229);
+            this.panel29.Location = new System.Drawing.Point(540, 229);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(110, 27);
             this.panel29.TabIndex = 63;
@@ -818,7 +818,7 @@ namespace Web_Origin
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(676, 205);
+            this.label35.Location = new System.Drawing.Point(912, 205);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(61, 13);
             this.label35.TabIndex = 72;
@@ -829,7 +829,7 @@ namespace Web_Origin
             this.panel26.BackColor = System.Drawing.Color.White;
             this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel26.Controls.Add(this.posotita);
-            this.panel26.Location = new System.Drawing.Point(652, 229);
+            this.panel26.Location = new System.Drawing.Point(888, 229);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(110, 27);
             this.panel26.TabIndex = 70;
@@ -848,7 +848,7 @@ namespace Web_Origin
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(80, 123);
+            this.label27.Location = new System.Drawing.Point(312, 126);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(96, 13);
             this.label27.TabIndex = 62;
@@ -857,7 +857,7 @@ namespace Web_Origin
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(100, 133);
+            this.label28.Location = new System.Drawing.Point(332, 136);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(0, 13);
             this.label28.TabIndex = 61;
@@ -865,7 +865,7 @@ namespace Web_Origin
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(1127, 62);
+            this.label33.Location = new System.Drawing.Point(197, 136);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(90, 13);
             this.label33.TabIndex = 59;
@@ -874,7 +874,7 @@ namespace Web_Origin
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(1031, 133);
+            this.label22.Location = new System.Drawing.Point(100, 202);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(0, 13);
             this.label22.TabIndex = 49;
@@ -895,7 +895,7 @@ namespace Web_Origin
             this.panel20.BackColor = System.Drawing.Color.White;
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel20.Controls.Add(this.iera_paraklisi_ymnografos);
-            this.panel20.Location = new System.Drawing.Point(72, 160);
+            this.panel20.Location = new System.Drawing.Point(304, 163);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(110, 27);
             this.panel20.TabIndex = 60;
@@ -926,7 +926,7 @@ namespace Web_Origin
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(196, 202);
+            this.label29.Location = new System.Drawing.Point(432, 202);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(91, 13);
             this.label29.TabIndex = 57;
@@ -937,7 +937,7 @@ namespace Web_Origin
             this.panel21.BackColor = System.Drawing.Color.White;
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel21.Controls.Add(this.topos_ekdosis);
-            this.panel21.Location = new System.Drawing.Point(188, 229);
+            this.panel21.Location = new System.Drawing.Point(424, 229);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(110, 27);
             this.panel21.TabIndex = 56;
@@ -1068,7 +1068,7 @@ namespace Web_Origin
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(579, 298);
+            this.label64.Location = new System.Drawing.Point(656, 65);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(107, 13);
             this.label64.TabIndex = 256;
@@ -1079,26 +1079,29 @@ namespace Web_Origin
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.MetathesiEortis);
-            this.panel8.Location = new System.Drawing.Point(578, 322);
+            this.panel8.Location = new System.Drawing.Point(655, 89);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(110, 27);
             this.panel8.TabIndex = 255;
             // 
             // MetathesiEortis
             // 
+            this.MetathesiEortis.BackColor = System.Drawing.SystemColors.Window;
             this.MetathesiEortis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MetathesiEortis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.MetathesiEortis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.MetathesiEortis.ForeColor = System.Drawing.Color.Gray;
             this.MetathesiEortis.Location = new System.Drawing.Point(3, 3);
             this.MetathesiEortis.Name = "MetathesiEortis";
             this.MetathesiEortis.Size = new System.Drawing.Size(104, 20);
             this.MetathesiEortis.TabIndex = 8;
-            this.MetathesiEortis.Text = "ΜΜ-ΗΗ";
+            this.MetathesiEortis.Text = "MM-HH";
+            this.MetathesiEortis.Enter += new System.EventHandler(this.MetathesiEortis_Enter);
+            this.MetathesiEortis.Leave += new System.EventHandler(this.MetathesiEortis_Leave);
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(813, 297);
+            this.label37.Location = new System.Drawing.Point(109, 64);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(26, 13);
             this.label37.TabIndex = 249;
@@ -1110,7 +1113,7 @@ namespace Web_Origin
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.IDtextBox);
-            this.panel6.Location = new System.Drawing.Point(774, 322);
+            this.panel6.Location = new System.Drawing.Point(70, 89);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(110, 27);
             this.panel6.TabIndex = 248;
@@ -1131,7 +1134,7 @@ namespace Web_Origin
             this.comboBox11.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox11.Location = new System.Drawing.Point(420, 92);
+            this.comboBox11.Location = new System.Drawing.Point(534, 92);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(110, 21);
             this.comboBox11.TabIndex = 247;
@@ -1142,7 +1145,7 @@ namespace Web_Origin
             this.comboBox10.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox10.Location = new System.Drawing.Point(652, 92);
+            this.comboBox10.Location = new System.Drawing.Point(888, 92);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(110, 21);
             this.comboBox10.TabIndex = 246;
@@ -1153,7 +1156,7 @@ namespace Web_Origin
             this.comboBox9.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox9.Location = new System.Drawing.Point(768, 92);
+            this.comboBox9.Location = new System.Drawing.Point(1004, 92);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(110, 21);
             this.comboBox9.TabIndex = 245;
@@ -1164,7 +1167,7 @@ namespace Web_Origin
             this.comboBox8.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox8.Location = new System.Drawing.Point(884, 92);
+            this.comboBox8.Location = new System.Drawing.Point(1120, 92);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(110, 21);
             this.comboBox8.TabIndex = 244;
@@ -1175,7 +1178,7 @@ namespace Web_Origin
             this.comboBox7.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox7.Location = new System.Drawing.Point(1000, 92);
+            this.comboBox7.Location = new System.Drawing.Point(70, 166);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(110, 21);
             this.comboBox7.TabIndex = 243;
@@ -1186,7 +1189,7 @@ namespace Web_Origin
             this.comboBox6.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox6.Location = new System.Drawing.Point(1116, 92);
+            this.comboBox6.Location = new System.Drawing.Point(186, 166);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(110, 21);
             this.comboBox6.TabIndex = 242;
@@ -1197,7 +1200,7 @@ namespace Web_Origin
             this.comboBox5.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox5.Location = new System.Drawing.Point(771, 164);
+            this.comboBox5.Location = new System.Drawing.Point(1003, 167);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(110, 21);
             this.comboBox5.TabIndex = 241;
@@ -1208,7 +1211,7 @@ namespace Web_Origin
             this.comboBox4.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox4.Location = new System.Drawing.Point(887, 164);
+            this.comboBox4.Location = new System.Drawing.Point(1119, 167);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(110, 21);
             this.comboBox4.TabIndex = 240;
@@ -1219,7 +1222,7 @@ namespace Web_Origin
             this.comboBox3.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox3.Location = new System.Drawing.Point(1003, 164);
+            this.comboBox3.Location = new System.Drawing.Point(72, 233);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(110, 21);
             this.comboBox3.TabIndex = 239;
@@ -1230,7 +1233,7 @@ namespace Web_Origin
             this.comboBox2.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox2.Location = new System.Drawing.Point(420, 232);
+            this.comboBox2.Location = new System.Drawing.Point(656, 232);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(110, 21);
             this.comboBox2.TabIndex = 238;
@@ -1241,7 +1244,7 @@ namespace Web_Origin
             this.comboBox1.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox1.Location = new System.Drawing.Point(536, 232);
+            this.comboBox1.Location = new System.Drawing.Point(772, 232);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(110, 21);
             this.comboBox1.TabIndex = 237;
@@ -1250,7 +1253,7 @@ namespace Web_Origin
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(98, 203);
+            this.label30.Location = new System.Drawing.Point(334, 203);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(53, 13);
             this.label30.TabIndex = 55;
@@ -1259,7 +1262,7 @@ namespace Web_Origin
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(100, 202);
+            this.label31.Location = new System.Drawing.Point(336, 202);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(0, 13);
             this.label31.TabIndex = 54;
@@ -1267,7 +1270,7 @@ namespace Web_Origin
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(789, 133);
+            this.label25.Location = new System.Drawing.Point(1021, 136);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(0, 13);
             this.label25.TabIndex = 44;
@@ -1277,7 +1280,7 @@ namespace Web_Origin
             this.panel22.BackColor = System.Drawing.Color.White;
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel22.Controls.Add(this.ekdotis);
-            this.panel22.Location = new System.Drawing.Point(72, 229);
+            this.panel22.Location = new System.Drawing.Point(308, 229);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(110, 27);
             this.panel22.TabIndex = 53;
@@ -1287,7 +1290,7 @@ namespace Web_Origin
             this.panel23.BackColor = System.Drawing.Color.White;
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel23.Controls.Add(this.plhrhs_titlos);
-            this.panel23.Location = new System.Drawing.Point(1119, 160);
+            this.panel23.Location = new System.Drawing.Point(188, 229);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(110, 27);
             this.panel23.TabIndex = 51;
@@ -1297,7 +1300,7 @@ namespace Web_Origin
             this.panel19.BackColor = System.Drawing.Color.White;
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Controls.Add(this.mousiko_parartima_ymnografos);
-            this.panel19.Location = new System.Drawing.Point(655, 160);
+            this.panel19.Location = new System.Drawing.Point(887, 163);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(110, 27);
             this.panel19.TabIndex = 41;
@@ -1305,7 +1308,7 @@ namespace Web_Origin
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(1028, 62);
+            this.label9.Location = new System.Drawing.Point(98, 136);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(46, 13);
             this.label9.TabIndex = 30;
@@ -1314,7 +1317,7 @@ namespace Web_Origin
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(567, 133);
+            this.label16.Location = new System.Drawing.Point(799, 136);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(0, 13);
             this.label16.TabIndex = 39;
@@ -1322,7 +1325,7 @@ namespace Web_Origin
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(1028, 62);
+            this.label10.Location = new System.Drawing.Point(98, 136);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 13);
             this.label10.TabIndex = 29;
@@ -1332,7 +1335,7 @@ namespace Web_Origin
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.eyxes_ymnografos);
-            this.panel12.Location = new System.Drawing.Point(539, 160);
+            this.panel12.Location = new System.Drawing.Point(771, 163);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(110, 27);
             this.panel12.TabIndex = 38;
@@ -1340,7 +1343,7 @@ namespace Web_Origin
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(912, 62);
+            this.label11.Location = new System.Drawing.Point(1148, 62);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(49, 13);
             this.label11.TabIndex = 27;
@@ -1351,7 +1354,7 @@ namespace Web_Origin
             this.panel13.BackColor = System.Drawing.Color.White;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.eulogitiria_ymnografos);
-            this.panel13.Location = new System.Drawing.Point(423, 160);
+            this.panel13.Location = new System.Drawing.Point(655, 163);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(110, 27);
             this.panel13.TabIndex = 36;
@@ -1359,7 +1362,7 @@ namespace Web_Origin
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(774, 62);
+            this.label12.Location = new System.Drawing.Point(1010, 62);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(100, 13);
             this.label12.TabIndex = 25;
@@ -1368,7 +1371,7 @@ namespace Web_Origin
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(335, 133);
+            this.label19.Location = new System.Drawing.Point(567, 136);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(0, 13);
             this.label19.TabIndex = 34;
@@ -1376,7 +1379,7 @@ namespace Web_Origin
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(796, 62);
+            this.label13.Location = new System.Drawing.Point(1032, 62);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(0, 13);
             this.label13.TabIndex = 24;
@@ -1386,7 +1389,7 @@ namespace Web_Origin
             this.panel14.BackColor = System.Drawing.Color.White;
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.egkwmia_ymnografos);
-            this.panel14.Location = new System.Drawing.Point(307, 160);
+            this.panel14.Location = new System.Drawing.Point(539, 163);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(110, 27);
             this.panel14.TabIndex = 33;
@@ -1394,7 +1397,7 @@ namespace Web_Origin
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(657, 62);
+            this.label14.Location = new System.Drawing.Point(893, 62);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(103, 13);
             this.label14.TabIndex = 22;
@@ -1405,7 +1408,7 @@ namespace Web_Origin
             this.panel15.BackColor = System.Drawing.Color.White;
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.xairetismoi_ymnografos);
-            this.panel15.Location = new System.Drawing.Point(191, 160);
+            this.panel15.Location = new System.Drawing.Point(423, 163);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(110, 27);
             this.panel15.TabIndex = 31;
@@ -1413,7 +1416,7 @@ namespace Web_Origin
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(549, 62);
+            this.label5.Location = new System.Drawing.Point(785, 62);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 13);
             this.label5.TabIndex = 20;
@@ -1422,7 +1425,7 @@ namespace Web_Origin
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(564, 62);
+            this.label7.Location = new System.Drawing.Point(800, 62);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 19;
@@ -1430,7 +1433,7 @@ namespace Web_Origin
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(448, 62);
+            this.label8.Location = new System.Drawing.Point(562, 62);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 13);
             this.label8.TabIndex = 17;
@@ -1441,7 +1444,7 @@ namespace Web_Origin
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.hmeromhnia_eortis);
-            this.panel7.Location = new System.Drawing.Point(536, 89);
+            this.panel7.Location = new System.Drawing.Point(772, 89);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(110, 27);
             this.panel7.TabIndex = 16;
@@ -1449,7 +1452,7 @@ namespace Web_Origin
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(216, 62);
+            this.label4.Location = new System.Drawing.Point(330, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 15;
@@ -1457,7 +1460,7 @@ namespace Web_Origin
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(216, 62);
+            this.label3.Location = new System.Drawing.Point(330, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 14;
@@ -1467,7 +1470,7 @@ namespace Web_Origin
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.idiotita);
-            this.panel5.Location = new System.Drawing.Point(188, 89);
+            this.panel5.Location = new System.Drawing.Point(302, 89);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(110, 27);
             this.panel5.TabIndex = 13;
@@ -1475,7 +1478,7 @@ namespace Web_Origin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(89, 62);
+            this.label2.Location = new System.Drawing.Point(203, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 12;
@@ -1486,7 +1489,7 @@ namespace Web_Origin
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.onoma);
-            this.panel4.Location = new System.Drawing.Point(72, 89);
+            this.panel4.Location = new System.Drawing.Point(186, 89);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(110, 27);
             this.panel4.TabIndex = 11;

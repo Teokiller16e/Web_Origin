@@ -209,7 +209,7 @@ namespace Web_Origin
             }
             else 
             {
-                MessageBox.Show("Τα κελιά (Όνομα,Ιδιότητε και Ημερομηνία Εορτής είναι υποχρεωτικά !");
+                MessageBox.Show("Τα κελιά (Όνομα,Ιδιότητα και Ημερομηνία Εορτής είναι υποχρεωτικά !");
             }
           
         }
@@ -233,5 +233,26 @@ namespace Web_Origin
         {
 
         }
+
+        private void MetathesiEortis_Enter(object sender, EventArgs e)
+        {
+            if (MetathesiEortis.Text == "MM-HH")
+            {
+                MetathesiEortis.Text = "";
+                MetathesiEortis.ForeColor = Color.LightGray;
+            }
+
+        }
+
+        private void MetathesiEortis_Leave(object sender, EventArgs e)
+        {
+            if (MetathesiEortis.Text == "")
+            {
+                MetathesiEortis.Text = "MM-HH";
+                MetathesiEortis.ForeColor = Color.DimGray;
+            }
+
+        }
+
     }
 }
