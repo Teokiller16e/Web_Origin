@@ -315,6 +315,7 @@ namespace Web_Origin
             this.MetathesiEortis.Size = new System.Drawing.Size(104, 20);
             this.MetathesiEortis.TabIndex = 8;
             this.MetathesiEortis.Text = "MM-HH";
+            this.MetathesiEortis.TextChanged += new System.EventHandler(this.MetathesiEortis_TextChanged);
             this.MetathesiEortis.Enter += new System.EventHandler(this.MetathesiEortis_Enter);
             this.MetathesiEortis.Leave += new System.EventHandler(this.MetathesiEortis_Leave);
             // 
@@ -492,6 +493,7 @@ namespace Web_Origin
             this.mnhmh_anakomidi_sinaxi.Name = "mnhmh_anakomidi_sinaxi";
             this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(102, 20);
             this.mnhmh_anakomidi_sinaxi.TabIndex = 0;
+            this.mnhmh_anakomidi_sinaxi.TextChanged += new System.EventHandler(this.mnhmh_anakomidi_sinaxi_TextChanged);
             // 
             // button3
             // 
@@ -885,6 +887,7 @@ namespace Web_Origin
             this.psifiaki_morfi.Name = "psifiaki_morfi";
             this.psifiaki_morfi.Size = new System.Drawing.Size(102, 20);
             this.psifiaki_morfi.TabIndex = 8;
+            this.psifiaki_morfi.TextChanged += new System.EventHandler(this.psifiaki_morfi_TextChanged);
             // 
             // label35
             // 
@@ -922,6 +925,7 @@ namespace Web_Origin
             this.posotita.Name = "posotita";
             this.posotita.Size = new System.Drawing.Size(102, 20);
             this.posotita.TabIndex = 8;
+            this.posotita.TextChanged += new System.EventHandler(this.posotita_TextChanged);
             // 
             // label38
             // 
@@ -969,6 +973,7 @@ namespace Web_Origin
             this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(102, 20);
             this.hmeromhnia_ekdosis.TabIndex = 8;
             this.hmeromhnia_ekdosis.Text = "MMMM";
+            this.hmeromhnia_ekdosis.TextChanged += new System.EventHandler(this.hmeromhnia_ekdosis_TextChanged);
             // 
             // label27
             // 
@@ -1006,6 +1011,7 @@ namespace Web_Origin
             this.iera_paraklisi_ymnografos.Name = "iera_paraklisi_ymnografos";
             this.iera_paraklisi_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.iera_paraklisi_ymnografos.TabIndex = 8;
+            this.iera_paraklisi_ymnografos.TextChanged += new System.EventHandler(this.iera_paraklisi_ymnografos_TextChanged);
             // 
             // label33
             // 
@@ -1052,6 +1058,7 @@ namespace Web_Origin
             this.topos_ekdosis.Name = "topos_ekdosis";
             this.topos_ekdosis.Size = new System.Drawing.Size(102, 20);
             this.topos_ekdosis.TabIndex = 8;
+            this.topos_ekdosis.TextChanged += new System.EventHandler(this.topos_ekdosis_TextChanged);
             // 
             // label30
             // 
@@ -1097,6 +1104,7 @@ namespace Web_Origin
             this.ekdotis.Name = "ekdotis";
             this.ekdotis.Size = new System.Drawing.Size(102, 20);
             this.ekdotis.TabIndex = 8;
+            this.ekdotis.TextChanged += new System.EventHandler(this.ekdotis_TextChanged);
             // 
             // panel23
             // 
@@ -1117,6 +1125,7 @@ namespace Web_Origin
             this.plhrhs_titlos.Name = "plhrhs_titlos";
             this.plhrhs_titlos.Size = new System.Drawing.Size(102, 20);
             this.plhrhs_titlos.TabIndex = 8;
+            this.plhrhs_titlos.TextChanged += new System.EventHandler(this.plhrhs_titlos_TextChanged);
             // 
             // panel19
             // 
@@ -1137,6 +1146,7 @@ namespace Web_Origin
             this.mousiko_parartima_ymnografos.Name = "mousiko_parartima_ymnografos";
             this.mousiko_parartima_ymnografos.Size = new System.Drawing.Size(101, 20);
             this.mousiko_parartima_ymnografos.TabIndex = 8;
+            this.mousiko_parartima_ymnografos.TextChanged += new System.EventHandler(this.mousiko_parartima_ymnografos_TextChanged);
             // 
             // label9
             // 
@@ -1182,6 +1192,7 @@ namespace Web_Origin
             this.eyxes_ymnografos.Name = "eyxes_ymnografos";
             this.eyxes_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.eyxes_ymnografos.TabIndex = 8;
+            this.eyxes_ymnografos.TextChanged += new System.EventHandler(this.eyxes_ymnografos_TextChanged);
             // 
             // label11
             // 
@@ -1257,6 +1268,7 @@ namespace Web_Origin
             this.egkwmia_ymnografos.Name = "egkwmia_ymnografos";
             this.egkwmia_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.egkwmia_ymnografos.TabIndex = 8;
+            this.egkwmia_ymnografos.TextChanged += new System.EventHandler(this.egkwmia_ymnografos_TextChanged);
             // 
             // label14
             // 
@@ -1286,6 +1298,7 @@ namespace Web_Origin
             this.xairetismoi_ymnografos.Name = "xairetismoi_ymnografos";
             this.xairetismoi_ymnografos.Size = new System.Drawing.Size(102, 20);
             this.xairetismoi_ymnografos.TabIndex = 8;
+            this.xairetismoi_ymnografos.TextChanged += new System.EventHandler(this.xairetismoi_ymnografos_TextChanged);
             // 
             // label5
             // 
@@ -1399,6 +1412,7 @@ namespace Web_Origin
             this.onoma.Name = "onoma";
             this.onoma.Size = new System.Drawing.Size(102, 20);
             this.onoma.TabIndex = 8;
+            this.onoma.TextChanged += new System.EventHandler(this.onoma_TextChanged);
             // 
             // button1
             // 

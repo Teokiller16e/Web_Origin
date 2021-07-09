@@ -107,7 +107,6 @@ namespace Web_Origin
             this.iera_paraklisi_ymnografos = new System.Windows.Forms.TextBox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label29 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
             this.topos_ekdosis = new System.Windows.Forms.TextBox();
@@ -156,13 +155,13 @@ namespace Web_Origin
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel21.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -177,6 +176,7 @@ namespace Web_Origin
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label32
@@ -461,11 +461,13 @@ namespace Web_Origin
             // 
             this.hmeromhnia_eortis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hmeromhnia_eortis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.hmeromhnia_eortis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.hmeromhnia_eortis.ForeColor = System.Drawing.Color.Gray;
             this.hmeromhnia_eortis.Location = new System.Drawing.Point(3, 3);
             this.hmeromhnia_eortis.Name = "hmeromhnia_eortis";
             this.hmeromhnia_eortis.Size = new System.Drawing.Size(104, 20);
             this.hmeromhnia_eortis.TabIndex = 8;
+            this.hmeromhnia_eortis.Text = "ΜΜ-ΗΗ";
+            this.hmeromhnia_eortis.TextChanged += new System.EventHandler(this.hmeromhnia_eortis_TextChanged);
             // 
             // label56
             // 
@@ -912,17 +914,6 @@ namespace Web_Origin
             this.panel1.Size = new System.Drawing.Size(1267, 40);
             this.panel1.TabIndex = 4;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Image = global::Web_Origin.Properties.Resources.church_500px;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1095,6 +1086,7 @@ namespace Web_Origin
             this.MetathesiEortis.Size = new System.Drawing.Size(104, 20);
             this.MetathesiEortis.TabIndex = 8;
             this.MetathesiEortis.Text = "MM-HH";
+            this.MetathesiEortis.TextChanged += new System.EventHandler(this.MetathesiEortis_TextChanged);
             this.MetathesiEortis.Enter += new System.EventHandler(this.MetathesiEortis_Enter);
             this.MetathesiEortis.Leave += new System.EventHandler(this.MetathesiEortis_Leave);
             // 
@@ -1494,6 +1486,17 @@ namespace Web_Origin
             this.panel4.Size = new System.Drawing.Size(110, 27);
             this.panel4.TabIndex = 11;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Image = global::Web_Origin.Properties.Resources.church_500px;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 43);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // Search_Agios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1516,7 +1519,6 @@ namespace Web_Origin
             this.panel20.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1545,6 +1547,7 @@ namespace Web_Origin
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

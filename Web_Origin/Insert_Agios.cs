@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Web_Origin
 {
@@ -101,7 +102,6 @@ namespace Web_Origin
             if(comboBox4.Text == "ΝΑΙ")
             { photo = true; }
 
-            var celebration_date = hmeromhnia_eortis.Text; 
             //checked
             bool small =false;
             if (comboBox6.Text == "ΝΑΙ")
@@ -174,12 +174,25 @@ namespace Web_Origin
 
             string synaksi = "";
 
-            string metathesi_eortis = MetathesiEortis.Text;
+            string metathesi_eortis;
+            if (MetathesiEortis.Text == "ΜΜ-ΗΗ")
+            {
+                metathesi_eortis = "";
+            }
+            else { metathesi_eortis = MetathesiEortis.Text ; }
+
+             var celebration_date = hmeromhnia_eortis.Text;
+            if (celebration_date == "ΜΜ-ΗΗ")
+            {
+                celebration_date = "";
+            }
+            else
+            { celebration_date = hmeromhnia_eortis.Text; }
+
 
 
             if (name != "" && property != "" && celebration_date != "" )// σύναξη προσωρινό
             {
-                celebration_date = celebration_date + "-1970";
                 //Here the insert has to check to the database
                 SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
                 connection.Open();
@@ -216,7 +229,11 @@ namespace Web_Origin
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+            if (Regex.Match(idiotita.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο του ονόματος δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                idiotita.Text = string.Empty;
+            }
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -231,9 +248,14 @@ namespace Web_Origin
 
         private void eulogitiria_ymnografos_TextChanged(object sender, EventArgs e)
         {
-
+            if (Regex.Match(eulogitiria_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                eulogitiria_ymnografos.Text = string.Empty;
+            }
         }
 
+        // We need to fix that here :
         private void MetathesiEortis_Enter(object sender, EventArgs e)
         {
             if (MetathesiEortis.Text == "MM-HH")
@@ -254,5 +276,126 @@ namespace Web_Origin
 
         }
 
+        private void onoma_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(onoma.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο του ονόματος δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                onoma.Text = string.Empty;
+            }
+        }
+
+        private void mnhmh_anakomidi_sinaxi_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(mnhmh_anakomidi_sinaxi.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                mnhmh_anakomidi_sinaxi.Text = string.Empty;
+            }
+        }
+
+        private void MetathesiEortis_TextChanged(object sender, EventArgs e)
+        {
+            if (MetathesiEortis.Text == "")
+            {
+                MetathesiEortis.Text = "MM-HH";
+                MetathesiEortis.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void iera_paraklisi_ymnografos_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(iera_paraklisi_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                iera_paraklisi_ymnografos.Text = string.Empty;
+            }
+        }
+
+        private void xairetismoi_ymnografos_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(xairetismoi_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                xairetismoi_ymnografos.Text = string.Empty;
+            }
+        }
+
+        private void egkwmia_ymnografos_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(egkwmia_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                egkwmia_ymnografos.Text = string.Empty;
+            }
+        }
+
+        private void eyxes_ymnografos_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(eyxes_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                eyxes_ymnografos.Text = string.Empty;
+            }
+        }
+
+        private void mousiko_parartima_ymnografos_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(mousiko_parartima_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο  δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                mousiko_parartima_ymnografos.Text = string.Empty;
+            }
+        }
+
+        private void plhrhs_titlos_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(plhrhs_titlos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                plhrhs_titlos.Text = string.Empty;
+            }
+        }
+
+        private void ekdotis_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(ekdotis.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                ekdotis.Text = string.Empty;
+            }
+        }
+
+        private void topos_ekdosis_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.Match(topos_ekdosis.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
+            {
+                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
+                topos_ekdosis.Text = string.Empty;
+            }
+        }
+
+        private void psifiaki_morfi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void posotita_TextChanged(object sender, EventArgs e)
+        {
+            if ((Regex.Match(posotita.Text, "[^0-9]+").Success))
+            {
+                MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
+                posotita.Text = string.Empty;
+            }
+        }
+
+        private void hmeromhnia_ekdosis_TextChanged(object sender, EventArgs e)
+        {
+            if ((Regex.Match(hmeromhnia_ekdosis.Text, "[^0-9]+").Success))
+            {
+                MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
+                hmeromhnia_ekdosis.Text = string.Empty;
+            }
+        }
     }
 }

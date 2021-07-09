@@ -15,6 +15,8 @@ namespace Web_Origin
 {
     public partial class Search_Agios : Form
     {
+        public int emptySpaceCounter = 0;
+        public int emptySpaceCounter2 = 0;
         public Search_Agios()
         {
             InitializeComponent();
@@ -45,13 +47,6 @@ namespace Web_Origin
             Boolean photo=false;
             if (comboBox11.Text == "ΝΑΙ")
             { photo = true; }
-
-
-            if (!Regex.Match(hmeromhnia_eortis.Text,"^[a-z -']+$").Success)
-            {
-                MessageBox.Show("Regular Expression Error");
-            }
-            var celebration_date = hmeromhnia_eortis.Text;
 
             Boolean small =false;
             if (comboBox10.Text == "ΝΑΙ")
@@ -130,8 +125,15 @@ namespace Web_Origin
             else
             { quantity = Int32.Parse(posotita.Text); }
 
-            string metathesi_eortis = MetathesiEortis.Text;
+            string metathesi_eortis=MetathesiEortis.Text;
+            
 
+
+            var celebration_date = hmeromhnia_eortis.Text;
+            if (celebration_date != "ΜΜ-ΗΗ" && celebration_date!="")
+            {
+                celebration_date = celebration_date + "-1970";
+            }
 
             string synaksi = "";
 
@@ -143,7 +145,7 @@ namespace Web_Origin
                     connection.Open();
 
 
-                    string query = "SELECT * FROM Ekklisia.dbo.Agioi";
+                    string query = "SELECT * FROM Church.dbo.Agioi";
                     //string query = "SELECT * FROM Ekklisia.dbo.Agioi WHERE Onoma='" + name + "'AND Idiotita='" + property + "' AND Eikona='" + photo + "'AND Date_eortis='" + celebration_date + "' AND Mikros_esperinos='"
                      //   + small + "'AND Megalos_esperinos='" + big + "' AND Orthros='" + orthross + "'AND Eklogi='" + election + "' AND Theia_leitourgeia='" + theia_leit + "'AND Ymnografos='"
                      //   + hymn + "' AND Xairetismoi='" + xairetism + "'AND Egkomia='" + egkom + "' AND Eulogitaria='" + eulog + "'AND Eyxes='" + wishes + "' AND Mousiko_parartima='"
@@ -242,7 +244,7 @@ namespace Web_Origin
 
                                 }
 
-                                if (hmeromhnia_eortis.Text !="")
+                                if (celebration_date !="" && celebration_date !="ΜΜ-ΗΗ")
                                 {
                                     out_if++;
                                     DateTime cel_date = Convert.ToDateTime(celebration_date);
@@ -420,7 +422,7 @@ namespace Web_Origin
 
                                 }
 
-                                if (metathesi_eortis != "")
+                                if (metathesi_eortis != "" && metathesi_eortis != "ΜΜ-ΗΗ")
                                 {
                                     out_if++;
                                     if (metathesi_eortis == agioi[i].Metathesi_eortis)
@@ -459,6 +461,9 @@ namespace Web_Origin
                         MessageBox.Show("Πρέπει να συμπληρώσετε Όνομα & Ιδιότητα & Ημερομηνία Εορτής υποχρεωτικά");
                     }
 
+
+                SearchResult formPopup = new SearchResult();
+                formPopup.ShowDialog();
             }
 
              
@@ -618,17 +623,50 @@ namespace Web_Origin
 
         private void MetathesiEortis_Enter(object sender, EventArgs e)
         {
+            /*
             if (MetathesiEortis.Text == "MM-HH") {
                 MetathesiEortis.Text = "";
                 MetathesiEortis.ForeColor = Color.LightGray;
             }
+            */
         }
 
         private void MetathesiEortis_Leave(object sender, EventArgs e)
         {
+            /*
             if (MetathesiEortis.Text==""){
                 MetathesiEortis.Text = "MM-HH";
                 MetathesiEortis.ForeColor = Color.DimGray;
+            }
+            */
+        }
+
+        private void hmeromhnia_eortis_TextChanged(object sender, EventArgs e)
+        {
+            if(emptySpaceCounter<=0)
+            {
+                hmeromhnia_eortis.Text = "";
+                emptySpaceCounter++;
+            }
+            if ((Regex.Match(hmeromhnia_eortis.Text, "[^0-9-]+").Success))
+            {
+                MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
+                hmeromhnia_eortis.Text = string.Empty;
+            }
+        }
+
+        private void MetathesiEortis_TextChanged(object sender, EventArgs e)
+        {
+            if (emptySpaceCounter2 <= 0) 
+            {
+                MetathesiEortis.Text = "";
+                emptySpaceCounter2++;
+            }
+
+            if ((Regex.Match(MetathesiEortis.Text, "[^0-9-]+").Success))
+            {
+                MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
+                MetathesiEortis.Text = string.Empty;
             }
         }
     }
