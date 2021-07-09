@@ -463,7 +463,7 @@ namespace Web_Origin
 
 
                 SearchResult formPopup = new SearchResult();
-                formPopup.ShowDialog();
+                formPopup.Show(this);
             }
 
              

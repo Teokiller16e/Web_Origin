@@ -16,5 +16,12 @@ namespace Web_Origin
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Insert_Agios mainMenu = new Insert_Agios();
+            mainMenu.Show();
+        }
     }
 }
