@@ -45,15 +45,16 @@ namespace Web_Origin
 
             private void button4_Click(object sender, EventArgs e)
         {
-            var Delete_Agios = new Delete_Agios();
-            Delete_Agios.Show();
+            Users xristes = new Users();
+            xristes.Show();
+            // Αυτό θα μας πηγαίνει στους Χρήστες καινούργια φόρμα popup
+            //var Delete_Agios = new Delete_Agios();
+            //Delete_Agios.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Update_Agios form1 = new Update_Agios();
-            form1.Show();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)

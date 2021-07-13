@@ -147,48 +147,7 @@ namespace Web_Origin
         {
             Application.Exit();
         }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            var Delete_Agios = new Delete_Agios();
-            Delete_Agios.Show(this);
-        }
     }
 }
 
 
-/*
-           //Here the insert has to check to the database
-           SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");
-           connection.Open();
-
-           //SqlCommand cmd = new SqlCommand("insert into User(Firstname,Lastname,Username,Password,Administrator) values('Christos','Routsis','administrator','administrator',1)", connection);
-
-           SqlCommand Cmd = new SqlCommand("INSERT INTO User " +"(Firstname, Lastname, Username,Password,Administrator) " +
-               "VALUES(@FNAME, @LNAME, @UNAME, @PASSWORD, @ADMIN)",connection);
-
-           
-
-           int sql_query = Cmd.ExecuteNonQuery();
-
-           if (sql_query != 0)
-           {
-               MessageBox.Show("User inserted");
-           }
-           else
-           {
-               MessageBox.Show("User not inserted");
-           }
-
-
-           if (textBox1.Text == "admin" && textBox2.Text == "admin")
-           {
-               this.Hide();
-               welcomeForm wForm = new welcomeForm();
-               wForm.Show();
-           }
-           else
-           {
-               errorMessageFunction();
-           }
-           */

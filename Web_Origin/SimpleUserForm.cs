@@ -73,12 +73,7 @@ namespace Web_Origin
             form1.Show();
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            Update_Agios form1 = new Update_Agios();
-            form1.Show();
-        }
+
 
         private void button4_Click_1(object sender, EventArgs e)
         {

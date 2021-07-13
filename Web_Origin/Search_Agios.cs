@@ -141,18 +141,8 @@ namespace Web_Origin
 
             if (connection.State == System.Data.ConnectionState.Closed)
                 {
-                    
                     connection.Open();
-
-
                     string query = "SELECT * FROM Church.dbo.Agioi";
-                    //string query = "SELECT * FROM Ekklisia.dbo.Agioi WHERE Onoma='" + name + "'AND Idiotita='" + property + "' AND Eikona='" + photo + "'AND Date_eortis='" + celebration_date + "' AND Mikros_esperinos='"
-                     //   + small + "'AND Megalos_esperinos='" + big + "' AND Orthros='" + orthross + "'AND Eklogi='" + election + "' AND Theia_leitourgeia='" + theia_leit + "'AND Ymnografos='"
-                     //   + hymn + "' AND Xairetismoi='" + xairetism + "'AND Egkomia='" + egkom + "' AND Eulogitaria='" + eulog + "'AND Eyxes='" + wishes + "' AND Mousiko_parartima='"
-                     //   + music + "'AND Apofasi='" + decision + "' AND Egkrisi='" + approvement + "' AND Eikona_ekswfyllou='" + img_eksw + "'AND Plhrhs_titlos='" + title + "' AND Ekdotis='"
-                     //   + publishe + "'AND Topos_ekdosis='" + pub_place + "' AND Date_ekdosis='" + pub_date + "'AND CD='" + disk + "' AND Phototypia='" + fyllada + "' AND Posotita='"
-                     //   + quantity + "'AND Mnimi_anakomidi_synaksi='" + synaksi + "'";
-
                     SqlCommand command = new SqlCommand(query, connection);
 
                     SqlDataReader dataReader;
@@ -465,12 +455,6 @@ namespace Web_Origin
                 SearchResult formPopup = new SearchResult();
                 formPopup.Show(this);
             }
-
-             
-
-
-
-
         }
 
         private void label37_Click(object sender, EventArgs e)
@@ -623,22 +607,12 @@ namespace Web_Origin
 
         private void MetathesiEortis_Enter(object sender, EventArgs e)
         {
-            /*
-            if (MetathesiEortis.Text == "MM-HH") {
-                MetathesiEortis.Text = "";
-                MetathesiEortis.ForeColor = Color.LightGray;
-            }
-            */
+          
         }
 
         private void MetathesiEortis_Leave(object sender, EventArgs e)
         {
-            /*
-            if (MetathesiEortis.Text==""){
-                MetathesiEortis.Text = "MM-HH";
-                MetathesiEortis.ForeColor = Color.DimGray;
-            }
-            */
+         
         }
 
         private void hmeromhnia_eortis_TextChanged(object sender, EventArgs e)

@@ -51,12 +51,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ChurchDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Delete_Agios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Delete_Agios.Designer.cs">
-      <DependentUpon>Delete_Agios.cs</DependentUpon>
-    </Compile>
     <Compile Include="EkklisiaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,9 +102,12 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Delete_Agios.resx">
-      <DependentUpon>Delete_Agios.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Insert_Agios.resx">
       <DependentUpon>Insert_Agios.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ChurchDataSet.xsc">
       <DependentUpon>ChurchDataSet.xsd</DependentUpon>

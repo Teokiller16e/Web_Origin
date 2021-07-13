@@ -30,6 +30,7 @@ namespace Web_Origin
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Ymnografoi = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.MetathesiEortis = new System.Windows.Forms.TextBox();
@@ -177,6 +178,7 @@ namespace Web_Origin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.Ymnografoi);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.comboBox17);
@@ -285,6 +287,25 @@ namespace Web_Origin
             this.panel2.Size = new System.Drawing.Size(1266, 652);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // Ymnografoi
+            // 
+            this.Ymnografoi.Items.AddRange(new object[] {
+            "π.Αθανασιος Σιμωνοπετριτης",
+            "Αρχιμ Νικόδημος Αερακης",
+            "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
+            "Γεροντισσα Ισιδωρα Αγιοιεροθειτισσα",
+            "Μοναχη Ισιδωρα Μακρυνιωτισσα",
+            "κ.Χαραλαμπος Μπουσιας",
+            "κ.Φώτιος Τζελεπης",
+            "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
+            "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
+            "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.Ymnografoi.Location = new System.Drawing.Point(543, 283);
+            this.Ymnografoi.Name = "Ymnografoi";
+            this.Ymnografoi.Size = new System.Drawing.Size(207, 81);
+            this.Ymnografoi.TabIndex = 255;
+            this.Ymnografoi.Text = "Επιλέξτε";
             // 
             // label37
             // 
@@ -972,7 +993,6 @@ namespace Web_Origin
             this.hmeromhnia_ekdosis.Name = "hmeromhnia_ekdosis";
             this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(102, 20);
             this.hmeromhnia_ekdosis.TabIndex = 8;
-            this.hmeromhnia_ekdosis.Text = "MMMM";
             this.hmeromhnia_ekdosis.TextChanged += new System.EventHandler(this.hmeromhnia_ekdosis_TextChanged);
             // 
             // label27
@@ -1340,12 +1360,13 @@ namespace Web_Origin
             // 
             this.hmeromhnia_eortis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hmeromhnia_eortis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.hmeromhnia_eortis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.hmeromhnia_eortis.ForeColor = System.Drawing.Color.Gray;
             this.hmeromhnia_eortis.Location = new System.Drawing.Point(3, 3);
             this.hmeromhnia_eortis.Name = "hmeromhnia_eortis";
-            this.hmeromhnia_eortis.Size = new System.Drawing.Size(102, 20);
+            this.hmeromhnia_eortis.Size = new System.Drawing.Size(104, 20);
             this.hmeromhnia_eortis.TabIndex = 8;
-            this.hmeromhnia_eortis.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.hmeromhnia_eortis.Text = "ΜΜ-ΗΗ";
+            this.hmeromhnia_eortis.TextChanged += new System.EventHandler(this.hmeromhnia_eortis_TextChanged);
             // 
             // label4
             // 
@@ -1644,5 +1665,6 @@ namespace Web_Origin
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox MetathesiEortis;
+        private System.Windows.Forms.ComboBox Ymnografoi;
     }
 }
