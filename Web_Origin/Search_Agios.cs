@@ -71,7 +71,8 @@ namespace Web_Origin
             { theia_leit = true; }
 
 
-            string hymn = iera_paraklisi_ymnografos.Text;
+            string hymn = Ymnografoi.Text;
+            if (hymn == "Επιλέξτε") { hymn = ""; }
             string xairetism = xairetismoi_ymnografos.Text;
             string egkom = egkwmia_ymnografos.Text;
             string eulog = eulogitiria_ymnografos.Text;
@@ -140,7 +141,7 @@ namespace Web_Origin
             SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
 
             if (connection.State == System.Data.ConnectionState.Closed)
-                {
+            {
                     connection.Open();
                     string query = "SELECT * FROM Church.dbo.Agioi";
                     SqlCommand command = new SqlCommand(query, connection);
@@ -512,16 +513,6 @@ namespace Web_Origin
             {
                 MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
                 mnhmh_anakomidi_sinaxi.Text = string.Empty;
-            }
-        }
-
-        private void iera_paraklisi_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            //Allows only greek letters
-            if (Regex.Match(iera_paraklisi_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                iera_paraklisi_ymnografos.Text = string.Empty;
             }
         }
 

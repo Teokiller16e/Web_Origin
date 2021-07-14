@@ -141,6 +141,7 @@ namespace Web_Origin
             this.Controls.Add(this.listView1);
             this.Name = "Users";
             this.Text = "Users";
+            this.Load += new System.EventHandler(this.Users_Load);
             this.ResumeLayout(false);
 
         }

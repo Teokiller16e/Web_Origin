@@ -125,7 +125,8 @@ namespace Web_Origin
             if (comboBox17.Text == "ΝΑΙ")
             { theia_leit = true; }
 
-            string hymn = iera_paraklisi_ymnografos.Text;
+            string hymn = Ymnografoi.Text;
+            if(hymn == "Επιλέξτε") { hymn = ""; }
             string xairetism = xairetismoi_ymnografos.Text;
             string egkom = egkwmia_ymnografos.Text;
             string eulog = eulogitiria_ymnografos.Text;
@@ -205,7 +206,7 @@ namespace Web_Origin
 
                 if (!dataReader.Equals(null))
                 {
-                    MessageBox.Show("Ο Άγιος καταχωρήθηκε στην βάση.");
+                    MessageBox.Show("Η καταχώρηση του Αγίου ολοκληρώθηκε με επιτυχία !");
                     this.Hide();
                     Insert_Agios f1 = new Insert_Agios();
                     f1.Show();
@@ -301,15 +302,6 @@ namespace Web_Origin
             {
                 MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
                 MetathesiEortis.Text = string.Empty;
-            }
-        }
-
-        private void iera_paraklisi_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            if (Regex.Match(iera_paraklisi_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                iera_paraklisi_ymnografos.Text = string.Empty;
             }
         }
 
