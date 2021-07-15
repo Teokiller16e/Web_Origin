@@ -27,9 +27,10 @@ namespace Web_Origin
             mainMenu.Show();
         }
 
-        private void Users_Load(object sender, EventArgs e)
+        internal void Agioi_Load(List<Agios> agioi)
         {
-            List<Agios> agioi = this.diathesimoiAgioi;
+            diathesimoiAgioi = agioi;
+
             listView1.Items.Clear();
 
             foreach (var agios in agioi)
@@ -44,12 +45,6 @@ namespace Web_Origin
                 lvi.Tag = agios;
                 listView1.Items.Add(lvi);
             }
-
-        }
-
-        internal void Agioi_Load(List<Agios> agioi, object p2)
-        {
-            diathesimoiAgioi = agioi;
         }
     }
 

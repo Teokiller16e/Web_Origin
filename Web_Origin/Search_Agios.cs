@@ -234,7 +234,6 @@ namespace Web_Origin
 
                                 }
 
-
                                 if (comboBox11.Text != "Επιλέξτε")
                                 {
                                     out_if++;
@@ -449,7 +448,6 @@ namespace Web_Origin
                                     returnedAgioi.Add(agioi[i]);
                                 }
                             }
-
                             /*// Just testing for loop to print all the outcome names:
                             for (int i = 0; i < returnedAgioi.Count; i++)
                             { Console.WriteLine(returnedAgioi[i].Onoma); }*/
@@ -461,7 +459,7 @@ namespace Web_Origin
                     }   
             }
             SearchResult formPopup = new SearchResult();
-            formPopup.Agioi_Load(returnedAgioi, null);
+            formPopup.Agioi_Load(returnedAgioi);
             formPopup.Show(this);
         }
 
