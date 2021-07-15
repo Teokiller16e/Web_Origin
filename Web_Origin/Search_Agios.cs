@@ -54,10 +54,10 @@ namespace Web_Origin
             string election = comboBox7.Text;
             string theia_leit = comboBox6.Text;
             string hymn = Ymnografoi.Text;
-            string xairetism = xairetismoi_ymnografos.Text;
-            string egkom = egkwmia_ymnografos.Text;
-            string eulog = eulogitiria_ymnografos.Text;
-            string wishes = eyxes_ymnografos.Text;
+            string xairetism = xairetismoi_ymn_box.Text;
+            string egkom = egkomia_ymn.Text;
+            string eulog = eulogitaria_ymn.Text;
+            string wishes = euxes_ymn_comboBox.Text;
             string music = mousiko_parartima_ymnografos.Text;
             string decision = comboBox5.Text;
             string approvement = comboBox4.Text;
@@ -89,8 +89,18 @@ namespace Web_Origin
             { election = ""; }
             if (comboBox6.Text == "Επιλέξτε")
             { theia_leit = ""; }
-            if (hymn == "Επιλέξτε") 
+
+            if (hymn == "Επιλέξτε")
             { hymn = ""; }
+            if (xairetism == "Επιλέξτε") 
+            { xairetism = ""; }
+            if (egkom == "Επιλέξτε")
+            { egkom = ""; }
+            if (eulog == "Επιλέξτε")
+            { eulog = ""; }
+            if (wishes == "Επιλέξτε")
+            { wishes = ""; }
+
             if (comboBox5.Text == "Επιλέξτε")
             { decision = ""; }
             if (comboBox4.Text == "Επιλέξτε")
@@ -112,17 +122,20 @@ namespace Web_Origin
             else
             { quantity = Int32.Parse(posotita.Text); }
 
-            if (metathesi_eortis == "ΜΜ-ΗΗ"|| metathesi_eortis == "")
+            if (metathesi_eortis == "ΗΗ-ΜΜ" || metathesi_eortis == "")
             {
                 metathesi_eortis = "";
             }
 
-            if (celebration_date == "ΜΜ-ΗΗ" || celebration_date=="")
+            if (celebration_date == "ΗΗ-ΜΜ" || celebration_date=="")
             {
                 celebration_date = "";
             }
 
-
+            Services svr = new Services();
+            List<Agios> agioi = new List<Agios>();
+            agioi = svr.getSaints();
+/*
             SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
 
             if (connection.State == System.Data.ConnectionState.Closed)
@@ -133,9 +146,10 @@ namespace Web_Origin
 
                     SqlDataReader dataReader;
                     dataReader = command.ExecuteReader();
-                    List<Agios> agioi = new List<Agios>();
+                    List<Agios> agioi = new List<Agios>();*/
 
-                    if (!dataReader.Equals(null))
+
+                   /* if (agioi.Count!=0)
                     {
 
                         // loop for retrieving all the possible users from the database:
@@ -177,7 +191,7 @@ namespace Web_Origin
                                                 euxs, mousik,apofas, approve,eiko_eks, titloss, publisher, publish_place, publish_date, disc, phototypia_fyllada, posot,
                                                 Metathesi_Eortis, synakss,user_dimi);
                             agioi.Add(saint);
-                        }
+                        }*/
                         
 
                         if (agioi.Count == 0)
@@ -188,7 +202,7 @@ namespace Web_Origin
                         {
                             MessageBox.Show("Η αναζήτηση ολοκληρώθηκε με επιτυχία !!");
 
-                        //Initialize counters : 
+                            //Initialize counters : 
 
                             for (int i = 0; i < agioi.Count; i++) // 
                             {
@@ -413,19 +427,16 @@ namespace Web_Origin
                                     { in_if++; }
                                 }
 
-                                if (out_if == in_if)
+                                if (out_if == in_if && out_if!=0)
                                 {
                                     returnedAgioi.Add(agioi[i]);
                                 }
                             }
                          
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Πρέπει να συμπληρώσετε Όνομα & Ιδιότητα & Ημερομηνία Εορτής υποχρεωτικά");
-                    }   
-            }
+                    
+                   
+            //}
             SearchResult formPopup = new SearchResult();
             formPopup.Agioi_Load(returnedAgioi);
             formPopup.Show(this);
@@ -460,7 +471,7 @@ namespace Web_Origin
 
         private void hmeromhnia_ekdosis_TextChanged(object sender, EventArgs e)
         {
-            if ((Regex.Match(hmeromhnia_ekdosis.Text, "[^0-9-]+").Success))
+            if ((Regex.Match(hmeromhnia_ekdosis.Text, "[^0-9-πμχ. ]+").Success))
             {
                 MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
                 hmeromhnia_ekdosis.Text = string.Empty;
@@ -487,45 +498,7 @@ namespace Web_Origin
             }
         }
 
-        private void xairetismoi_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            //Allows only greek letters
-            if (Regex.Match(xairetismoi_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                xairetismoi_ymnografos.Text = string.Empty;
-            }
-        }
 
-        private void egkwmia_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            //Allows only greek letters
-            if (Regex.Match(egkwmia_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                egkwmia_ymnografos.Text = string.Empty;
-            }
-        }
-
-        private void eulogitiria_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            //Allows only greek letters
-            if (Regex.Match(eulogitiria_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                eulogitiria_ymnografos.Text = string.Empty;
-            }
-        }
-
-        private void eyxes_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            //Allows only greek letters
-            if (Regex.Match(eyxes_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                eyxes_ymnografos.Text = string.Empty;
-            }
-        }
 
         private void mousiko_parartima_ymnografos_TextChanged(object sender, EventArgs e)
         {

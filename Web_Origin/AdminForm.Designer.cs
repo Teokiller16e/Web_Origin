@@ -31,6 +31,7 @@ namespace Web_Origin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,11 +40,16 @@ namespace Web_Origin
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.NumOfAgioi = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.NumOfUsers = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -53,6 +59,7 @@ namespace Web_Origin
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.label6);
@@ -65,6 +72,22 @@ namespace Web_Origin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 530);
             this.panel1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(-7, 386);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(315, 38);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Άγιοι";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button6
             // 
@@ -166,6 +189,11 @@ namespace Web_Origin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.NumOfUsers);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.NumOfAgioi);
+            this.panel2.Controls.Add(this.monthCalendar1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
@@ -173,6 +201,22 @@ namespace Web_Origin
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
+            // 
+            // NumOfAgioi
+            // 
+            this.NumOfAgioi.AutoSize = true;
+            this.NumOfAgioi.Location = new System.Drawing.Point(212, 138);
+            this.NumOfAgioi.Name = "NumOfAgioi";
+            this.NumOfAgioi.Size = new System.Drawing.Size(28, 13);
+            this.NumOfAgioi.TabIndex = 5;
+            this.NumOfAgioi.Text = "test";
+            this.NumOfAgioi.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(214, 359);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 4;
             // 
             // panel3
             // 
@@ -238,6 +282,33 @@ namespace Web_Origin
             this.label1.TabIndex = 6;
             this.label1.Text = "Φόρμα Αλλαγής";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(28, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(164, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Συνολικός Αριθμός Αγίων :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(28, 179);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(182, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Συνολικός Αριθμός Χρηστών :";
+            // 
+            // NumOfUsers
+            // 
+            this.NumOfUsers.AutoSize = true;
+            this.NumOfUsers.Location = new System.Drawing.Point(214, 179);
+            this.NumOfUsers.Name = "NumOfUsers";
+            this.NumOfUsers.Size = new System.Drawing.Size(28, 13);
+            this.NumOfUsers.TabIndex = 8;
+            this.NumOfUsers.Text = "test";
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,10 +321,12 @@ namespace Web_Origin
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminForm";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.SaintsLoad);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -276,5 +349,11 @@ namespace Web_Origin
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label NumOfAgioi;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label NumOfUsers;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -43,6 +43,7 @@ namespace Web_Origin
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -163,7 +164,7 @@ namespace Web_Origin
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(-7, 349);
+            this.button6.Location = new System.Drawing.Point(-7, 374);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(315, 35);
             this.button6.TabIndex = 21;
@@ -179,7 +180,7 @@ namespace Web_Origin
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(-3, 410);
+            this.button5.Location = new System.Drawing.Point(-3, 416);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(318, 35);
             this.button5.TabIndex = 19;
@@ -227,6 +228,22 @@ namespace Web_Origin
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(-15, 332);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(315, 38);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Άγιοι";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // SimpleUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +251,7 @@ namespace Web_Origin
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(750, 530);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -263,5 +281,6 @@ namespace Web_Origin
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button3;
     }
 }

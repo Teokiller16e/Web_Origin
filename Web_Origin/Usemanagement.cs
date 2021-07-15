@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Collections.Generic;
+using Web_Origin.Models;
 
 namespace Web_Origin
 {
@@ -49,41 +50,9 @@ namespace Web_Origin
         private void button2_Click(object sender, EventArgs e)
         {
 
-            //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");        
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
-
-
-            if (connection.State == System.Data.ConnectionState.Closed)
-            {
-                connection.Open();
-                // SqlCommand command = new SqlCommand("SELECT * FROM Ekklisia.dbo.Xristes",connection);
-                SqlCommand command = new SqlCommand("SELECT * FROM Church.dbo.Xristes", connection);
-                //int sql_query = command.ExecuteNonQuery();
-                SqlDataReader dataReader;
-                dataReader = command.ExecuteReader();
-
-                List<Models.User> xristes = new List<Models.User>();
-                // Insert when command returns not null
-                if (!dataReader.Equals(null))
-                {
-                    
-                    // loop for retrieving all the possible users from the database
-                    while (dataReader.Read())
-                    {
-                        var id = dataReader.GetInt32(0);
-                        var firstname = dataReader["Firstname"].ToString();
-                        var lastname = dataReader["Lastname"].ToString();
-                        var username = dataReader["Username"].ToString();
-                        var password = dataReader["Password"].ToString();
-                        var administrator = dataReader.GetBoolean(5);
-
-                        Models.User user = new Models.User(id, firstname, lastname, username, password, administrator);
-
-                        xristes.Add(user);
-                    }
-
-
-                }
+                Services svr = new Services();
+                List<User> xristes = new List<User>();
+                xristes = svr.getUsers();
 
                 // Decide requirements for each windows form
                 for (int i = 0; i < xristes.Count; i++)
@@ -104,17 +73,12 @@ namespace Web_Origin
                         found = true;
                         Administrator = 2;
                     }
-                   
-                    
                 }
 
                 if(found.Equals(false))
                 { 
                     errorMessageFunction();
-                }
-            }
-           
-            
+                }  
         }
 
         // Pop up error message

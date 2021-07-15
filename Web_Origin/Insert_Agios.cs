@@ -104,10 +104,10 @@ namespace Web_Origin
             string election = comboBox2.Text;
             string theia_leit = comboBox17.Text;
             string hymn = Ymnografoi.Text;
-            string xairetism = xairetismoi_ymnografos.Text;
-            string egkom = egkwmia_ymnografos.Text;
-            string eulog = eulogitiria_ymnografos.Text;
-            string wishes = eyxes_ymnografos.Text;
+            string xairetism = xairetismoi_ymn_box.Text;
+            string egkom = egkomia_ymn.Text;
+            string eulog = eulogitaria_ymn.Text;
+            string wishes = euxes_ymn_comboBox.Text;
             string music = mousiko_parartima_ymnografos.Text;
             string decision = comboBox16.Text;
             string approvement = comboBox15.Text;
@@ -142,8 +142,16 @@ namespace Web_Origin
             if (comboBox17.Text == "Επιλέξτε")
             { theia_leit = ""; }
 
-            if(hymn == "Επιλέξτε") 
+            if (hymn == "Επιλέξτε")
             { hymn = ""; }
+            if (xairetism == "Επιλέξτε")
+            { xairetism = ""; }
+            if (egkom == "Επιλέξτε")
+            { egkom = ""; }
+            if (eulog == "Επιλέξτε")
+            { eulog = ""; }
+            if (wishes == "Επιλέξτε")
+            { wishes = ""; }
 
             if (comboBox16.Text == "Επιλέξτε")
             { decision = ""; }
@@ -170,12 +178,12 @@ namespace Web_Origin
             else
             { quantity = Int32.Parse(posotita.Text); }
 
-            if (metathesi_eortis == "ΜΜ-ΗΗ" || metathesi_eortis == "")
+            if (metathesi_eortis == "ΗΗ-ΜΜ" || metathesi_eortis == "")
             {
                 metathesi_eortis = "";
             }
 
-            if (celebration_date == "ΜΜ-ΗΗ" || celebration_date == "")
+            if (celebration_date == "ΗΗ-ΜΜ" || celebration_date == "")
             {
                 celebration_date = "";
             }
@@ -232,19 +240,12 @@ namespace Web_Origin
 
         }
 
-        private void eulogitiria_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            if (Regex.Match(eulogitiria_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                eulogitiria_ymnografos.Text = string.Empty;
-            }
-        }
+      
 
         // We need to fix that here :
         private void MetathesiEortis_Enter(object sender, EventArgs e)
         {
-            if (MetathesiEortis.Text == "MM-HH")
+            if (MetathesiEortis.Text == "HH-MM")
             {
                 MetathesiEortis.Text = "";
                 MetathesiEortis.ForeColor = Color.LightGray;
@@ -256,7 +257,7 @@ namespace Web_Origin
         {
             if (MetathesiEortis.Text == "")
             {
-                MetathesiEortis.Text = "MM-HH";
+                MetathesiEortis.Text = "HH-MM";
                 MetathesiEortis.ForeColor = Color.DimGray;
             }
 
@@ -295,32 +296,7 @@ namespace Web_Origin
             }
         }
 
-        private void xairetismoi_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            if (Regex.Match(xairetismoi_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                xairetismoi_ymnografos.Text = string.Empty;
-            }
-        }
-
-        private void egkwmia_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            if (Regex.Match(egkwmia_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                egkwmia_ymnografos.Text = string.Empty;
-            }
-        }
-
-        private void eyxes_ymnografos_TextChanged(object sender, EventArgs e)
-        {
-            if (Regex.Match(eyxes_ymnografos.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                eyxes_ymnografos.Text = string.Empty;
-            }
-        }
+        
 
         private void mousiko_parartima_ymnografos_TextChanged(object sender, EventArgs e)
         {

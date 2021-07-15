@@ -22,6 +22,12 @@ namespace Web_Origin
             Application.Exit();
         }
 
+        private void SaintsLoad(object sender, EventArgs e)
+        {
+            Services test = new Services();
+            NumOfAgioi.Text = ((test.getSaints()).Count).ToString();
+            NumOfUsers.Text = ((test.getUsers()).Count).ToString();
+        }
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -33,7 +39,6 @@ namespace Web_Origin
         {
 
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -64,42 +69,15 @@ namespace Web_Origin
             form1.Show();
         }
 
-     
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Saints agioiPopUp = new Saints();
+            agioiPopUp.Show(this);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-/*
-  SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Ekklisia;Integrated Security=True");
-
-            if (connection.State == System.Data.ConnectionState.Closed)
-            {
-                connection.Open();
-                //SqlCommand command = new SqlCommand("SELECT * FROM Ekklisia.dbo.Xristes", connection);
-                //SqlCommand command = new SqlCommand("insert into User(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia,Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis,CD,Phototypia,Posotita,Mnimi_anakomidi_synaksi) values('" + fir + "','" + las + "','" + usr + "','" + pass + "','" + admin + "') ",connection);
-                //int sql_query = command.ExecuteNonQuery();
-                SqlDataReader dataReader;
-                dataReader = command.ExecuteReader();
-
-                List<Models.User> xristes = new List<Models.User>();
-                // Insert when command returns not null
-                if (!dataReader.Equals(null))
-                {
-
-                    // loop for retrieving all the possible users from the database
-                    while (dataReader.Read())
-                    {
-                        var id = dataReader.GetInt32(0);
-                        var firstname = dataReader["Firstname"].ToString();
-                        var lastname = dataReader["Lastname"].ToString();
-                        var username = dataReader["Username"].ToString();
-                        var password = dataReader["Password"].ToString();
-                        var administrator = dataReader.GetBoolean(5);
-
-                        Models.User user = new Models.User(id, firstname, lastname, username, password, administrator);
-
-                        xristes.Add(user);
-                    }
-
-
-                }
-            }
-*/

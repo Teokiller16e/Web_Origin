@@ -30,7 +30,6 @@ namespace Web_Origin
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Ymnografoi = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.MetathesiEortis = new System.Windows.Forms.TextBox();
@@ -72,25 +71,10 @@ namespace Web_Origin
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
@@ -104,8 +88,6 @@ namespace Web_Origin
             this.label40 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
             this.hmeromhnia_ekdosis = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -121,21 +103,11 @@ namespace Web_Origin
             this.panel19 = new System.Windows.Forms.Panel();
             this.mousiko_parartima_ymnografos = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.eyxes_ymnografos = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.eulogitiria_ymnografos = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.egkwmia_ymnografos = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.xairetismoi_ymnografos = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -152,6 +124,30 @@ namespace Web_Origin
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.eulogitaria_ymn = new System.Windows.Forms.ComboBox();
+            this.euxes_ymn_comboBox = new System.Windows.Forms.ComboBox();
+            this.egkomia_ymn = new System.Windows.Forms.ComboBox();
+            this.xairetismoi_ymn_box = new System.Windows.Forms.ComboBox();
+            this.Ymnografoi = new System.Windows.Forms.ComboBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -162,10 +158,6 @@ namespace Web_Origin
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel19.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -175,7 +167,30 @@ namespace Web_Origin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.eulogitaria_ymn);
+            this.panel2.Controls.Add(this.euxes_ymn_comboBox);
+            this.panel2.Controls.Add(this.egkomia_ymn);
+            this.panel2.Controls.Add(this.xairetismoi_ymn_box);
             this.panel2.Controls.Add(this.Ymnografoi);
+            this.panel2.Controls.Add(this.label64);
+            this.panel2.Controls.Add(this.label75);
+            this.panel2.Controls.Add(this.label76);
+            this.panel2.Controls.Add(this.label77);
+            this.panel2.Controls.Add(this.label78);
+            this.panel2.Controls.Add(this.label79);
+            this.panel2.Controls.Add(this.label80);
+            this.panel2.Controls.Add(this.label81);
+            this.panel2.Controls.Add(this.label82);
+            this.panel2.Controls.Add(this.label83);
+            this.panel2.Controls.Add(this.label84);
+            this.panel2.Controls.Add(this.label85);
+            this.panel2.Controls.Add(this.label86);
+            this.panel2.Controls.Add(this.label87);
+            this.panel2.Controls.Add(this.label88);
+            this.panel2.Controls.Add(this.label89);
+            this.panel2.Controls.Add(this.label90);
+            this.panel2.Controls.Add(this.label91);
+            this.panel2.Controls.Add(this.label92);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.comboBox17);
@@ -215,25 +230,10 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.label57);
             this.panel2.Controls.Add(this.label58);
             this.panel2.Controls.Add(this.label59);
-            this.panel2.Controls.Add(this.label52);
-            this.panel2.Controls.Add(this.label53);
-            this.panel2.Controls.Add(this.label54);
-            this.panel2.Controls.Add(this.label55);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Controls.Add(this.label49);
             this.panel2.Controls.Add(this.label50);
             this.panel2.Controls.Add(this.label51);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label26);
-            this.panel2.Controls.Add(this.label46);
-            this.panel2.Controls.Add(this.label47);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label43);
-            this.panel2.Controls.Add(this.label44);
-            this.panel2.Controls.Add(this.label45);
-            this.panel2.Controls.Add(this.label42);
             this.panel2.Controls.Add(this.label41);
             this.panel2.Controls.Add(this.label34);
             this.panel2.Controls.Add(this.panel25);
@@ -244,8 +244,6 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.label39);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.panel29);
-            this.panel2.Controls.Add(this.label27);
-            this.panel2.Controls.Add(this.label28);
             this.panel2.Controls.Add(this.label33);
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label29);
@@ -257,17 +255,11 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.panel23);
             this.panel2.Controls.Add(this.panel19);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.panel13);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.panel14);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.panel15);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
@@ -283,25 +275,6 @@ namespace Web_Origin
             this.panel2.Size = new System.Drawing.Size(1266, 652);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // Ymnografoi
-            // 
-            this.Ymnografoi.Items.AddRange(new object[] {
-            "π.Αθανασιος Σιμωνοπετριτης",
-            "Αρχιμ Νικόδημος Αερακης",
-            "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
-            "Γεροντισσα Ισιδωρα Αγιοιεροθειτισσα",
-            "Μοναχη Ισιδωρα Μακρυνιωτισσα",
-            "κ.Χαραλαμπος Μπουσιας",
-            "κ.Φώτιος Τζελεπης",
-            "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
-            "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
-            "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
-            this.Ymnografoi.Location = new System.Drawing.Point(45, 145);
-            this.Ymnografoi.Name = "Ymnografoi";
-            this.Ymnografoi.Size = new System.Drawing.Size(257, 21);
-            this.Ymnografoi.TabIndex = 255;
-            this.Ymnografoi.Text = "Επιλέξτε";
             // 
             // label37
             // 
@@ -332,11 +305,8 @@ namespace Web_Origin
             this.MetathesiEortis.Name = "MetathesiEortis";
             this.MetathesiEortis.Size = new System.Drawing.Size(104, 20);
             this.MetathesiEortis.TabIndex = 8;
-            this.MetathesiEortis.Text = "MM-HH";
+            this.MetathesiEortis.Text = "HH-MM";
             this.MetathesiEortis.TextChanged += new System.EventHandler(this.MetathesiEortis_TextChanged);
-
-
-
             // 
             // comboBox17
             // 
@@ -705,40 +675,6 @@ namespace Web_Origin
             this.label59.Size = new System.Drawing.Size(0, 13);
             this.label59.TabIndex = 95;
             // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(670, 123);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(81, 13);
-            this.label52.TabIndex = 94;
-            this.label52.Text = "ΥΜΝΟΓΡΑΦΟΣ";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(684, 106);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(53, 13);
-            this.label53.TabIndex = 93;
-            this.label53.Text = "ΕΥΧΗ/ΕΣ";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(681, 115);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(0, 13);
-            this.label54.TabIndex = 92;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(687, 114);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(0, 13);
-            this.label55.TabIndex = 91;
-            // 
             // label48
             // 
             this.label48.AutoSize = true;
@@ -772,102 +708,6 @@ namespace Web_Origin
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(0, 13);
             this.label51.TabIndex = 87;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(556, 123);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(81, 13);
-            this.label20.TabIndex = 86;
-            this.label20.Text = "ΥΜΝΟΓΡΑΦΟΣ";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(558, 106);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(77, 13);
-            this.label26.TabIndex = 85;
-            this.label26.Text = "ΕΥΛΟΓΗΤΑΡΙΑ";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(567, 115);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(0, 13);
-            this.label46.TabIndex = 84;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(573, 114);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(0, 13);
-            this.label47.TabIndex = 83;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(438, 123);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(81, 13);
-            this.label15.TabIndex = 82;
-            this.label15.Text = "ΥΜΝΟΓΡΑΦΟΣ";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(453, 106);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 13);
-            this.label17.TabIndex = 81;
-            this.label17.Text = "ΕΓΚΩΜΙΑ";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(449, 115);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(0, 13);
-            this.label18.TabIndex = 80;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(323, 123);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(81, 13);
-            this.label43.TabIndex = 79;
-            this.label43.Text = "ΥΜΝΟΓΡΑΦΟΣ";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(329, 106);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(68, 13);
-            this.label44.TabIndex = 78;
-            this.label44.Text = "ΧΑΙΡΕΤΙΣΜΟΙ";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(334, 115);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(0, 13);
-            this.label45.TabIndex = 77;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(133, 122);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(81, 13);
-            this.label42.TabIndex = 76;
-            this.label42.Text = "ΥΜΝΟΓΡΑΦΟΣ";
-            this.label42.Click += new System.EventHandler(this.label42_Click);
             // 
             // label41
             // 
@@ -992,23 +832,6 @@ namespace Web_Origin
             this.hmeromhnia_ekdosis.Size = new System.Drawing.Size(102, 20);
             this.hmeromhnia_ekdosis.TabIndex = 8;
             this.hmeromhnia_ekdosis.TextChanged += new System.EventHandler(this.hmeromhnia_ekdosis_TextChanged);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(124, 104);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(96, 13);
-            this.label27.TabIndex = 62;
-            this.label27.Text = "ΙΕΡΑ ΠΑΡΑΚΛΗΣΙΣ";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(226, 114);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(0, 13);
-            this.label28.TabIndex = 61;
             // 
             // label33
             // 
@@ -1154,14 +977,6 @@ namespace Web_Origin
             this.label9.TabIndex = 30;
             this.label9.Text = "ΕΚΛΟΓΗ";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(687, 114);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 13);
-            this.label16.TabIndex = 39;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -1169,27 +984,6 @@ namespace Web_Origin
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 13);
             this.label10.TabIndex = 29;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.eyxes_ymnografos);
-            this.panel12.Location = new System.Drawing.Point(659, 141);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(110, 27);
-            this.panel12.TabIndex = 38;
-            // 
-            // eyxes_ymnografos
-            // 
-            this.eyxes_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.eyxes_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.eyxes_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eyxes_ymnografos.Location = new System.Drawing.Point(3, 3);
-            this.eyxes_ymnografos.Name = "eyxes_ymnografos";
-            this.eyxes_ymnografos.Size = new System.Drawing.Size(102, 20);
-            this.eyxes_ymnografos.TabIndex = 8;
-            this.eyxes_ymnografos.TextChanged += new System.EventHandler(this.eyxes_ymnografos_TextChanged);
             // 
             // label11
             // 
@@ -1200,27 +994,6 @@ namespace Web_Origin
             this.label11.TabIndex = 27;
             this.label11.Text = "ΟΡΘΡΟΣ";
             // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.eulogitiria_ymnografos);
-            this.panel13.Location = new System.Drawing.Point(543, 141);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(110, 27);
-            this.panel13.TabIndex = 36;
-            // 
-            // eulogitiria_ymnografos
-            // 
-            this.eulogitiria_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.eulogitiria_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.eulogitiria_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eulogitiria_ymnografos.Location = new System.Drawing.Point(3, 3);
-            this.eulogitiria_ymnografos.Name = "eulogitiria_ymnografos";
-            this.eulogitiria_ymnografos.Size = new System.Drawing.Size(101, 20);
-            this.eulogitiria_ymnografos.TabIndex = 8;
-            this.eulogitiria_ymnografos.TextChanged += new System.EventHandler(this.eulogitiria_ymnografos_TextChanged);
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -1230,14 +1003,6 @@ namespace Web_Origin
             this.label12.TabIndex = 25;
             this.label12.Text = "ΜΕΓΑΣ ΕΣΠΕΡΙΝΟΣ";
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(455, 114);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(0, 13);
-            this.label19.TabIndex = 34;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -1245,27 +1010,6 @@ namespace Web_Origin
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(0, 13);
             this.label13.TabIndex = 24;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.egkwmia_ymnografos);
-            this.panel14.Location = new System.Drawing.Point(427, 141);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(110, 27);
-            this.panel14.TabIndex = 33;
-            // 
-            // egkwmia_ymnografos
-            // 
-            this.egkwmia_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.egkwmia_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.egkwmia_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.egkwmia_ymnografos.Location = new System.Drawing.Point(3, 3);
-            this.egkwmia_ymnografos.Name = "egkwmia_ymnografos";
-            this.egkwmia_ymnografos.Size = new System.Drawing.Size(102, 20);
-            this.egkwmia_ymnografos.TabIndex = 8;
-            this.egkwmia_ymnografos.TextChanged += new System.EventHandler(this.egkwmia_ymnografos_TextChanged);
             // 
             // label14
             // 
@@ -1275,27 +1019,6 @@ namespace Web_Origin
             this.label14.Size = new System.Drawing.Size(103, 13);
             this.label14.TabIndex = 22;
             this.label14.Text = "ΜΙΚΡΟΣ ΕΣΠΕΡΙΝΟΣ";
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.xairetismoi_ymnografos);
-            this.panel15.Location = new System.Drawing.Point(311, 141);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(110, 27);
-            this.panel15.TabIndex = 31;
-            // 
-            // xairetismoi_ymnografos
-            // 
-            this.xairetismoi_ymnografos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.xairetismoi_ymnografos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.xairetismoi_ymnografos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.xairetismoi_ymnografos.Location = new System.Drawing.Point(3, 4);
-            this.xairetismoi_ymnografos.Name = "xairetismoi_ymnografos";
-            this.xairetismoi_ymnografos.Size = new System.Drawing.Size(102, 20);
-            this.xairetismoi_ymnografos.TabIndex = 8;
-            this.xairetismoi_ymnografos.TextChanged += new System.EventHandler(this.xairetismoi_ymnografos_TextChanged);
             // 
             // label5
             // 
@@ -1342,7 +1065,7 @@ namespace Web_Origin
             this.hmeromhnia_eortis.Name = "hmeromhnia_eortis";
             this.hmeromhnia_eortis.Size = new System.Drawing.Size(104, 20);
             this.hmeromhnia_eortis.TabIndex = 8;
-            this.hmeromhnia_eortis.Text = "ΜΜ-ΗΗ";
+            this.hmeromhnia_eortis.Text = "ΗΗ-ΜΜ";
             this.hmeromhnia_eortis.TextChanged += new System.EventHandler(this.hmeromhnia_eortis_TextChanged);
             // 
             // label4
@@ -1462,6 +1185,263 @@ namespace Web_Origin
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // eulogitaria_ymn
+            // 
+            this.eulogitaria_ymn.Items.AddRange(new object[] {
+            "π.Αθανασιος Σιμωνοπετριτης",
+            "Αρχιμ Νικόδημος Αερακης",
+            "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
+            "Γεροντισσα Ισιδωρα Αγιοιεροθειτισσα",
+            "Μοναχη Ισιδωρα Μακρυνιωτισσα",
+            "κ.Χαραλαμπος Μπουσιας",
+            "κ.Φώτιος Τζελεπης",
+            "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
+            "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
+            "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.eulogitaria_ymn.Location = new System.Drawing.Point(497, 142);
+            this.eulogitaria_ymn.Name = "eulogitaria_ymn";
+            this.eulogitaria_ymn.Size = new System.Drawing.Size(130, 21);
+            this.eulogitaria_ymn.TabIndex = 285;
+            this.eulogitaria_ymn.Text = "Επιλέξτε";
+            // 
+            // euxes_ymn_comboBox
+            // 
+            this.euxes_ymn_comboBox.Items.AddRange(new object[] {
+            "π.Αθανασιος Σιμωνοπετριτης",
+            "Αρχιμ Νικόδημος Αερακης",
+            "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
+            "Γεροντισσα Ισιδωρα Αγιοιεροθειτισσα",
+            "Μοναχη Ισιδωρα Μακρυνιωτισσα",
+            "κ.Χαραλαμπος Μπουσιας",
+            "κ.Φώτιος Τζελεπης",
+            "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
+            "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
+            "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.euxes_ymn_comboBox.Location = new System.Drawing.Point(636, 142);
+            this.euxes_ymn_comboBox.Name = "euxes_ymn_comboBox";
+            this.euxes_ymn_comboBox.Size = new System.Drawing.Size(130, 21);
+            this.euxes_ymn_comboBox.TabIndex = 284;
+            this.euxes_ymn_comboBox.Text = "Επιλέξτε";
+            // 
+            // egkomia_ymn
+            // 
+            this.egkomia_ymn.Items.AddRange(new object[] {
+            "π.Αθανασιος Σιμωνοπετριτης",
+            "Αρχιμ Νικόδημος Αερακης",
+            "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
+            "Γεροντισσα Ισιδωρα Αγιοιεροθειτισσα",
+            "Μοναχη Ισιδωρα Μακρυνιωτισσα",
+            "κ.Χαραλαμπος Μπουσιας",
+            "κ.Φώτιος Τζελεπης",
+            "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
+            "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
+            "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.egkomia_ymn.Location = new System.Drawing.Point(356, 142);
+            this.egkomia_ymn.Name = "egkomia_ymn";
+            this.egkomia_ymn.Size = new System.Drawing.Size(130, 21);
+            this.egkomia_ymn.TabIndex = 283;
+            this.egkomia_ymn.Text = "Επιλέξτε";
+            // 
+            // xairetismoi_ymn_box
+            // 
+            this.xairetismoi_ymn_box.Items.AddRange(new object[] {
+            "π.Αθανασιος Σιμωνοπετριτης",
+            "Αρχιμ Νικόδημος Αερακης",
+            "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
+            "Γεροντισσα Ισιδωρα Αγιοιεροθειτισσα",
+            "Μοναχη Ισιδωρα Μακρυνιωτισσα",
+            "κ.Χαραλαμπος Μπουσιας",
+            "κ.Φώτιος Τζελεπης",
+            "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
+            "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
+            "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.xairetismoi_ymn_box.Location = new System.Drawing.Point(216, 143);
+            this.xairetismoi_ymn_box.Name = "xairetismoi_ymn_box";
+            this.xairetismoi_ymn_box.Size = new System.Drawing.Size(130, 21);
+            this.xairetismoi_ymn_box.TabIndex = 282;
+            this.xairetismoi_ymn_box.Text = "Επιλέξτε";
+            // 
+            // Ymnografoi
+            // 
+            this.Ymnografoi.Items.AddRange(new object[] {
+            "π.Αθανασιος Σιμωνοπετριτης",
+            "Αρχιμ Νικόδημος Αερακης",
+            "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
+            "Γεροντισσα Ισιδωρα Αγιοιεροθειτισσα",
+            "Μοναχη Ισιδωρα Μακρυνιωτισσα",
+            "κ.Χαραλαμπος Μπουσιας",
+            "κ.Φώτιος Τζελεπης",
+            "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
+            "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
+            "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.Ymnografoi.Location = new System.Drawing.Point(76, 143);
+            this.Ymnografoi.Name = "Ymnografoi";
+            this.Ymnografoi.Size = new System.Drawing.Size(130, 21);
+            this.Ymnografoi.TabIndex = 281;
+            this.Ymnografoi.Text = "Επιλέξτε";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(661, 120);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(81, 13);
+            this.label64.TabIndex = 280;
+            this.label64.Text = "ΥΜΝΟΓΡΑΦΟΣ";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(669, 104);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(53, 13);
+            this.label75.TabIndex = 279;
+            this.label75.Text = "ΕΥΧΗ/ΕΣ";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(668, 104);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(0, 13);
+            this.label76.TabIndex = 278;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(674, 103);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(0, 13);
+            this.label77.TabIndex = 277;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(524, 120);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(81, 13);
+            this.label78.TabIndex = 276;
+            this.label78.Text = "ΥΜΝΟΓΡΑΦΟΣ";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(526, 103);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(77, 13);
+            this.label79.TabIndex = 275;
+            this.label79.Text = "ΕΥΛΟΓΗΤΑΡΙΑ";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(535, 112);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(0, 13);
+            this.label80.TabIndex = 274;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(541, 111);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(0, 13);
+            this.label81.TabIndex = 273;
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(379, 120);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(81, 13);
+            this.label82.TabIndex = 272;
+            this.label82.Text = "ΥΜΝΟΓΡΑΦΟΣ";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(394, 103);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(51, 13);
+            this.label83.TabIndex = 271;
+            this.label83.Text = "ΕΓΚΩΜΙΑ";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(390, 112);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(0, 13);
+            this.label84.TabIndex = 270;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(237, 122);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(81, 13);
+            this.label85.TabIndex = 269;
+            this.label85.Text = "ΥΜΝΟΓΡΑΦΟΣ";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(243, 105);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(68, 13);
+            this.label86.TabIndex = 268;
+            this.label86.Text = "ΧΑΙΡΕΤΙΣΜΟΙ";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(277, 114);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(0, 13);
+            this.label87.TabIndex = 267;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Location = new System.Drawing.Point(101, 121);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(81, 13);
+            this.label88.TabIndex = 266;
+            this.label88.Text = "ΥΜΝΟΓΡΑΦΟΣ";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(92, 103);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(96, 13);
+            this.label89.TabIndex = 265;
+            this.label89.Text = "ΙΕΡΑ ΠΑΡΑΚΛΗΣΙΣ";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(174, 113);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(0, 13);
+            this.label90.TabIndex = 264;
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(674, 103);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(0, 13);
+            this.label91.TabIndex = 263;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Location = new System.Drawing.Point(396, 111);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(0, 13);
+            this.label92.TabIndex = 262;
+            // 
             // Insert_Agios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1494,14 +1474,6 @@ namespace Web_Origin
             this.panel23.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -1524,7 +1496,6 @@ namespace Web_Origin
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox onoma;
-        private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel25;
@@ -1538,8 +1509,6 @@ namespace Web_Origin
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.TextBox hmeromhnia_ekdosis;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label29;
@@ -1555,21 +1524,11 @@ namespace Web_Origin
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.TextBox mousiko_parartima_ymnografos;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox eyxes_ymnografos;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox eulogitiria_ymnografos;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox egkwmia_ymnografos;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox xairetismoi_ymnografos;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -1579,9 +1538,6 @@ namespace Web_Origin
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox idiotita;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
@@ -1601,21 +1557,10 @@ namespace Web_Origin
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label32;
@@ -1638,6 +1583,29 @@ namespace Web_Origin
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox MetathesiEortis;
+        private System.Windows.Forms.ComboBox eulogitaria_ymn;
+        private System.Windows.Forms.ComboBox euxes_ymn_comboBox;
+        private System.Windows.Forms.ComboBox egkomia_ymn;
+        private System.Windows.Forms.ComboBox xairetismoi_ymn_box;
         private System.Windows.Forms.ComboBox Ymnografoi;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label92;
     }
 }
