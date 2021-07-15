@@ -1073,7 +1073,7 @@ namespace Web_Origin
             this.MetathesiEortis.Name = "MetathesiEortis";
             this.MetathesiEortis.Size = new System.Drawing.Size(104, 20);
             this.MetathesiEortis.TabIndex = 8;
-            this.MetathesiEortis.Text = "MM-HH";
+            this.MetathesiEortis.Text = "ΜΜ-ΗΗ";
             this.MetathesiEortis.TextChanged += new System.EventHandler(this.MetathesiEortis_TextChanged);
             // 
             // label37

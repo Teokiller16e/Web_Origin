@@ -92,7 +92,7 @@ namespace Web_Origin
             }
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        public void button3_Click_1(object sender, EventArgs e)
         {
             // Receive form inputs and set to variables
             var name = onoma.Text;
@@ -390,8 +390,6 @@ namespace Web_Origin
                 hmeromhnia_ekdosis.Text = string.Empty;
             }
         }
-
-
 
         private void hmeromhnia_eortis_TextChanged(object sender, EventArgs e)
         {

@@ -26,10 +26,9 @@ namespace Web_Origin
 
             foreach (var usr in users)
             {
-                //var row = new string[] { usr.ID, usr.Firstname, usr.Lastname, usr.Username, usr.Password, usr.Administrator };
-                //var lvi = new ListViewItem(usr);
+                var row = new string[] { (usr.ID).ToString(), usr.Firstname, usr.Lastname, usr.Username, usr.Password, (usr.Administrator).ToString() };
+                var lvi = new ListViewItem(row);
                 lvi.Tag = usr;
-
                 listView1.Items.Add(lvi);
             }
 

@@ -38,9 +38,13 @@ namespace Web_Origin
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        public void button3_Click(object sender, EventArgs e)
         {
-        // Initialize variables 
+
+            // result:
+            List<Agios> returnedAgioi = new List<Agios>();
+
+            // Initialize variables 
             string name = onoma.Text;
             string property = idiotita.Text;
 
@@ -127,7 +131,10 @@ namespace Web_Origin
             { quantity = Int32.Parse(posotita.Text); }
 
             string metathesi_eortis=MetathesiEortis.Text;
-            
+            if (metathesi_eortis != "ΜΜ-ΗΗ" && metathesi_eortis != "")
+            {
+                metathesi_eortis = metathesi_eortis + "-1970";
+            }
 
 
             var celebration_date = hmeromhnia_eortis.Text;
@@ -194,6 +201,8 @@ namespace Web_Origin
 
                             agioi.Add(saint);
                         }
+                        
+
                         if (agioi.Count == 0)
                         {
                             MessageBox.Show("Δεν βρέθηκαν αποτελέμσατα που αντιστοιχούν στα στοιχεία.");
@@ -201,7 +210,6 @@ namespace Web_Origin
                         else 
                         {
                             MessageBox.Show("Η αναζήτηση ολοκληρώθηκε με επιτυχία !!");
-                            List<Agios> returnedAgioi = new List<Agios>();
                         //Initialize counters
                             int out_if;
                             int in_if;
@@ -442,20 +450,19 @@ namespace Web_Origin
                                 }
                             }
 
-                            // Just testing for loop to print all the outcome names:
+                            /*// Just testing for loop to print all the outcome names:
                             for (int i = 0; i < returnedAgioi.Count; i++)
-                            { Console.WriteLine(returnedAgioi[i].Onoma); }
+                            { Console.WriteLine(returnedAgioi[i].Onoma); }*/
                         }
                     }
                     else
                     {
                         MessageBox.Show("Πρέπει να συμπληρώσετε Όνομα & Ιδιότητα & Ημερομηνία Εορτής υποχρεωτικά");
-                    }
-
-
-                SearchResult formPopup = new SearchResult();
-                formPopup.Show(this);
+                    }   
             }
+            SearchResult formPopup = new SearchResult();
+            formPopup.Agioi_Load(returnedAgioi, null);
+            formPopup.Show(this);
         }
 
         private void label37_Click(object sender, EventArgs e)
