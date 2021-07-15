@@ -94,103 +94,91 @@ namespace Web_Origin
 
         public void button3_Click_1(object sender, EventArgs e)
         {
-            // Receive form inputs and set to variables
+            // Initialize variables 
             var name = onoma.Text;
-
-            //string name = N+onoma.Text;
             string  property = idiotita.Text;
-
-            bool photo = false ;
-            if(comboBox4.Text == "ΝΑΙ")
-            { photo = true; }
-
-            //checked
-            bool small =false;
-            if (comboBox6.Text == "ΝΑΙ")
-            { small = true; }
-
-            bool big = false ;
-            if (comboBox5.Text == "ΝΑΙ")
-            { big = true; }
-
-            bool orthross = false;
-            if (comboBox3.Text == "ΝΑΙ")
-            { orthross = true; }
-
-            bool election = false;
-            if (comboBox2.Text == "ΝΑΙ")
-            { election = true; }
-            
-            bool theia_leit = false;
-            if (comboBox17.Text == "ΝΑΙ")
-            { theia_leit = true; }
-
+            string photo = comboBox4.Text;
+            string small = comboBox6.Text;
+            string big = comboBox5.Text;
+            string orthross = comboBox3.Text;
+            string election = comboBox2.Text;
+            string theia_leit = comboBox17.Text;
             string hymn = Ymnografoi.Text;
-            if(hymn == "Επιλέξτε") { hymn = ""; }
             string xairetism = xairetismoi_ymnografos.Text;
             string egkom = egkwmia_ymnografos.Text;
             string eulog = eulogitiria_ymnografos.Text;
             string wishes = eyxes_ymnografos.Text;
             string music = mousiko_parartima_ymnografos.Text;
-
-            bool decision=false;
-            if (comboBox16.Text == "ΝΑΙ")
-            { decision = true; }
-           
-
-            bool approvement=false;
-            if (comboBox15.Text == "ΝΑΙ")
-            { approvement = true; }
-           
-
-            bool img_eksw = false; 
-            if (comboBox14.Text == "ΝΑΙ")
-            { img_eksw = true; }
-           
-
+            string decision = comboBox16.Text;
+            string approvement = comboBox15.Text;
+            string img_eksw = comboBox14.Text;
             string title = plhrhs_titlos.Text;
             string publishe = ekdotis.Text;
             int pub_date;
+            string pub_place = topos_ekdosis.Text;
+            string disk = comboBox13.Text;
+            string fyllada = comboBox12.Text;
+            int quantity;
+            string synaksi = "";
+            string metathesi_eortis = MetathesiEortis.Text;
+            string celebration_date = hmeromhnia_eortis.Text;
+            string xristis_dimiourgias="rararararara";
+
+            if (comboBox4.Text == "Επιλέξτε")
+            { photo = ""; }
+
+            if (comboBox6.Text == "Επιλέξτε")
+            { small = ""; }
+
+            if (comboBox5.Text == "Επιλέξτε")
+            { big = ""; }
+
+            if (comboBox3.Text == "Επιλέξτε")
+            { orthross = ""; }
+
+            if (comboBox2.Text == "Επιλέξτε")
+            { election = ""; }
+
+            if (comboBox17.Text == "Επιλέξτε")
+            { theia_leit = ""; }
+
+            if(hymn == "Επιλέξτε") 
+            { hymn = ""; }
+
+            if (comboBox16.Text == "Επιλέξτε")
+            { decision = ""; }
+
+            if (comboBox15.Text == "Επιλέξτε")
+            { approvement = ""; }
+
+            if (comboBox14.Text == "Επιλέξτε")
+            { img_eksw = ""; }
 
             if (hmeromhnia_ekdosis.Text=="")
             { pub_date = 0; }
             else
             { pub_date = Int32.Parse(hmeromhnia_ekdosis.Text); }
-
-            string pub_place = topos_ekdosis.Text;
-
-            bool disk=false;
-            if (comboBox13.Text == "ΝΑΙ")
-            { disk = true; }
             
+            if (comboBox13.Text == "Επιλέξτε")
+            { disk = ""; }
 
-            bool fyllada=false;
-            if (comboBox12.Text == "ΝΑΙ")
-            { fyllada = true; }
-            
+            if (comboBox12.Text == "Επιλέξτε")
+            { fyllada = ""; }
 
-            int quantity;
             if (posotita.Text == "")
             { quantity = 0; }
             else
             { quantity = Int32.Parse(posotita.Text); }
 
-            string synaksi = "";
-
-            string metathesi_eortis = MetathesiEortis.Text;
-            if (metathesi_eortis != "ΜΜ-ΗΗ" && metathesi_eortis!="")
+            if (metathesi_eortis == "ΜΜ-ΗΗ" || metathesi_eortis == "")
             {
-                metathesi_eortis = metathesi_eortis + "-1970";
-            }
-            else { metathesi_eortis = MetathesiEortis.Text ; }
-
-            var celebration_date = hmeromhnia_eortis.Text;
-            if (celebration_date != "ΜΜ-ΗΗ" && celebration_date != "")
-            {
-                celebration_date = celebration_date + "-1970";
+                metathesi_eortis = "";
             }
 
-
+            if (celebration_date == "ΜΜ-ΗΗ" || celebration_date == "")
+            {
+                celebration_date = "";
+            }
 
             if (name != "" && property != "" && celebration_date != "" && metathesi_eortis!="" )// +σύναξη προσωρινό
             {
@@ -199,8 +187,10 @@ namespace Web_Origin
                 connection.Open();
 
 
-                SqlCommand cmd = new SqlCommand("insert into Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia,Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis,CD,Phototypia,Posotita,Metathesi_Eortis,Mnimi_anakomidi_synaksi)" +
-                "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" + orthross + "','" + election + "','" + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog + "','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','" + img_eksw + "','" + title + "','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" + metathesi_eortis + "','" + synaksi + "')", connection);
+                SqlCommand cmd = new SqlCommand("insert into Church.dbo.Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia," +
+                    "Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis," +
+                    "CD,Phototypia,Posotita,Metathesi_eortis,Mnimi_anakomidi_synaksi,Xristis_dhmiourgias)" +
+                "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" + orthross + "','" + election + "','" + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog + "','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','" + img_eksw + "','" + title + "','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" + metathesi_eortis + "','" + synaksi + "','" + xristis_dimiourgias + "')", connection);
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
