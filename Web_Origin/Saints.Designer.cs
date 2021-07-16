@@ -1,7 +1,7 @@
 ﻿
 namespace Web_Origin
 {
-    partial class Saints
+    partial class Άγιοι
     {
         /// <summary>
         /// Required designer variable.
@@ -217,22 +217,18 @@ namespace Web_Origin
             // 
             // button5
             // 
-            if (Usemanagement.Administrator == 1)
-            {
-                this.button5.BackColor = System.Drawing.Color.White;
-                this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-                this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-                this.button5.ForeColor = System.Drawing.Color.Red;
-                this.button5.Location = new System.Drawing.Point(435, 390);
-                this.button5.Name = "button5";
-                this.button5.Size = new System.Drawing.Size(148, 35);
-                this.button5.TabIndex = 16;
-                this.button5.Text = "Διαγραφή";
-                this.button5.UseVisualStyleBackColor = false;
-                this.button5.Click += new System.EventHandler(this.button5_Click);
-            }
-            
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button5.ForeColor = System.Drawing.Color.Red;
+            this.button5.Location = new System.Drawing.Point(435, 390);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(148, 35);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Διαγραφή";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button2
             // 
@@ -249,7 +245,7 @@ namespace Web_Origin
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Saints
+            // Άγιοι
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -257,7 +253,7 @@ namespace Web_Origin
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.listView1);
-            this.Name = "Saints";
+            this.Name = "Άγιοι";
             this.Text = "Saints";
             this.Load += new System.EventHandler(this.Saints_Load);
             this.ResumeLayout(false);

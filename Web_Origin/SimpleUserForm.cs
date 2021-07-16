@@ -124,7 +124,7 @@ namespace Web_Origin
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Saints agioiPopUp = new Saints();
+            Άγιοι agioiPopUp = new Άγιοι();
             agioiPopUp.Show(this);
         }
     }

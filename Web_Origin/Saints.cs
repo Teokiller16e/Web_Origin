@@ -5,11 +5,11 @@ using Web_Origin.Models;
 
 namespace Web_Origin
 {
-    public partial class Saints : Form
+    public partial class Άγιοι : Form
     {
         public int selectedIdNumber { get; set; }
         public Services ss { get; set; }
-        public Saints()
+        public Άγιοι()
         {
             InitializeComponent();
         }
@@ -45,26 +45,44 @@ namespace Web_Origin
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (selectedIdNumber != 0)
+            if(Usemanagement.Administrator == 1)
             {
-                if (ss.DeleteAgios(selectedIdNumber) == true)
+                if (selectedIdNumber != 0)
                 {
-                    MessageBox.Show("Η διαγραφή Άγιου ολοκληρώθηκε με επιτυχία");
-                    Saints f1 = new Saints();
-                    this.Hide();
-                    f1.Show();
+                    if (ss.DeleteAgios(selectedIdNumber) == true)
+                    {
+                        MessageBox.Show("Η διαγραφή Άγιου ολοκληρώθηκε με επιτυχία");
+                        Άγιοι f1 = new Άγιοι();
+                        this.Hide();
+                        f1.Show();
+                    }
+                    else { MessageBox.Show("Υπήρξε σφάλμα, παρακαλούμε προσπαθήστε ξανά"); }
                 }
-                else { MessageBox.Show("Υπήρξε σφάλμα, παρακαλούμε προσπαθήστε ξανά"); }
+                else
+                {
+                    MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω Αγίους.");
+                }
             }
             else
             {
-                MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω Αγίους.");
+                MessageBox.Show("Δεν επιτρέπετε οι απλοί χρήστες να χρησιμοποιούν Διαγραφή Οντοτήτων.");
             }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (selectedIdNumber != 0)
+            {
+                Update_Agios upd_usr = new Update_Agios();
+                this.Hide();
+                upd_usr.LoadData(selectedIdNumber);
+                upd_usr.Show();
+            }
+            else
+            {
+                MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες.");
+            }
         }
     }
 }

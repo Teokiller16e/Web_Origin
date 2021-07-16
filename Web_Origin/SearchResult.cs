@@ -59,22 +59,31 @@ namespace Web_Origin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ss = new Services();
-            if (selectedIdNumber != 0)
+            if(Usemanagement.Administrator==1)
             {
-                if (ss.DeleteAgios(selectedIdNumber) == true)
+                ss = new Services();
+                if (selectedIdNumber != 0)
                 {
-                    MessageBox.Show("Η διαγραφή Άγιου ολοκληρώθηκε με επιτυχία");
-                    SearchResult f1 = new SearchResult();
-                    this.Hide();
-                    f1.Show();
+                    if (ss.DeleteAgios(selectedIdNumber) == true)
+                    {
+                        MessageBox.Show("Η διαγραφή Άγιου ολοκληρώθηκε με επιτυχία");
+                        SearchResult f1 = new SearchResult();
+                        this.Hide();
+                        f1.Show();
+                    }
+                    else { MessageBox.Show("Υπήρξε σφάλμα, παρακαλούμε προσπαθήστε ξανά"); }
                 }
-                else { MessageBox.Show("Υπήρξε σφάλμα, παρακαλούμε προσπαθήστε ξανά"); }
+                else
+                {
+                    MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω Αγίους.");
+                }
+
             }
             else
             {
-                MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω Αγίους.");
+                MessageBox.Show("Δεν επιτρέπετε οι απλοί χρήστες να χρησιμοποιούν Διαγραφή Οντοτήτων.");
             }
+
         }
     }
 

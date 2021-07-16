@@ -103,6 +103,12 @@
     <Compile Include="Update_Agios.Designer.cs">
       <DependentUpon>Update_Agios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_User.Designer.cs">
+      <DependentUpon>Update_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usemanagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Update_Agios.resx">
       <DependentUpon>Update_Agios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_User.resx">
+      <DependentUpon>Update_User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usemanagement.resx">
       <DependentUpon>Usemanagement.cs</DependentUpon>

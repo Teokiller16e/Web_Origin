@@ -262,8 +262,7 @@ namespace Web_Origin
             // 
             // button3
             // 
-            if(Usemanagement.Administrator == 1)
-            {
+         
                 this.button3.BackColor = System.Drawing.Color.White;
                 this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
                 this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -276,7 +275,7 @@ namespace Web_Origin
                 this.button3.Text = "Διαγραφή";
                 this.button3.UseVisualStyleBackColor = false;
                 this.button3.Click += new System.EventHandler(this.button3_Click);
-            }
+            
             
             // 
             // SearchResult

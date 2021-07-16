@@ -8,14 +8,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Web_Origin.Models;
 
 namespace Web_Origin
 {
     public partial class Update_Agios : Form
     {
+        public int extID { get; set; }
+        public Services svr { get; set; }
         public Update_Agios()
         {
             InitializeComponent();
+        }
+
+        internal void LoadData(int idNumber)
+        {
+            extID = idNumber;
+            Agios saint = new Agios();
+            svr = new Services();
+            saint = svr.GetSaint(extID);
+
+            
         }
 
         private void button5_Click(object sender, EventArgs e)

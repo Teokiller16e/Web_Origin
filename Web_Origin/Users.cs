@@ -33,9 +33,9 @@ namespace Web_Origin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Insert_User ins_usr = new Insert_User();
-            this.Hide();
-            ins_usr.Show();
+                Insert_User ins_usr = new Insert_User();
+                this.Hide();
+                ins_usr.Show();
         }
 
         private void listView1_MouseClick(object sender, MouseEventArgs e)
@@ -46,20 +46,44 @@ namespace Web_Origin
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if(Usemanagement.Administrator == 1 )
+            {
+                if (selectedIdNumber != 0)
+                {
+                    if (svr.DeleteUser(selectedIdNumber) == true)
+                    {
+                        MessageBox.Show("Η διαγραφή χρήστη ολοκληρώθηκε με επιτυχία");
+                        Users f1 = new Users();
+                        this.Hide();
+                        f1.Show();
+                    }
+                    else { MessageBox.Show("Υπήρξε σφάλμα, παρακαλούμε προσπαθήστε ξανά"); }
+                }
+                else
+                {
+                    MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες.");
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Δεν επιτρέπετε οι απλοί χρήστες να χρησιμοποιούν Διαγραφή Οντοτήτων.");
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
             if (selectedIdNumber != 0)
             {
-                if(svr.DeleteUser(selectedIdNumber)==true)
-                {
-                    MessageBox.Show("Η διαγραφή χρήστη ολοκληρώθηκε με επιτυχία");
-                    Users f1 = new Users();
-                    this.Hide();
-                    f1.Show();
-                }
-                else { MessageBox.Show("Υπήρξε σφάλμα, παρακαλούμε προσπαθήστε ξανά"); }
+                Update_User upd_usr = new Update_User();
+                this.Hide();
+                upd_usr.LoadData(selectedIdNumber);
+                upd_usr.Show();
             }
             else
             {
-                 MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες.");
+                MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες.");
             }
         }
     }

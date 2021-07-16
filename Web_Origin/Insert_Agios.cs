@@ -23,7 +23,18 @@ namespace Web_Origin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (Usemanagement.Administrator == 1)
+            {
+                AdminForm ad = new AdminForm();
+                this.Hide();
+                ad.Show();
+            }
+            else
+            {
+                SimpleUserForm smpUsr = new SimpleUserForm();
+                this.Hide();
+                smpUsr.Show();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
