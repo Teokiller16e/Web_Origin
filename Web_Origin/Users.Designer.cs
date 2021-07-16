@@ -43,6 +43,7 @@ namespace Web_Origin
             // 
             // listView1
             // 
+            this.listView1.BackgroundImageTiled = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Id_Number,
             this.Firstname,
@@ -50,10 +51,11 @@ namespace Web_Origin
             this.Username,
             this.Password,
             this.Administrator});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(7, -1);
+            this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(781, 439);
+            this.listView1.Size = new System.Drawing.Size(800, 450);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -129,6 +131,7 @@ namespace Web_Origin
             this.button1.TabIndex = 15;
             this.button1.Text = "Προσθήκη";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Users
             // 
@@ -140,7 +143,7 @@ namespace Web_Origin
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listView1);
             this.Name = "Users";
-            this.Text = "Users";
+            this.Text = "Χρήστες";
             this.Load += new System.EventHandler(this.Users_Load);
             this.ResumeLayout(false);
 

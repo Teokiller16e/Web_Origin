@@ -4,12 +4,36 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Web_Origin.Models;
 
 namespace Web_Origin
 {
     public  class Services
     {
+
+        internal Boolean InsertUser(string firstName, string lastName, string userName , string pass, bool adminRights)
+        {
+            bool flag = false;
+          
+                //Here the insert has to check to the database
+                SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+                connection.Open();
+
+
+                SqlCommand cmd = new SqlCommand("insert into Church.dbo.Xristes(Firstname,Lastname,Username,Password,Administrator)" +
+                "values ('" + firstName + "','" + lastName + "','" + userName + "','" + pass + "','" + adminRights + "')", connection);
+
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+                if (!dataReader.Equals(null))
+                {flag = true;}
+                
+                
+            
+            return flag;
+        }
+
 
         internal List<User> getUsers()
         {

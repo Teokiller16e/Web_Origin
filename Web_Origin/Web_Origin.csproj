@@ -62,6 +62,12 @@
     <Compile Include="Insert_Agios.Designer.cs">
       <DependentUpon>Insert_Agios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Insert_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert_User.Designer.cs">
+      <DependentUpon>Insert_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Agios.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
@@ -117,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="Insert_Agios.resx">
       <DependentUpon>Insert_Agios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert_User.resx">
+      <DependentUpon>Insert_User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

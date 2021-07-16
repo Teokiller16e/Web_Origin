@@ -121,10 +121,11 @@ namespace Web_Origin
             this.columnHeader26,
             this.columnHeader27,
             this.columnHeader28});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(13, 13);
+            this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1352, 444);
+            this.listView1.Size = new System.Drawing.Size(1377, 539);
             this.listView1.TabIndex = 14;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -251,7 +252,7 @@ namespace Web_Origin
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Name = "SearchResult";
-            this.Text = "SearchResult";
+            this.Text = "Αποτελέσματα Αγίων";
             this.ResumeLayout(false);
 
         }

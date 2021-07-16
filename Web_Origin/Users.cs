@@ -25,8 +25,13 @@ namespace Web_Origin
                 lvi.Tag = usr;
                 listView1.Items.Add(lvi);
             }
-
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Insert_User ins_usr = new Insert_User();
+            this.Hide();
+            ins_usr.Show();
+        }
     }
 }
