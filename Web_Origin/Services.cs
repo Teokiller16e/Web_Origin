@@ -1,17 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Web_Origin.Models;
 
 namespace Web_Origin
 {
     public  class Services
     {
-
+        //Updates for Users and Administrators
+        internal Boolean DeleteAgios(int id)
+        {
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            connection.Open();
+            SqlCommand command = new SqlCommand("DELETE  FROM Church.dbo.Agioi WHERE ID =" + id, connection);
+            SqlDataReader dataReader = command.ExecuteReader();
+            if (!dataReader.Equals(null))
+            { return true; }
+            return false;
+        }
+        internal Boolean DeleteUser(int id)
+        {
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            connection.Open();
+            SqlCommand command = new SqlCommand("DELETE  FROM Church.dbo.Xristes WHERE Id_Number ="+id, connection);
+            SqlDataReader dataReader = command.ExecuteReader();
+            if (!dataReader.Equals(null))
+            { return true; }
+             return false;
+        }
         internal Boolean InsertUser(string firstName, string lastName, string userName , string pass, bool adminRights)
         {
             bool flag = false;

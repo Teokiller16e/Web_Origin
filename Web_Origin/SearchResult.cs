@@ -13,7 +13,9 @@ namespace Web_Origin
 {
     public partial class SearchResult : Form
     {
-        List<Agios> diathesimoiAgioi = new List<Agios>();
+        public int selectedIdNumber { get; set; }
+        List<Agios> diathesimoiAgioi { get; set; }
+        Services ss { get; set; }
         public SearchResult()
         {
             InitializeComponent();
@@ -29,6 +31,9 @@ namespace Web_Origin
 
         internal void Agioi_Load(List<Agios> agioi)
         {
+            listView1.View = View.Details;
+            listView1.FullRowSelect = true;
+            diathesimoiAgioi = new List<Agios>();
             diathesimoiAgioi = agioi;
 
             listView1.Items.Clear();
@@ -44,6 +49,31 @@ namespace Web_Origin
                 var lvi = new ListViewItem(row);
                 lvi.Tag = agios;
                 listView1.Items.Add(lvi);
+            }
+        }
+
+        private void listView1_MouseClick(object sender, MouseEventArgs e)
+        {
+             selectedIdNumber = Int32.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ss = new Services();
+            if (selectedIdNumber != 0)
+            {
+                if (ss.DeleteAgios(selectedIdNumber) == true)
+                {
+                    MessageBox.Show("Η διαγραφή Άγιου ολοκληρώθηκε με επιτυχία");
+                    SearchResult f1 = new SearchResult();
+                    this.Hide();
+                    f1.Show();
+                }
+                else { MessageBox.Show("Υπήρξε σφάλμα, παρακαλούμε προσπαθήστε ξανά"); }
+            }
+            else
+            {
+                MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω Αγίους.");
             }
         }
     }

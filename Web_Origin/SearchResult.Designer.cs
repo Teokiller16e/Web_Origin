@@ -60,6 +60,8 @@ namespace Web_Origin
             this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button5
@@ -129,6 +131,7 @@ namespace Web_Origin
             this.listView1.TabIndex = 14;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseClick);
             // 
             // columnHeader1
             // 
@@ -243,11 +246,46 @@ namespace Web_Origin
             // 
             this.columnHeader28.Text = "Μνήμη-Ανακ-Σύναξη";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(496, 475);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 35);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Αλλαγή";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            if(Usemanagement.Administrator == 1)
+            {
+                this.button3.BackColor = System.Drawing.Color.White;
+                this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+                this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+                this.button3.ForeColor = System.Drawing.Color.Red;
+                this.button3.Location = new System.Drawing.Point(733, 475);
+                this.button3.Name = "button3";
+                this.button3.Size = new System.Drawing.Size(148, 35);
+                this.button3.TabIndex = 18;
+                this.button3.Text = "Διαγραφή";
+                this.button3.UseVisualStyleBackColor = false;
+                this.button3.Click += new System.EventHandler(this.button3_Click);
+            }
+            
+            // 
             // SearchResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 539);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
@@ -290,5 +328,7 @@ namespace Web_Origin
         private System.Windows.Forms.ColumnHeader columnHeader26;
         private System.Windows.Forms.ColumnHeader columnHeader27;
         private System.Windows.Forms.ColumnHeader columnHeader28;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }

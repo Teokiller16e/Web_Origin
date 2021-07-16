@@ -7,6 +7,8 @@ namespace Web_Origin
 {
     public partial class Saints : Form
     {
+        public int selectedIdNumber { get; set; }
+        public Services ss { get; set; }
         public Saints()
         {
             InitializeComponent();
@@ -14,8 +16,10 @@ namespace Web_Origin
 
         private void Saints_Load(object sender, EventArgs e)
         {
-            Services Saints = new Services();
-            List<Agios> agioi = Saints.getSaints();
+            listView1.View = View.Details;
+            listView1.FullRowSelect = true;
+            ss = new Services();
+            List<Agios> agioi = ss.getSaints();
             listView1.Items.Clear();
 
             foreach (var agios in agioi)
@@ -30,6 +34,36 @@ namespace Web_Origin
                 lvi.Tag = agios;
                 listView1.Items.Add(lvi);
             }
+
+        }
+
+        private void listView1_MouseClick(object sender, MouseEventArgs e)
+        {
+             selectedIdNumber = Int32.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (selectedIdNumber != 0)
+            {
+                if (ss.DeleteAgios(selectedIdNumber) == true)
+                {
+                    MessageBox.Show("Η διαγραφή Άγιου ολοκληρώθηκε με επιτυχία");
+                    Saints f1 = new Saints();
+                    this.Hide();
+                    f1.Show();
+                }
+                else { MessageBox.Show("Υπήρξε σφάλμα, παρακαλούμε προσπαθήστε ξανά"); }
+            }
+            else
+            {
+                MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω Αγίους.");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }

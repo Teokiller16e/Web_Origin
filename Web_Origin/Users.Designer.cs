@@ -59,6 +59,7 @@ namespace Web_Origin
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseClick);
             // 
             // Id_Number
             // 
@@ -92,17 +93,22 @@ namespace Web_Origin
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(553, 395);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(148, 35);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Διαγραφή";
-            this.button5.UseVisualStyleBackColor = false;
+            if(Usemanagement.Administrator ==1)
+            {
+                this.button5.BackColor = System.Drawing.Color.White;
+                this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+                this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+                this.button5.ForeColor = System.Drawing.Color.Red;
+                this.button5.Location = new System.Drawing.Point(553, 395);
+                this.button5.Name = "button5";
+                this.button5.Size = new System.Drawing.Size(148, 35);
+                this.button5.TabIndex = 13;
+                this.button5.Text = "Διαγραφή";
+                this.button5.UseVisualStyleBackColor = false;
+                this.button5.Click += new System.EventHandler(this.button5_Click);
+            }
+           
             // 
             // button2
             // 
