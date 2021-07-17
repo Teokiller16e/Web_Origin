@@ -18,7 +18,7 @@ namespace Web_Origin
             if (connection.State == System.Data.ConnectionState.Closed)
             {
                 connection.Open();
-                SqlCommand command = new SqlCommand("SELECT * FROM Church.dbo.Agioi WHERE Id_Number =" + id, connection);
+                SqlCommand command = new SqlCommand("SELECT * FROM Church.dbo.Agioi WHERE ID =" + id, connection);
                 SqlDataReader dataReader;
                 dataReader = command.ExecuteReader();
                 if (!dataReader.Equals(null))
@@ -160,6 +160,34 @@ namespace Web_Origin
 
 
 
+            return flag;
+        }
+
+
+        internal Boolean UpdateAgios(int idNumber, string onom, string proper, string foto, string cel_date, string mikros, string megas, string orthros, string elect,
+            string theia_leitourg, string ymnos, string xairet, string egkwmi, string eulogitar,string euxes, string mousik, string apofas, string approve, string eiko_eks,
+            string titloss, string publisher, string publish_place, string publish_date, string disc, string phototypia_fyllada,int posot,string Metathesi_Eortis, string synakss
+            ,string xristis_dimiourgias)
+        {
+            bool flag = false;
+
+            //Here the insert has to check to the database
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            connection.Open();
+
+            SqlCommand cmd = new SqlCommand("UPDATE  Church.dbo.Agioi  SET Onoma='" + onom + "',Idiotita='" + proper + "',Eikona='" + foto + "'" +
+               ",Date_eortis='" + cel_date + "',Mikros_esperinos= '" + mikros + "',Megalos_esperinos='" + megas + "',Orthros='" + orthros + "'" +
+               ",Eklogi='" + elect + "',Theia_leitourgeia= '" + theia_leitourg + "',Ymnografos='" + ymnos + "',Xairetismoi='" + xairet + "'" +
+               ",Egkomia='" + egkwmi + "',Eulogitaria= '" + eulogitar + "',Eyxes='" + euxes + "',Mousiko_parartima='" + mousik + "'" +
+               ",Apofasi='" + apofas + "',Egkrisi= '" + approve + "',Eikona_ekswfyllou='" + eiko_eks + "',Plhrhs_titlos='" + titloss + "'" +
+               ",Ekdotis='" + publisher + "',Topos_ekdosis= '" + publish_place + "',Posotita='" + posot + "',CD='" + disc + "'" +
+               ",Phototypia='" + phototypia_fyllada + "',Date_ekdosis= '" + publish_date + "',Metathesi_eortis='" + Metathesi_Eortis + "',Mnimi_anakomidi_synaksi='" 
+               + synakss + "',Xristis_dhmiourgias= '" + xristis_dimiourgias + "' WHERE ID='" + idNumber + "'", connection);
+
+           
+            SqlDataReader dataReader = cmd.ExecuteReader();
+            if (!dataReader.Equals(null))
+            { flag = true; }
             return flag;
         }
 

@@ -22,7 +22,9 @@ namespace Web_Origin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            Users f1 = new Users();
+            f1.Show(this);
         }
 
         private void button5_Click(object sender, EventArgs e)

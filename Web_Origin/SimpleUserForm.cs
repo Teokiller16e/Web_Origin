@@ -17,6 +17,11 @@ namespace Web_Origin
             InitializeComponent();
         }
 
+        private void SaintsLoad(object sender, EventArgs e)
+        {
+            Services test = new Services();
+            NumOfAgioi.Text = ((test.getSaints()).Count).ToString();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -124,8 +129,18 @@ namespace Web_Origin
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Άγιοι agioiPopUp = new Άγιοι();
+            Saints agioiPopUp = new Saints();
             agioiPopUp.Show(this);
+        }
+
+        private void NumOfAgioi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

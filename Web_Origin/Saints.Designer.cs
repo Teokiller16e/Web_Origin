@@ -1,7 +1,7 @@
 ﻿
 namespace Web_Origin
 {
-    partial class Άγιοι
+    partial class Saints
     {
         /// <summary>
         /// Required designer variable.
@@ -93,13 +93,15 @@ namespace Web_Origin
             this.columnHeader26,
             this.columnHeader27,
             this.columnHeader28});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(2, 3);
+            this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(801, 444);
+            this.listView1.Size = new System.Drawing.Size(1884, 461);
             this.listView1.TabIndex = 15;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             this.listView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseClick);
             // 
             // columnHeader1
@@ -222,7 +224,7 @@ namespace Web_Origin
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(435, 390);
+            this.button5.Location = new System.Drawing.Point(1060, 970);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(148, 35);
             this.button5.TabIndex = 16;
@@ -237,7 +239,7 @@ namespace Web_Origin
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(198, 390);
+            this.button2.Location = new System.Drawing.Point(746, 970);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 35);
             this.button2.TabIndex = 17;
@@ -245,16 +247,16 @@ namespace Web_Origin
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Άγιοι
+            // Saints
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1884, 461);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.listView1);
-            this.Name = "Άγιοι";
-            this.Text = "Saints";
+            this.Name = "Saints";
+            this.Text = "Άγιοι";
             this.Load += new System.EventHandler(this.Saints_Load);
             this.ResumeLayout(false);
 

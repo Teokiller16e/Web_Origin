@@ -127,7 +127,7 @@ namespace Web_Origin
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1377, 539);
+            this.listView1.Size = new System.Drawing.Size(1924, 1021);
             this.listView1.TabIndex = 14;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -259,30 +259,28 @@ namespace Web_Origin
             this.button1.TabIndex = 19;
             this.button1.Text = "Αλλαγή";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button3
             // 
-         
-                this.button3.BackColor = System.Drawing.Color.White;
-                this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-                this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-                this.button3.ForeColor = System.Drawing.Color.Red;
-                this.button3.Location = new System.Drawing.Point(733, 475);
-                this.button3.Name = "button3";
-                this.button3.Size = new System.Drawing.Size(148, 35);
-                this.button3.TabIndex = 18;
-                this.button3.Text = "Διαγραφή";
-                this.button3.UseVisualStyleBackColor = false;
-                this.button3.Click += new System.EventHandler(this.button3_Click);
-            
-            
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button3.ForeColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(733, 475);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(148, 35);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Διαγραφή";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // SearchResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1377, 539);
+            this.ClientSize = new System.Drawing.Size(1924, 1021);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listView1);

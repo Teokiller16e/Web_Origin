@@ -40,6 +40,9 @@ namespace Web_Origin
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.NumOfUsers = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.NumOfAgioi = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -47,9 +50,6 @@ namespace Web_Origin
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.NumOfUsers = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -202,6 +202,34 @@ namespace Web_Origin
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
             // 
+            // NumOfUsers
+            // 
+            this.NumOfUsers.AutoSize = true;
+            this.NumOfUsers.Location = new System.Drawing.Point(214, 179);
+            this.NumOfUsers.Name = "NumOfUsers";
+            this.NumOfUsers.Size = new System.Drawing.Size(28, 13);
+            this.NumOfUsers.TabIndex = 8;
+            this.NumOfUsers.Text = "test";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(28, 179);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(182, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Συνολικός Αριθμός Χρηστών :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(28, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(164, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Συνολικός Αριθμός Αγίων :";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
+            // 
             // NumOfAgioi
             // 
             this.NumOfAgioi.AutoSize = true;
@@ -214,7 +242,8 @@ namespace Web_Origin
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(214, 359);
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(2, 1);
+            this.monthCalendar1.Location = new System.Drawing.Point(-4, 368);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 4;
             // 
@@ -281,33 +310,6 @@ namespace Web_Origin
             this.label1.Size = new System.Drawing.Size(139, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "Φόρμα Αλλαγής";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 138);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Συνολικός Αριθμός Αγίων :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 179);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Συνολικός Αριθμός Χρηστών :";
-            // 
-            // NumOfUsers
-            // 
-            this.NumOfUsers.AutoSize = true;
-            this.NumOfUsers.Location = new System.Drawing.Point(214, 179);
-            this.NumOfUsers.Name = "NumOfUsers";
-            this.NumOfUsers.Size = new System.Drawing.Size(28, 13);
-            this.NumOfUsers.TabIndex = 8;
-            this.NumOfUsers.Text = "test";
             // 
             // AdminForm
             // 

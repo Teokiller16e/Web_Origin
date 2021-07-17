@@ -125,7 +125,7 @@ namespace Web_Origin
             string img_eksw = comboBox14.Text;
             string title = plhrhs_titlos.Text;
             string publishe = ekdotis.Text;
-            int pub_date;
+            string pub_date = hmeromhnia_ekdosis.Text;
             string pub_place = topos_ekdosis.Text;
             string disk = comboBox13.Text;
             string fyllada = comboBox12.Text;
@@ -172,11 +172,6 @@ namespace Web_Origin
 
             if (comboBox14.Text == "Επιλέξτε")
             { img_eksw = ""; }
-
-            if (hmeromhnia_ekdosis.Text=="")
-            { pub_date = 0; }
-            else
-            { pub_date = Int32.Parse(hmeromhnia_ekdosis.Text); }
             
             if (comboBox13.Text == "Επιλέξτε")
             { disk = ""; }
@@ -222,7 +217,7 @@ namespace Web_Origin
                 }
                 else
                 {
-                    MessageBox.Show("Υπήρξε κάποιο σφάλμα, προσπαθήστε ξανά.");
+                    MessageBox.Show("Υπήρξε κάποιο σφάλμα στην προσθήκη Αγίου, παρακαλούμε προσπαθήστε ξανά.");
                 }
             }
             else 
@@ -256,21 +251,21 @@ namespace Web_Origin
         // We need to fix that here :
         private void MetathesiEortis_Enter(object sender, EventArgs e)
         {
-            if (MetathesiEortis.Text == "HH-MM")
+            /*if (MetathesiEortis.Text == "HH-MM")
             {
                 MetathesiEortis.Text = "";
                 MetathesiEortis.ForeColor = Color.LightGray;
-            }
+            }*/
 
         }
 
         private void MetathesiEortis_Leave(object sender, EventArgs e)
         {
-            if (MetathesiEortis.Text == "")
+           /* if (MetathesiEortis.Text == "")
             {
                 MetathesiEortis.Text = "HH-MM";
                 MetathesiEortis.ForeColor = Color.DimGray;
-            }
+            }*/
 
         }
 
@@ -361,7 +356,7 @@ namespace Web_Origin
 
         private void hmeromhnia_ekdosis_TextChanged(object sender, EventArgs e)
         {
-            if ((Regex.Match(hmeromhnia_ekdosis.Text, "[^0-9]+").Success))
+            if ((Regex.Match(hmeromhnia_ekdosis.Text, "[^0-9-πμχ. ]+").Success))
             {
                 MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
                 hmeromhnia_ekdosis.Text = string.Empty;

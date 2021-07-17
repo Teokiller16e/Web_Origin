@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace Web_Origin
 {
     partial class Insert_Agios
@@ -313,6 +315,7 @@ namespace Web_Origin
             this.comboBox17.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox17.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox17.Location = new System.Drawing.Point(1013, 214);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(110, 21);
@@ -324,6 +327,8 @@ namespace Web_Origin
             this.comboBox16.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox16.DropDownStyle = ComboBoxStyle.DropDownList;
+
             this.comboBox16.Location = new System.Drawing.Point(891, 144);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(110, 21);
@@ -335,6 +340,7 @@ namespace Web_Origin
             this.comboBox15.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox15.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox15.Location = new System.Drawing.Point(1007, 144);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(110, 21);
@@ -346,6 +352,8 @@ namespace Web_Origin
             this.comboBox14.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox14.DropDownStyle = ComboBoxStyle.DropDownList;
+
             this.comboBox14.Location = new System.Drawing.Point(1123, 144);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(110, 21);
@@ -357,6 +365,7 @@ namespace Web_Origin
             this.comboBox13.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox13.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox13.Location = new System.Drawing.Point(543, 213);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(110, 21);
@@ -368,6 +377,7 @@ namespace Web_Origin
             this.comboBox12.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox12.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox12.Location = new System.Drawing.Point(659, 213);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(110, 21);
@@ -379,6 +389,7 @@ namespace Web_Origin
             this.comboBox6.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox6.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox6.Location = new System.Drawing.Point(775, 68);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(110, 21);
@@ -390,6 +401,7 @@ namespace Web_Origin
             this.comboBox5.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox5.Location = new System.Drawing.Point(891, 68);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(110, 21);
@@ -401,6 +413,7 @@ namespace Web_Origin
             this.comboBox3.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox3.Location = new System.Drawing.Point(1007, 68);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(110, 21);
@@ -412,6 +425,7 @@ namespace Web_Origin
             this.comboBox2.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox2.Location = new System.Drawing.Point(1123, 68);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(110, 21);
@@ -423,6 +437,7 @@ namespace Web_Origin
             this.comboBox4.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox4.Location = new System.Drawing.Point(424, 68);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(110, 21);
@@ -1198,6 +1213,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.eulogitaria_ymn.DropDownStyle = ComboBoxStyle.DropDownList;
             this.eulogitaria_ymn.Location = new System.Drawing.Point(497, 142);
             this.eulogitaria_ymn.Name = "eulogitaria_ymn";
             this.eulogitaria_ymn.Size = new System.Drawing.Size(130, 21);
@@ -1217,6 +1233,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.euxes_ymn_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             this.euxes_ymn_comboBox.Location = new System.Drawing.Point(636, 142);
             this.euxes_ymn_comboBox.Name = "euxes_ymn_comboBox";
             this.euxes_ymn_comboBox.Size = new System.Drawing.Size(130, 21);
@@ -1236,6 +1253,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.egkomia_ymn.DropDownStyle = ComboBoxStyle.DropDownList;
             this.egkomia_ymn.Location = new System.Drawing.Point(356, 142);
             this.egkomia_ymn.Name = "egkomia_ymn";
             this.egkomia_ymn.Size = new System.Drawing.Size(130, 21);
@@ -1255,6 +1273,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.xairetismoi_ymn_box.DropDownStyle = ComboBoxStyle.DropDownList;
             this.xairetismoi_ymn_box.Location = new System.Drawing.Point(216, 143);
             this.xairetismoi_ymn_box.Name = "xairetismoi_ymn_box";
             this.xairetismoi_ymn_box.Size = new System.Drawing.Size(130, 21);
@@ -1274,6 +1293,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.Ymnografoi.DropDownStyle = ComboBoxStyle.DropDownList;
             this.Ymnografoi.Location = new System.Drawing.Point(76, 143);
             this.Ymnografoi.Name = "Ymnografoi";
             this.Ymnografoi.Size = new System.Drawing.Size(130, 21);

@@ -31,6 +31,7 @@ namespace Web_Origin
 
         internal void Agioi_Load(List<Agios> agioi)
         {
+            this.WindowState = FormWindowState.Maximized;
             listView1.View = View.Details;
             listView1.FullRowSelect = true;
             diathesimoiAgioi = new List<Agios>();
@@ -84,6 +85,21 @@ namespace Web_Origin
                 MessageBox.Show("Δεν επιτρέπετε οι απλοί χρήστες να χρησιμοποιούν Διαγραφή Οντοτήτων.");
             }
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (selectedIdNumber != 0)
+            {
+                Update_Agios upd_usr = new Update_Agios();
+                this.Hide();
+                upd_usr.LoadData(selectedIdNumber);
+                upd_usr.Show();
+            }
+            else
+            {
+                MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες.");
+            }
         }
     }
 

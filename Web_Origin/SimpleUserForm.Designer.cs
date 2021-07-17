@@ -31,6 +31,9 @@ namespace Web_Origin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimpleUserForm));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.NumOfAgioi = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
@@ -44,7 +47,6 @@ namespace Web_Origin
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -53,6 +55,8 @@ namespace Web_Origin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.NumOfAgioi);
             this.panel2.Controls.Add(this.monthCalendar1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -61,6 +65,35 @@ namespace Web_Origin
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(28, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(164, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Συνολικός Αριθμός Αγίων :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // NumOfAgioi
+            // 
+            this.NumOfAgioi.AutoSize = true;
+            this.NumOfAgioi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumOfAgioi.Location = new System.Drawing.Point(212, 139);
+            this.NumOfAgioi.Name = "NumOfAgioi";
+            this.NumOfAgioi.Size = new System.Drawing.Size(28, 13);
+            this.NumOfAgioi.TabIndex = 5;
+            this.NumOfAgioi.Text = "test";
+            this.NumOfAgioi.Click += new System.EventHandler(this.NumOfAgioi_Click);
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(2, 1);
+            this.monthCalendar1.Location = new System.Drawing.Point(-4, 368);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 4;
             // 
             // panel3
             // 
@@ -170,7 +203,7 @@ namespace Web_Origin
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(315, 35);
             this.button6.TabIndex = 21;
-            this.button6.Text = "Αναζήτηση";
+            this.button6.Text = "  Αναζήτηση";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -186,7 +219,7 @@ namespace Web_Origin
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(318, 35);
             this.button5.TabIndex = 19;
-            this.button5.Text = "Αποσύνδεση ";
+            this.button5.Text = " Αποσύνδεση ";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
@@ -242,15 +275,9 @@ namespace Web_Origin
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(315, 38);
             this.button3.TabIndex = 19;
-            this.button3.Text = "Άγιοι";
+            this.button3.Text = "     Άγιοι";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(218, 362);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 5;
             // 
             // SimpleUserForm
             // 
@@ -265,7 +292,9 @@ namespace Web_Origin
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SimpleUserForm";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.SaintsLoad);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -291,5 +320,7 @@ namespace Web_Origin
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label NumOfAgioi;
     }
 }

@@ -5,17 +5,18 @@ using Web_Origin.Models;
 
 namespace Web_Origin
 {
-    public partial class Άγιοι : Form
+    public partial class Saints : Form
     {
         public int selectedIdNumber { get; set; }
         public Services ss { get; set; }
-        public Άγιοι()
+        public Saints()
         {
             InitializeComponent();
         }
 
         private void Saints_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             listView1.View = View.Details;
             listView1.FullRowSelect = true;
             ss = new Services();
@@ -52,7 +53,7 @@ namespace Web_Origin
                     if (ss.DeleteAgios(selectedIdNumber) == true)
                     {
                         MessageBox.Show("Η διαγραφή Άγιου ολοκληρώθηκε με επιτυχία");
-                        Άγιοι f1 = new Άγιοι();
+                        Saints f1 = new Saints();
                         this.Hide();
                         f1.Show();
                     }
@@ -83,6 +84,11 @@ namespace Web_Origin
             {
                 MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες.");
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

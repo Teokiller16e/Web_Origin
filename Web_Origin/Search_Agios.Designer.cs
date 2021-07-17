@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace Web_Origin
 {
     partial class Search_Agios
@@ -1006,6 +1008,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.eulogitaria_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.eulogitaria_ymn.Location = new System.Drawing.Point(611, 165);
             this.eulogitaria_ymn.Name = "eulogitaria_ymn";
             this.eulogitaria_ymn.Size = new System.Drawing.Size(130, 21);
@@ -1014,6 +1017,7 @@ namespace Web_Origin
             // 
             // euxes_ymn_comboBox
             // 
+            this.euxes_ymn_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.euxes_ymn_comboBox.Items.AddRange(new object[] {
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
@@ -1029,10 +1033,10 @@ namespace Web_Origin
             this.euxes_ymn_comboBox.Name = "euxes_ymn_comboBox";
             this.euxes_ymn_comboBox.Size = new System.Drawing.Size(130, 21);
             this.euxes_ymn_comboBox.TabIndex = 260;
-            this.euxes_ymn_comboBox.Text = "Επιλέξτε";
             // 
             // egkomia_ymn
             // 
+            this.egkomia_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.egkomia_ymn.Items.AddRange(new object[] {
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
@@ -1048,10 +1052,10 @@ namespace Web_Origin
             this.egkomia_ymn.Name = "egkomia_ymn";
             this.egkomia_ymn.Size = new System.Drawing.Size(130, 21);
             this.egkomia_ymn.TabIndex = 259;
-            this.egkomia_ymn.Text = "Επιλέξτε";
             // 
             // xairetismoi_ymn_box
             // 
+            this.xairetismoi_ymn_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.xairetismoi_ymn_box.Items.AddRange(new object[] {
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
@@ -1067,10 +1071,10 @@ namespace Web_Origin
             this.xairetismoi_ymn_box.Name = "xairetismoi_ymn_box";
             this.xairetismoi_ymn_box.Size = new System.Drawing.Size(130, 21);
             this.xairetismoi_ymn_box.TabIndex = 258;
-            this.xairetismoi_ymn_box.Text = "Επιλέξτε";
             // 
             // Ymnografoi
             // 
+            this.Ymnografoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Ymnografoi.Items.AddRange(new object[] {
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
@@ -1086,7 +1090,6 @@ namespace Web_Origin
             this.Ymnografoi.Name = "Ymnografoi";
             this.Ymnografoi.Size = new System.Drawing.Size(130, 21);
             this.Ymnografoi.TabIndex = 257;
-            this.Ymnografoi.Text = "Επιλέξτε";
             // 
             // label64
             // 
@@ -1153,6 +1156,7 @@ namespace Web_Origin
             // 
             // comboBox11
             // 
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1160,10 +1164,10 @@ namespace Web_Origin
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(110, 21);
             this.comboBox11.TabIndex = 247;
-            this.comboBox11.Text = "Επιλέξτε";
             // 
             // comboBox10
             // 
+            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1171,10 +1175,10 @@ namespace Web_Origin
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(110, 21);
             this.comboBox10.TabIndex = 246;
-            this.comboBox10.Text = "Επιλέξτε";
             // 
             // comboBox9
             // 
+            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1182,13 +1186,13 @@ namespace Web_Origin
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(110, 21);
             this.comboBox9.TabIndex = 245;
-            this.comboBox9.Text = "Επιλέξτε";
             // 
             // comboBox8
             // 
             this.comboBox8.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.Location = new System.Drawing.Point(1120, 92);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(110, 21);
@@ -1197,6 +1201,7 @@ namespace Web_Origin
             // 
             // comboBox7
             // 
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1204,10 +1209,10 @@ namespace Web_Origin
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(110, 21);
             this.comboBox7.TabIndex = 243;
-            this.comboBox7.Text = "Επιλέξτε";
             // 
             // comboBox6
             // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1215,10 +1220,10 @@ namespace Web_Origin
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(110, 21);
             this.comboBox6.TabIndex = 242;
-            this.comboBox6.Text = "Επιλέξτε";
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1226,10 +1231,10 @@ namespace Web_Origin
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(110, 21);
             this.comboBox5.TabIndex = 241;
-            this.comboBox5.Text = "Επιλέξτε";
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1237,10 +1242,10 @@ namespace Web_Origin
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(110, 21);
             this.comboBox4.TabIndex = 240;
-            this.comboBox4.Text = "Επιλέξτε";
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1248,10 +1253,10 @@ namespace Web_Origin
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(110, 21);
             this.comboBox3.TabIndex = 239;
-            this.comboBox3.Text = "Επιλέξτε";
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1259,10 +1264,10 @@ namespace Web_Origin
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(110, 21);
             this.comboBox2.TabIndex = 238;
-            this.comboBox2.Text = "Επιλέξτε";
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Items.AddRange(new object[] {
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -1270,7 +1275,6 @@ namespace Web_Origin
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(110, 21);
             this.comboBox1.TabIndex = 237;
-            this.comboBox1.Text = "Επιλέξτε";
             // 
             // label30
             // 
