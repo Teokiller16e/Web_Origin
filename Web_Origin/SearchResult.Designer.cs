@@ -71,7 +71,7 @@ namespace Web_Origin
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(765, 488);
+            this.button5.Location = new System.Drawing.Point(1060, 970);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(148, 35);
             this.button5.TabIndex = 11;
@@ -85,7 +85,7 @@ namespace Web_Origin
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(543, 490);
+            this.button2.Location = new System.Drawing.Point(1060, 970);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 35);
             this.button2.TabIndex = 12;
@@ -253,7 +253,7 @@ namespace Web_Origin
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(496, 475);
+            this.button1.Location = new System.Drawing.Point(760, 941);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 35);
             this.button1.TabIndex = 19;
@@ -268,7 +268,7 @@ namespace Web_Origin
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(733, 475);
+            this.button3.Location = new System.Drawing.Point(997, 941);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(148, 35);
             this.button3.TabIndex = 18;

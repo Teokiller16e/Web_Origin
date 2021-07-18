@@ -17,6 +17,7 @@ namespace Web_Origin
         private void Saints_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+           
             listView1.View = View.Details;
             listView1.FullRowSelect = true;
             ss = new Services();
@@ -35,6 +36,9 @@ namespace Web_Origin
                 lvi.Tag = agios;
                 listView1.Items.Add(lvi);
             }
+
+            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
         }
 

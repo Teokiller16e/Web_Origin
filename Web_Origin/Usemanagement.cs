@@ -14,6 +14,8 @@ namespace Web_Origin
         public Usemanagement()
         {
             InitializeComponent();
+            ControlExtension.Draggable(this, true);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -120,6 +122,16 @@ namespace Web_Origin
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Enter(object sender, EventArgs e)
+        {
+            ControlExtension.Draggable(this, true);
         }
     }
 }

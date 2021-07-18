@@ -40,18 +40,21 @@ namespace Web_Origin
             // Initialize variables 
             string name = onoma.Text;
             string property = idiotita.Text;
+
             string photo = comboBox11.Text;
             string small = comboBox10.Text;
             string big = comboBox9.Text;
             string orthross = comboBox8.Text;
             string election = comboBox7.Text;
             string theia_leit = comboBox6.Text;
+
             string hymn = Ymnografoi.Text;
             string xairetism = xairetismoi_ymn_box.Text;
             string egkom = egkomia_ymn.Text;
             string eulog = eulogitaria_ymn.Text;
             string wishes = euxes_ymn_comboBox.Text;
             string music = mousiko_parartima_ymnografos.Text;
+
             string decision = comboBox5.Text;
             string approvement = comboBox4.Text;
             string img_eksw = comboBox3.Text;
@@ -59,51 +62,57 @@ namespace Web_Origin
             string publishe = ekdotis.Text;
             string pub_date = hmeromhnia_ekdosis.Text;
             string pub_place = topos_ekdosis.Text;
+
             string disk = comboBox2.Text;
             string fyllada = comboBox1.Text;
+
             int aukson_ar;
             int quantity;
             string metathesi_eortis = MetathesiEortis.Text;
             var celebration_date = hmeromhnia_eortis.Text;
-            string synaksi = "";
+            string synaksi = mnANSYcomboBox.Text;
             int out_if;
             int in_if;
 
             // Drop down menu choices & editing :
-            if (comboBox11.Text == "Επιλέξτε")
+            if (mnANSYcomboBox.Text == "-")
+            {
+                synaksi = "";
+            }
+            if (comboBox11.Text == "-")
             { photo = ""; }
-            if (comboBox10.Text == "Επιλέξτε")
+            if (comboBox10.Text == "-")
             { small = ""; }
-            if (comboBox9.Text == "Επιλέξτε")
+            if (comboBox9.Text == "-")
             { big = ""; }
-            if (comboBox8.Text == "Επιλέξτε")
+            if (comboBox8.Text == "-")
             { orthross = ""; }
-            if (comboBox7.Text == "Επιλέξτε")
+            if (comboBox7.Text == "-")
             { election = ""; }
-            if (comboBox6.Text == "Επιλέξτε")
+            if (comboBox6.Text == "-")
             { theia_leit = ""; }
 
-            if (hymn == "Επιλέξτε")
+            if (hymn == "-")
             { hymn = ""; }
-            if (xairetism == "Επιλέξτε") 
+            if (xairetism == "-") 
             { xairetism = ""; }
-            if (egkom == "Επιλέξτε")
+            if (egkom == "-")
             { egkom = ""; }
-            if (eulog == "Επιλέξτε")
+            if (eulog == "-")
             { eulog = ""; }
-            if (wishes == "Επιλέξτε")
+            if (wishes == "-")
             { wishes = ""; }
 
-            if (comboBox5.Text == "Επιλέξτε")
+            if (comboBox5.Text == "-")
             { decision = ""; }
-            if (comboBox4.Text == "Επιλέξτε")
+            if (comboBox4.Text == "-")
             { approvement = ""; }
-            if (comboBox3.Text == "Επιλέξτε")
+            if (comboBox3.Text == "-")
             { img_eksw = ""; }
 
-            if (comboBox2.Text == "Επιλέξτε")
+            if (comboBox2.Text == "-")
             { disk = ""; }
-            if (comboBox1.Text == "Επιλέξτε")
+            if (comboBox1.Text == "-")
             { fyllada = ""; }
             if (IDtextBox.Text == "")
             { aukson_ar = 0; }
@@ -136,11 +145,7 @@ namespace Web_Origin
                         }
                         else 
                         {
-                            MessageBox.Show("Η αναζήτηση ολοκληρώθηκε με επιτυχία !!");
-
-                            //Initialize counters : 
-
-                            for (int i = 0; i < agioi.Count; i++) // 
+                            for (int i = 0; i < agioi.Count; i++) 
                             {
                                 out_if = 0;
                                 in_if = 0;
@@ -168,7 +173,7 @@ namespace Web_Origin
 
                                 }
 
-                                if (celebration_date !="") //&& celebration_date !="ΜΜ-ΗΗ")
+                                if (celebration_date !="") 
                                 {
                                     out_if++;
                                     if (celebration_date == agioi[i].Date_Eortis)
@@ -424,16 +429,7 @@ namespace Web_Origin
             }
         }
 
-        private void mnhmh_anakomidi_sinaxi_TextChanged(object sender, EventArgs e)
-        {
-            //Allows only greek letters
-            if (Regex.Match(mnhmh_anakomidi_sinaxi.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                mnhmh_anakomidi_sinaxi.Text = string.Empty;
-            }
-        }
-
+  
 
 
         private void mousiko_parartima_ymnografos_TextChanged(object sender, EventArgs e)

@@ -66,7 +66,7 @@ namespace Web_Origin
 
 
             posotita.Text = (saint.Posotita).ToString();
-            mnhmh_anakomidi_sinaxi.Text = saint.Mnimi_anakomidi_synaksi;
+            mnANSYcomboBox.Text = saint.Mnimi_anakomidi_synaksi;
             MetathesiEortis.Text = saint.Metathesi_eortis;
         }
 
@@ -116,56 +116,57 @@ namespace Web_Origin
             string fyllada = comboBox12.Text;
 
             int quantity;
-            string synaksi = "";
+            string synaksi = mnANSYcomboBox.Text;
             string metathesi_eortis = MetathesiEortis.Text;
             string xristis_dimiourgias = "rararararara";
 
 
-
-            if (comboBox10.Text == "Επιλέξτε")
+            if (mnANSYcomboBox.Text == "-")
+            {
+                synaksi = "";
+            }
+            if (comboBox10.Text == "-")
             { photo = ""; }
 
-            if (comboBox9.Text == "Επιλέξτε")
+            if (comboBox9.Text == "-")
             { small = ""; }
 
-            if (comboBox8.Text == "Επιλέξτε")
+            if (comboBox8.Text == "-")
             { big = ""; }
 
-            if (comboBox7.Text == "Επιλέξτε")
+            if (comboBox7.Text == "-")
             { orthross = ""; }
 
-            if (comboBox6.Text == "Επιλέξτε")
+            if (comboBox6.Text == "-")
             { election = ""; }
 
-            if (comboBox5.Text == "Επιλέξτε")
+            if (comboBox5.Text == "-")
             { theia_leit = ""; }
 
-            if (hymn == "Επιλέξτε")
+            if (hymn == "-")
             { hymn = ""; }
-            if (xairetism == "Επιλέξτε")
+            if (xairetism == "-")
             { xairetism = ""; }
-            if (egkom == "Επιλέξτε")
+            if (egkom == "-")
             { egkom = ""; }
-            if (eulog == "Επιλέξτε")
+            if (eulog == "-")
             { eulog = ""; }
-            if (wishes == "Επιλέξτε")
+            if (wishes == "-")
             { wishes = ""; }
 
-            if (comboBox4.Text == "Επιλέξτε")
+            if (comboBox4.Text == "-")
             { decision = ""; }
 
-            if (comboBox3.Text == "Επιλέξτε")
+            if (comboBox3.Text == "-")
             { approvement = ""; }
 
-            if (comboBox1.Text == "Επιλέξτε")
+            if (comboBox1.Text == "-")
             { img_eksw = ""; }
 
-           
-
-            if (comboBox11.Text == "Επιλέξτε")
+            if (comboBox11.Text == "-")
             { disk = ""; }
 
-            if (comboBox12.Text == "Επιλέξτε")
+            if (comboBox12.Text == "-")
             { fyllada = ""; }
 
             if (posotita.Text == "")
@@ -184,9 +185,6 @@ namespace Web_Origin
             }
 
 
-
-            //
-
             if (name != "" && property != "" && celebration_date != "" && metathesi_eortis!="")
             {
                 svr = new Services();
@@ -197,8 +195,7 @@ namespace Web_Origin
                 {
                     MessageBox.Show("Τα στοιχεία του Αγίου ανανεώθηκαν  στην βάση.");
                     this.Hide();
-                    Update_Agios f1 = new Update_Agios();
-                    f1.Show();
+                   
                 }
                 else
                 {
@@ -246,14 +243,7 @@ namespace Web_Origin
             }
         }
 
-        private void mnhmh_anakomidi_sinaxi_TextChanged(object sender, EventArgs e)
-        {
-            if (Regex.Match(mnhmh_anakomidi_sinaxi.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ]+").Success)
-            {
-                MessageBox.Show("Το πεδίο του ονόματος δέχεται μόνο ελληνικούς χαρακτήρες/γραμματοσειρά");
-                mnhmh_anakomidi_sinaxi.Text = string.Empty;
-            }
-        }
+  
 
         private void MetathesiEortis_TextChanged(object sender, EventArgs e)
         {

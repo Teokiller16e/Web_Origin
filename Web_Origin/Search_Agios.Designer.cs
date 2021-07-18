@@ -35,8 +35,6 @@ namespace Web_Origin
             this.label1 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.mnhmh_anakomidi_sinaxi = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label71 = new System.Windows.Forms.Label();
@@ -153,7 +151,8 @@ namespace Web_Origin
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3.SuspendLayout();
+            this.label75 = new System.Windows.Forms.Label();
+            this.mnANSYcomboBox = new System.Windows.Forms.ComboBox();
             this.panel25.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel26.SuspendLayout();
@@ -174,7 +173,7 @@ namespace Web_Origin
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(443, 62);
+            this.label32.Location = new System.Drawing.Point(446, 66);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(50, 13);
             this.label32.TabIndex = 221;
@@ -204,27 +203,6 @@ namespace Web_Origin
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(0, 13);
             this.label23.TabIndex = 218;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.mnhmh_anakomidi_sinaxi);
-            this.panel3.Location = new System.Drawing.Point(418, 89);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(110, 27);
-            this.panel3.TabIndex = 217;
-            // 
-            // mnhmh_anakomidi_sinaxi
-            // 
-            this.mnhmh_anakomidi_sinaxi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mnhmh_anakomidi_sinaxi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnhmh_anakomidi_sinaxi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.mnhmh_anakomidi_sinaxi.Location = new System.Drawing.Point(3, 3);
-            this.mnhmh_anakomidi_sinaxi.Name = "mnhmh_anakomidi_sinaxi";
-            this.mnhmh_anakomidi_sinaxi.Size = new System.Drawing.Size(104, 20);
-            this.mnhmh_anakomidi_sinaxi.TabIndex = 0;
-            this.mnhmh_anakomidi_sinaxi.TextChanged += new System.EventHandler(this.mnhmh_anakomidi_sinaxi_TextChanged);
             // 
             // button3
             // 
@@ -885,6 +863,8 @@ namespace Web_Origin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.mnANSYcomboBox);
+            this.panel2.Controls.Add(this.label75);
             this.panel2.Controls.Add(this.eulogitaria_ymn);
             this.panel2.Controls.Add(this.euxes_ymn_comboBox);
             this.panel2.Controls.Add(this.egkomia_ymn);
@@ -909,7 +889,6 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.label71);
@@ -998,6 +977,7 @@ namespace Web_Origin
             // eulogitaria_ymn
             // 
             this.eulogitaria_ymn.Items.AddRange(new object[] {
+            "-",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -1008,17 +988,17 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
-            this.eulogitaria_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.eulogitaria_ymn.Location = new System.Drawing.Point(611, 165);
             this.eulogitaria_ymn.Name = "eulogitaria_ymn";
             this.eulogitaria_ymn.Size = new System.Drawing.Size(130, 21);
-            this.eulogitaria_ymn.TabIndex = 261;
-            this.eulogitaria_ymn.Text = "Επιλέξτε";
+            this.eulogitaria_ymn.TabIndex = 260;
+            this.eulogitaria_ymn.Text = "-";
+            this.eulogitaria_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // euxes_ymn_comboBox
             // 
-            this.euxes_ymn_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.euxes_ymn_comboBox.Items.AddRange(new object[] {
+            "-",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -1033,11 +1013,13 @@ namespace Web_Origin
             this.euxes_ymn_comboBox.Name = "euxes_ymn_comboBox";
             this.euxes_ymn_comboBox.Size = new System.Drawing.Size(130, 21);
             this.euxes_ymn_comboBox.TabIndex = 260;
+            this.euxes_ymn_comboBox.Text = "-";
+            this.euxes_ymn_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // egkomia_ymn
             // 
-            this.egkomia_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.egkomia_ymn.Items.AddRange(new object[] {
+            "-",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -1052,11 +1034,13 @@ namespace Web_Origin
             this.egkomia_ymn.Name = "egkomia_ymn";
             this.egkomia_ymn.Size = new System.Drawing.Size(130, 21);
             this.egkomia_ymn.TabIndex = 259;
+            this.egkomia_ymn.Text = "-";
+            this.egkomia_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // xairetismoi_ymn_box
             // 
-            this.xairetismoi_ymn_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.xairetismoi_ymn_box.Items.AddRange(new object[] {
+            "-",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -1071,11 +1055,14 @@ namespace Web_Origin
             this.xairetismoi_ymn_box.Name = "xairetismoi_ymn_box";
             this.xairetismoi_ymn_box.Size = new System.Drawing.Size(130, 21);
             this.xairetismoi_ymn_box.TabIndex = 258;
+            this.xairetismoi_ymn_box.Text = "-";
+            this.xairetismoi_ymn_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
             // 
             // Ymnografoi
             // 
-            this.Ymnografoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Ymnografoi.Items.AddRange(new object[] {
+            "-",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -1090,6 +1077,9 @@ namespace Web_Origin
             this.Ymnografoi.Name = "Ymnografoi";
             this.Ymnografoi.Size = new System.Drawing.Size(130, 21);
             this.Ymnografoi.TabIndex = 257;
+            this.Ymnografoi.Text = "-";
+            this.Ymnografoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
             // 
             // label64
             // 
@@ -1156,125 +1146,147 @@ namespace Web_Origin
             // 
             // comboBox11
             // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox11.Location = new System.Drawing.Point(534, 92);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(110, 21);
             this.comboBox11.TabIndex = 247;
+            this.comboBox11.Text = "-";
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox10
             // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox10.Location = new System.Drawing.Point(888, 92);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(110, 21);
             this.comboBox10.TabIndex = 246;
+            this.comboBox10.Text = "-";
+            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox9
             // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox9.Location = new System.Drawing.Point(1004, 92);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(110, 21);
             this.comboBox9.TabIndex = 245;
+            this.comboBox9.Text = "-";
+            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox8
             // 
             this.comboBox8.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.Location = new System.Drawing.Point(1120, 92);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(110, 21);
             this.comboBox8.TabIndex = 244;
-            this.comboBox8.Text = "Επιλέξτε";
+            this.comboBox8.Text = "-";
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox7
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox7.Location = new System.Drawing.Point(70, 166);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(110, 21);
             this.comboBox7.TabIndex = 243;
+            this.comboBox7.Text = "-";
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
             // 
             // comboBox6
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox6.Location = new System.Drawing.Point(1121, 232);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(110, 21);
             this.comboBox6.TabIndex = 242;
+            this.comboBox6.Text = "-";
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox5
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox5.Location = new System.Drawing.Point(1003, 167);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(110, 21);
             this.comboBox5.TabIndex = 241;
+            this.comboBox5.Text = "-";
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox4
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox4.Location = new System.Drawing.Point(1119, 167);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(110, 21);
             this.comboBox4.TabIndex = 240;
+            this.comboBox4.Text = "-";
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox3
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox3.Location = new System.Drawing.Point(72, 233);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(110, 21);
             this.comboBox3.TabIndex = 239;
+            this.comboBox3.Text = "-";
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox2
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox2.Location = new System.Drawing.Point(656, 232);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(110, 21);
             this.comboBox2.TabIndex = 238;
+            this.comboBox2.Text = "-";
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Items.AddRange(new object[] {
+            "-",
             "ΝΑΙ",
             "ΟΧΙ"});
             this.comboBox1.Location = new System.Drawing.Point(772, 232);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(110, 21);
             this.comboBox1.TabIndex = 237;
+            this.comboBox1.Text = "-";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // label30
             // 
@@ -1480,6 +1492,30 @@ namespace Web_Origin
             this.panel4.Size = new System.Drawing.Size(110, 27);
             this.panel4.TabIndex = 11;
             // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(424, 49);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(107, 13);
+            this.label75.TabIndex = 261;
+            this.label75.Text = "ΜΝΗΜΗ/ΑΝΑΚΟΜΙΔΗ";
+            // 
+            // mnANSYcomboBox
+            // 
+            this.mnANSYcomboBox.Items.AddRange(new object[] {
+            "-",
+            "ΜΝΗΜΗ",
+            "ΑΝΑΚΟΜΙΔΗ",
+            "ΣΥΝΑΞΗ"});
+            this.mnANSYcomboBox.Location = new System.Drawing.Point(418, 92);
+            this.mnANSYcomboBox.Name = "mnANSYcomboBox";
+            this.mnANSYcomboBox.Size = new System.Drawing.Size(110, 21);
+            this.mnANSYcomboBox.TabIndex = 287;
+            this.mnANSYcomboBox.Text = "-";
+            this.mnANSYcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
+            // 
             // Search_Agios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1490,8 +1526,6 @@ namespace Web_Origin
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Search_Agios";
             this.Text = "Search_Agios";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
             this.panel29.ResumeLayout(false);
@@ -1530,8 +1564,6 @@ namespace Web_Origin
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox mnhmh_anakomidi_sinaxi;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label71;
@@ -1648,5 +1680,7 @@ namespace Web_Origin
         private System.Windows.Forms.ComboBox euxes_ymn_comboBox;
         private System.Windows.Forms.ComboBox egkomia_ymn;
         private System.Windows.Forms.ComboBox xairetismoi_ymn_box;
+        private Label label75;
+        private ComboBox mnANSYcomboBox;
     }
 }

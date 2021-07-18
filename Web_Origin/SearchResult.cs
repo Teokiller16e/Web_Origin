@@ -51,6 +51,9 @@ namespace Web_Origin
                 lvi.Tag = agios;
                 listView1.Items.Add(lvi);
             }
+
+            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
         private void listView1_MouseClick(object sender, MouseEventArgs e)

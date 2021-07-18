@@ -31,6 +31,7 @@ namespace Web_Origin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usemanagement));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@ namespace Web_Origin
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -76,6 +76,18 @@ namespace Web_Origin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 530);
             this.panel1.TabIndex = 0;
+            this.panel1.Enter += new System.EventHandler(this.panel1_Enter);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(130, 503);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(167, 17);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "και τον Θεόδωρο Γιαννίλια.";
             // 
             // label6
             // 
@@ -161,6 +173,7 @@ namespace Web_Origin
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button5
             // 
@@ -317,17 +330,6 @@ namespace Web_Origin
             this.label3.Size = new System.Drawing.Size(339, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Συνδεθείτε στο Λογαριασμό σας";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(130, 503);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(167, 17);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "και τον Θεόδωρο Γιαννίλια.";
             // 
             // Usemanagement
             // 
