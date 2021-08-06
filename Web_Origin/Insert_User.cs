@@ -150,7 +150,16 @@ namespace Web_Origin
 
         private void username_TextChanged(object sender, EventArgs e)
         {
-           
+            if (Regex.Match(username.Text, "[^ a-zA-Z0-9]+").Success)
+            {
+                MessageBox.Show("Το πεδίο του ονόματος δέχεται μόνο αγγλικούς χαρακτήρες και νούμερα");
+                username.Text = string.Empty;
+            }
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

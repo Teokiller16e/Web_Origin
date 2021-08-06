@@ -11,6 +11,7 @@ namespace Web_Origin
     {
         public bool found;
         public static int Administrator;
+        public static int userID;
         public Usemanagement()
         {
             InitializeComponent();
@@ -69,6 +70,8 @@ namespace Web_Origin
                     }
                     else if (textBox1.Text == xristes[i].Username && textBox2.Text == xristes[i].Password && xristes[i].Administrator.Equals(false))
                     {
+                    // Μόνο σε περίπτωση user αλλάζουμε το static UserId για να τον βρούμε μετά 
+                        userID = xristes[i].ID;
                         this.Hide();
                         SimpleUserForm wForm = new SimpleUserForm();
                         wForm.Show();

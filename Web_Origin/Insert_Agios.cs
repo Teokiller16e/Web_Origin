@@ -199,7 +199,7 @@ namespace Web_Origin
                 celebration_date = "";
             }
 
-            if (name != "" && property != "" && celebration_date != "" && metathesi_eortis!="" )// +σύναξη προσωρινό
+            if (name != "" && property != "" && celebration_date != ""  )// +σύναξη προσωρινό
             {
                 //Here the insert has to check to the database
                 SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");

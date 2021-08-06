@@ -31,6 +31,7 @@ namespace Web_Origin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimpleUserForm));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NumOfAgioi = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -47,6 +48,7 @@ namespace Web_Origin
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.nameOfUser = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -55,6 +57,8 @@ namespace Web_Origin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.nameOfUser);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.NumOfAgioi);
             this.panel2.Controls.Add(this.monthCalendar1);
@@ -65,6 +69,16 @@ namespace Web_Origin
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(28, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Όνομα Χρήστη :";
             // 
             // label4
             // 
@@ -279,6 +293,16 @@ namespace Web_Origin
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
+            // nameOfUser
+            // 
+            this.nameOfUser.AutoSize = true;
+            this.nameOfUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameOfUser.Location = new System.Drawing.Point(211, 107);
+            this.nameOfUser.Name = "nameOfUser";
+            this.nameOfUser.Size = new System.Drawing.Size(28, 13);
+            this.nameOfUser.TabIndex = 8;
+            this.nameOfUser.Text = "test";
+            // 
             // SimpleUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,5 +346,7 @@ namespace Web_Origin
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label NumOfAgioi;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label nameOfUser;
     }
 }

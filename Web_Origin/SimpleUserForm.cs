@@ -21,6 +21,7 @@ namespace Web_Origin
         {
             Services test = new Services();
             NumOfAgioi.Text = ((test.getSaints()).Count).ToString();
+            nameOfUser.Text = (test.GetUser(Usemanagement.userID)).Firstname;
         }
         private void button1_Click(object sender, EventArgs e)
         {

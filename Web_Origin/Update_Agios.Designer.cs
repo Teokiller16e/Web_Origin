@@ -331,6 +331,7 @@ namespace Web_Origin
             // 
             this.eulogitaria_ymn.Items.AddRange(new object[] {
             "-",
+            "NAI",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -353,6 +354,7 @@ namespace Web_Origin
             // 
             this.euxes_ymn_comboBox.Items.AddRange(new object[] {
             "-",
+            "NAI",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -374,6 +376,7 @@ namespace Web_Origin
             // 
             this.egkomia_ymn.Items.AddRange(new object[] {
             "-",
+            "NAI",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -395,6 +398,7 @@ namespace Web_Origin
             // 
             this.xairetismoi_ymn_box.Items.AddRange(new object[] {
             "-",
+            "NAI",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
@@ -417,6 +421,7 @@ namespace Web_Origin
             // 
             this.Ymnografoi.Items.AddRange(new object[] {
             "-",
+            "NAI",
             "π.Αθανασιος Σιμωνοπετριτης",
             "Αρχιμ Νικόδημος Αερακης",
             "Σεβ.Μητροπολίτης Εδέσσης κ.Ιωήλ",
