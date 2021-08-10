@@ -202,7 +202,7 @@ namespace Web_Origin
             if (name != "" && property != "" && celebration_date != ""  )// +σύναξη προσωρινό
             {
                 //Here the insert has to check to the database
-                SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+                SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
                 connection.Open();
 
 

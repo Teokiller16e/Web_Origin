@@ -136,6 +136,11 @@ namespace Web_Origin
         {
             ControlExtension.Draggable(this, true);
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

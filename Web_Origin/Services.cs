@@ -13,7 +13,7 @@ namespace Web_Origin
         internal Agios GetSaint(int id)
         {
             Agios saint = new Agios();
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
 
             if (connection.State == System.Data.ConnectionState.Closed)
             {
@@ -69,7 +69,7 @@ namespace Web_Origin
         internal Models.User GetUser(int id)
         {
             User xristis = new User();
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
 
             if (connection.State == System.Data.ConnectionState.Closed)
             {
@@ -99,7 +99,7 @@ namespace Web_Origin
         //Updates for Users and Administrators
         internal Boolean DeleteAgios(int id)
         {
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
             connection.Open();
             SqlCommand command = new SqlCommand("DELETE  FROM Church.dbo.Agioi WHERE ID =" + id, connection);
             SqlDataReader dataReader = command.ExecuteReader();
@@ -109,7 +109,7 @@ namespace Web_Origin
         }
         internal Boolean DeleteUser(int id)
         {
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
             connection.Open();
             SqlCommand command = new SqlCommand("DELETE  FROM Church.dbo.Xristes WHERE Id_Number ="+id, connection);
             SqlDataReader dataReader = command.ExecuteReader();
@@ -120,10 +120,10 @@ namespace Web_Origin
         internal Boolean InsertUser(string firstName, string lastName, string userName , string pass, bool adminRights)
         {
             bool flag = false;
-          
-                //Here the insert has to check to the database
-                SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
-                connection.Open();
+
+            //Here the insert has to check to the database
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
+            connection.Open();
 
 
                 SqlCommand cmd = new SqlCommand("insert into Church.dbo.Xristes(Firstname,Lastname,Username,Password,Administrator)" +
@@ -145,7 +145,7 @@ namespace Web_Origin
             bool flag = false;
 
             //Here the insert has to check to the database
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
             connection.Open();
 
 
@@ -172,7 +172,7 @@ namespace Web_Origin
             bool flag = false;
 
             //Here the insert has to check to the database
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
             connection.Open();
 
             SqlCommand cmd = new SqlCommand("UPDATE  Church.dbo.Agioi  SET Onoma='" + onom + "',Idiotita='" + proper + "',Eikona='" + foto + "'" +
@@ -193,7 +193,7 @@ namespace Web_Origin
 
         internal List<User> getUsers()
         {
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
 
             if (connection.State == System.Data.ConnectionState.Closed)
             {
@@ -229,7 +229,7 @@ namespace Web_Origin
         internal List<Agios> getSaints()
         {
 
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
 
             if (connection.State == System.Data.ConnectionState.Closed)
             {
