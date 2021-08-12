@@ -101,9 +101,6 @@ namespace Web_Origin
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.psifiaki_morfi = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
@@ -151,7 +148,6 @@ namespace Web_Origin
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel21.SuspendLayout();
@@ -235,8 +231,6 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.label50);
             this.panel2.Controls.Add(this.label51);
             this.panel2.Controls.Add(this.label41);
-            this.panel2.Controls.Add(this.label34);
-            this.panel2.Controls.Add(this.panel25);
             this.panel2.Controls.Add(this.label35);
             this.panel2.Controls.Add(this.label36);
             this.panel2.Controls.Add(this.panel26);
@@ -278,12 +272,14 @@ namespace Web_Origin
             // 
             // mnANSYcomboBox
             // 
+            this.mnANSYcomboBox.AllowDrop = true;
             this.mnANSYcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mnANSYcomboBox.Items.AddRange(new object[] {
             "-",
             "ΜΝΗΜΗ",
             "ΑΝΑΚΟΜΙΔΗ",
             "ΣΥΝΑΞΗ"});
+            this.mnANSYcomboBox.Text = "-";
             this.mnANSYcomboBox.Location = new System.Drawing.Point(309, 68);
             this.mnANSYcomboBox.Name = "mnANSYcomboBox";
             this.mnANSYcomboBox.Size = new System.Drawing.Size(110, 21);
@@ -305,6 +301,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.eulogitaria_ymn.Text = "-";
             this.eulogitaria_ymn.Location = new System.Drawing.Point(497, 142);
             this.eulogitaria_ymn.Name = "eulogitaria_ymn";
             this.eulogitaria_ymn.Size = new System.Drawing.Size(130, 21);
@@ -326,6 +323,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.euxes_ymn_comboBox.Text = "-";
             this.euxes_ymn_comboBox.Location = new System.Drawing.Point(636, 142);
             this.euxes_ymn_comboBox.Name = "euxes_ymn_comboBox";
             this.euxes_ymn_comboBox.Size = new System.Drawing.Size(130, 21);
@@ -347,6 +345,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.egkomia_ymn.Text = "-";
             this.egkomia_ymn.Location = new System.Drawing.Point(356, 142);
             this.egkomia_ymn.Name = "egkomia_ymn";
             this.egkomia_ymn.Size = new System.Drawing.Size(130, 21);
@@ -368,6 +367,7 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+            this.xairetismoi_ymn_box.Text = "-";
             this.xairetismoi_ymn_box.Location = new System.Drawing.Point(216, 143);
             this.xairetismoi_ymn_box.Name = "xairetismoi_ymn_box";
             this.xairetismoi_ymn_box.Size = new System.Drawing.Size(130, 21);
@@ -389,6 +389,8 @@ namespace Web_Origin
             "Σεβ.Μητροπολίτης Μάνης κ.Χρυσόστομος",
             "Σεβ.Μητροπολιτης Σύρου κ.Δωροθεος",
             "Σεβ.Μητροπολιτης Νέας Ιωνίας και Φιλαδέλφειας κύρος Τιμόθεος Ματθαιακης"});
+
+            this.Ymnografoi.Text = "-";
             this.Ymnografoi.Location = new System.Drawing.Point(76, 143);
             this.Ymnografoi.Name = "Ymnografoi";
             this.Ymnografoi.Size = new System.Drawing.Size(130, 21);
@@ -595,7 +597,8 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox17.Location = new System.Drawing.Point(1013, 214);
+            this.comboBox17.Text = "-";
+            this.comboBox17.Location = new System.Drawing.Point(897, 214);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(110, 21);
             this.comboBox17.TabIndex = 239;
@@ -607,6 +610,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox16.Text = "-";
             this.comboBox16.Location = new System.Drawing.Point(891, 144);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(110, 21);
@@ -619,6 +623,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox15.Text = "-";
             this.comboBox15.Location = new System.Drawing.Point(1007, 144);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(110, 21);
@@ -631,6 +636,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox14.Text = "-";
             this.comboBox14.Location = new System.Drawing.Point(1123, 144);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(110, 21);
@@ -643,6 +649,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox13.Text = "-";
             this.comboBox13.Location = new System.Drawing.Point(543, 213);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(110, 21);
@@ -655,6 +662,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox12.Text = "-";
             this.comboBox12.Location = new System.Drawing.Point(659, 213);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(110, 21);
@@ -667,6 +675,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox6.Text = "-";
             this.comboBox6.Location = new System.Drawing.Point(775, 68);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(110, 21);
@@ -679,6 +688,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox5.Text = "-";
             this.comboBox5.Location = new System.Drawing.Point(891, 68);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(110, 21);
@@ -691,6 +701,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox3.Text = "-";
             this.comboBox3.Location = new System.Drawing.Point(1007, 68);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(110, 21);
@@ -703,6 +714,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox2.Text = "-";
             this.comboBox2.Location = new System.Drawing.Point(1123, 68);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(110, 21);
@@ -715,6 +727,7 @@ namespace Web_Origin
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
+            this.comboBox4.Text = "-";
             this.comboBox4.Location = new System.Drawing.Point(424, 68);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(110, 21);
@@ -988,36 +1001,6 @@ namespace Web_Origin
             this.label41.TabIndex = 75;
             this.label41.Text = "ΙΔΙΟΤΗΤΑ";
             // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(897, 186);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(96, 13);
-            this.label34.TabIndex = 74;
-            this.label34.Text = "ΨΗΦΙΑΚΗ ΜΟΡΦΗ";
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.White;
-            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Controls.Add(this.psifiaki_morfi);
-            this.panel25.Location = new System.Drawing.Point(891, 210);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(110, 27);
-            this.panel25.TabIndex = 73;
-            // 
-            // psifiaki_morfi
-            // 
-            this.psifiaki_morfi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.psifiaki_morfi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.psifiaki_morfi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.psifiaki_morfi.Location = new System.Drawing.Point(3, 3);
-            this.psifiaki_morfi.Name = "psifiaki_morfi";
-            this.psifiaki_morfi.Size = new System.Drawing.Size(102, 20);
-            this.psifiaki_morfi.TabIndex = 8;
-            this.psifiaki_morfi.TextChanged += new System.EventHandler(this.psifiaki_morfi_TextChanged);
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -1106,7 +1089,7 @@ namespace Web_Origin
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(1024, 185);
+            this.label33.Location = new System.Drawing.Point(908, 185);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(90, 13);
             this.label33.TabIndex = 59;
@@ -1471,8 +1454,6 @@ namespace Web_Origin
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
             this.panel29.ResumeLayout(false);
@@ -1508,9 +1489,6 @@ namespace Web_Origin
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox onoma;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TextBox psifiaki_morfi;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel26;

@@ -185,7 +185,7 @@ namespace Web_Origin
             }
 
 
-            if (name != "" && property != "" && celebration_date != "" && metathesi_eortis!="")
+            if (name != "" && property != "" && celebration_date != "" )
             {
                 svr = new Services();
                 bool flag = svr.UpdateAgios(extID, name, property, photo, celebration_date, small, big, orthross, election, theia_leit, hymn, xairetism, egkom, eulog, wishes, music, decision,
@@ -204,7 +204,7 @@ namespace Web_Origin
             }
             else
             {
-                MessageBox.Show("Τα κελιά (ΟΝΟΜΑ, ΙΔΙΟΤΗΤΑ, ΜΝΗΜΗ/ΑΝΑΚΟΜΙΔΗ/ΣΥΝΑΞΗ, ΜΕΤΑΘΕΣΗ ΕΟΡΤΗΣ, ΗΜΕΡΟΜΗΝΙΑ ΕΟΡΤΗΣ)\n είναι υποχρεωτικά για να ολοκληρωθεί η ΕΙΣΑΓΩΓΗ!");
+                MessageBox.Show("Τα κελιά (ΟΝΟΜΑ, ΙΔΙΟΤΗΤΑ, ΜΝΗΜΗ/ΑΝΑΚΟΜΙΔΗ/ΣΥΝΑΞΗ, ΗΜΕΡΟΜΗΝΙΑ ΕΟΡΤΗΣ)\n είναι υποχρεωτικά για να ολοκληρωθεί η ΕΙΣΑΓΩΓΗ!");
             }
         }
 

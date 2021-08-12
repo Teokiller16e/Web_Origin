@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
@@ -16,6 +9,10 @@ namespace Web_Origin
     {
         public int emptySpaceCounter = 0;
         public int emptySpaceCounter2 = 0;
+        
+        //Path initialization : 
+       
+        
         public Insert_Agios()
         {
             InitializeComponent();
@@ -105,6 +102,8 @@ namespace Web_Origin
 
         public void button3_Click_1(object sender, EventArgs e)
         {
+           
+
             // Initialize variables 
             var name = onoma.Text;
             string  property = idiotita.Text;
@@ -205,17 +204,24 @@ namespace Web_Origin
                 SqlConnection connection = new SqlConnection("Data Source=DESKTOP-1MMBGHG;Initial Catalog=Church;Persist Security Info=True;Trusted_Connection=False;User ID=administrator;Password=administrator;Integrated Security=False");
                 connection.Open();
 
-
+                // Wrong priority from sql to application ( fix row of fields)
                 SqlCommand cmd = new SqlCommand("insert into Church.dbo.Agioi(Onoma,Idiotita,Eikona,Date_eortis,Mikros_esperinos,Megalos_esperinos,Orthros,Eklogi,Theia_leitourgeia," +
-                    "Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Date_ekdosis," +
-                    "CD,Phototypia,Posotita,Metathesi_eortis,Mnimi_anakomidi_synaksi,Xristis_dhmiourgias)" +
-                "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" + orthross + "','" + election + "','" + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog + "','" + wishes + "','" + music + "','" + decision + "','" + approvement + "','" + img_eksw + "','" + title + "','" + publishe + "','" + pub_place + "','" + pub_date + "','" + disk + "','" + fyllada + "','" + quantity + "','" + metathesi_eortis + "','" + synaksi + "','" + xristis_dimiourgias + "')", connection);
+                    "Ymnografos,Xairetismoi,Egkomia,Eulogitaria,Eyxes,Mousiko_parartima,Apofasi,Egkrisi,Eikona_ekswfyllou,Plhrhs_titlos,Ekdotis,Topos_ekdosis,Posotita,CD," +
+                    "Phototypia,Date_ekdosis,Metathesi_eortis,Mnimi_anakomidi_synaksi,Xristis_dhmiourgias)" +
+                    "values ('" + name + "','" + property + "','" + photo + "','" + celebration_date + "','" + small + "','" + big + "','" + orthross + "','" + election + "','" 
+                    + theia_leit + "','" + hymn + "','" + xairetism + "','" + egkom + "','" + eulog + "','" + wishes + "','" + music + "','" + decision + "','" + approvement 
+                    + "','" + img_eksw + "','" + title + "','" + publishe + "','" + pub_place + "','" + quantity + "','" + disk + "','" + fyllada + "','" + pub_date + "','" 
+                    + metathesi_eortis + "','" + synaksi + "','" + xristis_dimiourgias + "')", connection);
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
                 if (!dataReader.Equals(null))
                 {
                     MessageBox.Show("Η καταχώρηση του Αγίου ολοκληρώθηκε με επιτυχία !");
+
+                   
+
+
                     this.Hide();
                     Insert_Agios f1 = new Insert_Agios();
                     f1.Show();
@@ -227,7 +233,7 @@ namespace Web_Origin
             }
             else 
             {
-                MessageBox.Show("Τα κελιά (ΟΝΟΜΑ, ΙΔΙΟΤΗΤΑ, ΜΝΗΜΗ/ΑΝΑΚΟΜΙΔΗ/ΣΥΝΑΞΗ, ΜΕΤΑΘΕΣΗ ΕΟΡΤΗΣ, ΗΜΕΡΟΜΗΝΙΑ ΕΟΡΤΗΣ)\n είναι υποχρεωτικά για να ολοκληρωθεί η ΕΙΣΑΓΩΓΗ!");
+                MessageBox.Show("Τα κελιά (ΟΝΟΜΑ, ΙΔΙΟΤΗΤΑ, ΜΝΗΜΗ/ΑΝΑΚΟΜΙΔΗ/ΣΥΝΑΞΗ,  ΗΜΕΡΟΜΗΝΙΑ ΕΟΡΤΗΣ)\n είναι υποχρεωτικά για να ολοκληρωθεί η ΕΙΣΑΓΩΓΗ!");
             }
           
         }
@@ -292,9 +298,9 @@ namespace Web_Origin
                 emptySpaceCounter2++;
             }
 
-            if ((Regex.Match(MetathesiEortis.Text, "[^0-9-]+").Success))
+            if ((Regex.Match(MetathesiEortis.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ0-9-]+").Success))
             {
-                MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
+                MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία και ελληνικούς χαρακτήρες");
                 MetathesiEortis.Text = string.Empty;
             }
         }
@@ -337,10 +343,6 @@ namespace Web_Origin
             }
         }
 
-        private void psifiaki_morfi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void posotita_TextChanged(object sender, EventArgs e)
         {
@@ -367,9 +369,9 @@ namespace Web_Origin
                 hmeromhnia_eortis.Text = "";
                 emptySpaceCounter++;
             }
-            if ((Regex.Match(hmeromhnia_eortis.Text, "[^0-9-]+").Success))
+            if ((Regex.Match(hmeromhnia_eortis.Text, "[^ έύίόάήώςερτυθιοπλκξηγφδσαζχψωβνμςΈΎΊΌΆΉΏΕΡΤΥΘΙΟΠΛΚΞΗΓΦΔΣΑΖΧΨΩΒΝΜ0-9-]+").Success))
             {
-                MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία");
+                MessageBox.Show("Το πεδίο της ποσότητας δέχεται μόνο ψηφία και ελληνικούς χαρακτήρες");
                 hmeromhnia_eortis.Text = string.Empty;
             }
         }

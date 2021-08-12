@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Web_Origin
@@ -20,7 +13,7 @@ namespace Web_Origin
         private void SaintsLoad(object sender, EventArgs e)
         {
             Services test = new Services();
-            NumOfAgioi.Text = ((test.getSaints()).Count).ToString();
+            NumOfAgioi.Text = (test.getSaints().Count).ToString();
             nameOfUser.Text = (test.GetUser(Usemanagement.userID)).Firstname;
         }
         private void button1_Click(object sender, EventArgs e)

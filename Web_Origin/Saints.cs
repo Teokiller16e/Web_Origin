@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 using Web_Origin.Models;
 
@@ -7,6 +8,7 @@ namespace Web_Origin
 {
     public partial class Saints : Form
     {
+        public static OpenFileDialog nasPath { get; set; }
         public int selectedIdNumber { get; set; }
         public Services ss { get; set; }
         public Saints()
@@ -92,6 +94,44 @@ namespace Web_Origin
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (selectedIdNumber != 0)
+            {
+                nasPath = new OpenFileDialog();
+                nasPath.InitialDirectory = "Ζ:\\PsifiakiMorfi\\";
+
+                string folderName = selectedIdNumber.ToString();
+
+                DirectoryInfo dir = new DirectoryInfo(nasPath.InitialDirectory + folderName);
+
+
+                try
+                {
+                    if (dir.Exists)
+                    {
+                        MessageBox.Show("This folder already exists ");
+                    }
+                    else
+                    {
+                        dir.Create();
+                        MessageBox.Show("Folder created ");
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.ForegroundColor = System.ConsoleColor.Red;
+                    MessageBox.Show("Folder could not be created ");
+                }
+
+                nasPath.InitialDirectory = nasPath.InitialDirectory + folderName;
+                nasPath.ShowDialog();
+            }
+            else { MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες."); }
+
 
         }
     }

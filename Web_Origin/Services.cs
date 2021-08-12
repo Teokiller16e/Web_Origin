@@ -8,8 +8,7 @@ namespace Web_Origin
 {
     public  class Services
     {
-
-
+   
         internal Agios GetSaint(int id)
         {
             Agios saint = new Agios();
@@ -139,7 +138,6 @@ namespace Web_Origin
             return flag;
         }
 
-
         internal Boolean UpdateUser(int id,string firstName, string lastName, string userName, string pass, bool adminRights)
         {
             bool flag = false;
@@ -162,7 +160,6 @@ namespace Web_Origin
 
             return flag;
         }
-
 
         internal Boolean UpdateAgios(int idNumber, string onom, string proper, string foto, string cel_date, string mikros, string megas, string orthros, string elect,
             string theia_leitourg, string ymnos, string xairet, string egkwmi, string eulogitar,string euxes, string mousik, string apofas, string approve, string eiko_eks,

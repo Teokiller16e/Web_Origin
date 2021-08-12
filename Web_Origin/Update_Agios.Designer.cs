@@ -36,6 +36,7 @@ namespace Web_Origin
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.mnANSYcomboBox = new System.Windows.Forms.ComboBox();
             this.eulogitaria_ymn = new System.Windows.Forms.ComboBox();
             this.euxes_ymn_comboBox = new System.Windows.Forms.ComboBox();
             this.egkomia_ymn = new System.Windows.Forms.ComboBox();
@@ -102,9 +103,6 @@ namespace Web_Origin
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.psifiaki_morfi = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
@@ -148,12 +146,10 @@ namespace Web_Origin
             this.onoma = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.mnANSYcomboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel21.SuspendLayout();
@@ -284,8 +280,6 @@ namespace Web_Origin
             this.panel2.Controls.Add(this.label50);
             this.panel2.Controls.Add(this.label51);
             this.panel2.Controls.Add(this.label41);
-            this.panel2.Controls.Add(this.label34);
-            this.panel2.Controls.Add(this.panel25);
             this.panel2.Controls.Add(this.label35);
             this.panel2.Controls.Add(this.label36);
             this.panel2.Controls.Add(this.panel26);
@@ -327,8 +321,22 @@ namespace Web_Origin
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // mnANSYcomboBox
+            // 
+            this.mnANSYcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mnANSYcomboBox.Items.AddRange(new object[] {
+            "-",
+            "ΜΝΗΜΗ",
+            "ΑΝΑΚΟΜΙΔΗ",
+            "ΣΥΝΑΞΗ"});
+            this.mnANSYcomboBox.Location = new System.Drawing.Point(295, 108);
+            this.mnANSYcomboBox.Name = "mnANSYcomboBox";
+            this.mnANSYcomboBox.Size = new System.Drawing.Size(110, 21);
+            this.mnANSYcomboBox.TabIndex = 288;
+            // 
             // eulogitaria_ymn
             // 
+            this.eulogitaria_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.eulogitaria_ymn.Items.AddRange(new object[] {
             "-",
             "NAI",
@@ -346,12 +354,10 @@ namespace Web_Origin
             this.eulogitaria_ymn.Name = "eulogitaria_ymn";
             this.eulogitaria_ymn.Size = new System.Drawing.Size(130, 21);
             this.eulogitaria_ymn.TabIndex = 285;
-            this.eulogitaria_ymn.Text = "-";
-            this.eulogitaria_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-
             // 
             // euxes_ymn_comboBox
             // 
+            this.euxes_ymn_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.euxes_ymn_comboBox.Items.AddRange(new object[] {
             "-",
             "NAI",
@@ -369,11 +375,10 @@ namespace Web_Origin
             this.euxes_ymn_comboBox.Name = "euxes_ymn_comboBox";
             this.euxes_ymn_comboBox.Size = new System.Drawing.Size(130, 21);
             this.euxes_ymn_comboBox.TabIndex = 284;
-            this.euxes_ymn_comboBox.Text = "-";
-            this.euxes_ymn_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // egkomia_ymn
             // 
+            this.egkomia_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.egkomia_ymn.Items.AddRange(new object[] {
             "-",
             "NAI",
@@ -391,11 +396,10 @@ namespace Web_Origin
             this.egkomia_ymn.Name = "egkomia_ymn";
             this.egkomia_ymn.Size = new System.Drawing.Size(130, 21);
             this.egkomia_ymn.TabIndex = 283;
-            this.egkomia_ymn.Text = "-";
-            this.egkomia_ymn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;            
             // 
             // xairetismoi_ymn_box
             // 
+            this.xairetismoi_ymn_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.xairetismoi_ymn_box.Items.AddRange(new object[] {
             "-",
             "NAI",
@@ -413,12 +417,10 @@ namespace Web_Origin
             this.xairetismoi_ymn_box.Name = "xairetismoi_ymn_box";
             this.xairetismoi_ymn_box.Size = new System.Drawing.Size(130, 21);
             this.xairetismoi_ymn_box.TabIndex = 282;
-            this.xairetismoi_ymn_box.Text = "-";
-            this.xairetismoi_ymn_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-
             // 
             // Ymnografoi
             // 
+            this.Ymnografoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Ymnografoi.Items.AddRange(new object[] {
             "-",
             "NAI",
@@ -436,9 +438,6 @@ namespace Web_Origin
             this.Ymnografoi.Name = "Ymnografoi";
             this.Ymnografoi.Size = new System.Drawing.Size(130, 21);
             this.Ymnografoi.TabIndex = 281;
-            this.Ymnografoi.Text = "-";
-            this.Ymnografoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-
             // 
             // label52
             // 
@@ -636,6 +635,7 @@ namespace Web_Origin
             // 
             // comboBox12
             // 
+            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox12.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
@@ -644,11 +644,10 @@ namespace Web_Origin
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(110, 21);
             this.comboBox12.TabIndex = 250;
-            this.comboBox12.Text = "-";
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox11
             // 
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
@@ -657,8 +656,6 @@ namespace Web_Origin
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(110, 21);
             this.comboBox11.TabIndex = 249;
-            this.comboBox11.Text = "-";
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox10
             // 
@@ -674,6 +671,7 @@ namespace Web_Origin
             // 
             // comboBox9
             // 
+            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
@@ -682,13 +680,11 @@ namespace Web_Origin
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(110, 21);
             this.comboBox9.TabIndex = 247;
-            this.comboBox9.Text = "-";
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-
             // 
             // comboBox8
             // 
-             this.comboBox8.Items.AddRange(new object[] {
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox8.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
@@ -696,11 +692,10 @@ namespace Web_Origin
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(110, 21);
             this.comboBox8.TabIndex = 246;
-            this.comboBox8.Text = "-";
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox7
             // 
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
@@ -709,11 +704,10 @@ namespace Web_Origin
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(110, 21);
             this.comboBox7.TabIndex = 245;
-            this.comboBox7.Text = "-";
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox6
             // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
@@ -722,24 +716,22 @@ namespace Web_Origin
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(110, 21);
             this.comboBox6.TabIndex = 244;
-            this.comboBox6.Text = "-";
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
             "ΟΧΙ"});
-            this.comboBox5.Location = new System.Drawing.Point(998, 253);
+            this.comboBox5.Location = new System.Drawing.Point(884, 253);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(110, 21);
             this.comboBox5.TabIndex = 243;
-            this.comboBox5.Text = "-";
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
@@ -748,11 +740,10 @@ namespace Web_Origin
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(110, 21);
             this.comboBox4.TabIndex = 242;
-            this.comboBox4.Text = "-";
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
@@ -761,11 +752,10 @@ namespace Web_Origin
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(110, 21);
             this.comboBox3.TabIndex = 241;
-            this.comboBox3.Text = "-";
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Items.AddRange(new object[] {
             "-",
             "ΝΑΙ",
@@ -774,8 +764,6 @@ namespace Web_Origin
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(110, 21);
             this.comboBox1.TabIndex = 240;
-            this.comboBox1.Text = "-";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // label32
             // 
@@ -1015,36 +1003,6 @@ namespace Web_Origin
             this.label41.TabIndex = 173;
             this.label41.Text = "ΙΔΙΟΤΗΤΑ";
             // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(882, 223);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(96, 13);
-            this.label34.TabIndex = 172;
-            this.label34.Text = "ΨΗΦΙΑΚΗ ΜΟΡΦΗ";
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.White;
-            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Controls.Add(this.psifiaki_morfi);
-            this.panel25.Location = new System.Drawing.Point(876, 249);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(110, 27);
-            this.panel25.TabIndex = 171;
-            // 
-            // psifiaki_morfi
-            // 
-            this.psifiaki_morfi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.psifiaki_morfi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.psifiaki_morfi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.psifiaki_morfi.Location = new System.Drawing.Point(3, 3);
-            this.psifiaki_morfi.Name = "psifiaki_morfi";
-            this.psifiaki_morfi.Size = new System.Drawing.Size(103, 20);
-            this.psifiaki_morfi.TabIndex = 8;
-            this.psifiaki_morfi.TextChanged += new System.EventHandler(this.psifiaki_morfi_TextChanged);
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -1133,7 +1091,7 @@ namespace Web_Origin
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(1009, 223);
+            this.label33.Location = new System.Drawing.Point(895, 223);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(90, 13);
             this.label33.TabIndex = 158;
@@ -1461,21 +1419,6 @@ namespace Web_Origin
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // mnANSYcomboBox
-            // 
-            this.mnANSYcomboBox.Items.AddRange(new object[] {
-            "-",
-            "ΜΝΗΜΗ",
-            "ΑΝΑΚΟΜΙΔΗ",
-            "ΣΥΝΑΞΗ"});
-            this.mnANSYcomboBox.Location = new System.Drawing.Point(295, 108);
-            this.mnANSYcomboBox.Name = "mnANSYcomboBox";
-            this.mnANSYcomboBox.Size = new System.Drawing.Size(110, 21);
-            this.mnANSYcomboBox.TabIndex = 288;
-            this.mnANSYcomboBox.Text = "-";
-            this.mnANSYcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-
-            // 
             // Update_Agios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1495,8 +1438,6 @@ namespace Web_Origin
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
             this.panel29.ResumeLayout(false);
@@ -1552,9 +1493,6 @@ namespace Web_Origin
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TextBox psifiaki_morfi;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel26;

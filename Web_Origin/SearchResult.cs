@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace Web_Origin
 {
     public partial class SearchResult : Form
     {
+        public static OpenFileDialog nasPath { get; set; }
         public int selectedIdNumber { get; set; }
         List<Agios> diathesimoiAgioi { get; set; }
         Services ss { get; set; }
@@ -103,6 +105,47 @@ namespace Web_Origin
             {
                 MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες.");
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (selectedIdNumber != 0)
+            {
+                nasPath = new OpenFileDialog();
+                nasPath.InitialDirectory = "Ζ:\\PsifiakiMorfi\\";
+
+                string folderName = selectedIdNumber.ToString();
+
+                DirectoryInfo dir = new DirectoryInfo(nasPath.InitialDirectory + folderName);
+
+
+                try
+                {
+                    if (dir.Exists)
+                    {
+                        MessageBox.Show("This folder already exists ");
+                    }
+                    else
+                    {
+                        dir.Create();
+                        MessageBox.Show("Folder created ");
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.ForegroundColor = System.ConsoleColor.Red;
+                    MessageBox.Show("Folder could not be created ");
+                }
+
+                nasPath.InitialDirectory = nasPath.InitialDirectory + folderName;
+                nasPath.ShowDialog();
+            }
+            else { MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες."); }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
