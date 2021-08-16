@@ -125,7 +125,13 @@ namespace Web_Origin
             int quantity;
             string synaksi = mnANSYcomboBox.Text;
             string metathesi_eortis = MetathesiEortis.Text;
-            string xristis_dimiourgias = "rararararara";
+
+            string xristis_dimiourgias;
+
+            if (AdminForm.AdminLoggedName != null)
+            { xristis_dimiourgias = AdminForm.AdminLoggedName; }
+            else { xristis_dimiourgias = SimpleUserForm.UserLoggedName; }
+
 
             //New added combobox and labels:
             string liti = litiComboBox.Text;
