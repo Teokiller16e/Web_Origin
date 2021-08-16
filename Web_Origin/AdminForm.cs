@@ -13,6 +13,8 @@ namespace Web_Origin
 {
     public partial class AdminForm : Form
     {
+        public static string AdminLoggedName { get; set; }
+
         public AdminForm()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace Web_Origin
             Services test = new Services();
             NumOfAgioi.Text = ((test.getSaints()).Count).ToString();
             NumOfUsers.Text = ((test.getUsers()).Count).ToString();
+            AdminLoggedName = "Admin";
         }
         private void button5_Click(object sender, EventArgs e)
         {

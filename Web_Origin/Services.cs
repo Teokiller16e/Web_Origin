@@ -55,9 +55,17 @@ namespace Web_Origin
                         string synakss = dataReader["Mnimi_anakomidi_synaksi"].ToString();
                         string user_dimi = dataReader["Xristis_dhmiourgias"].ToString();
 
-                         saint = new Agios(idNumber, onom, proper, foto, cel_date, mikros, megas, orthros, elect, theia_leitourg, ymnos, xairet, egkwmi, eulogitar,
+                        // new fields : 
+                        string liti = dataReader["Lith"].ToString();
+                        string typikon = dataReader["Typikon_akolouthias"].ToString();
+                        string megalynaria = dataReader["Megalynaria_ymnografos"].ToString();
+                        string synaksarion = dataReader["Synaksarion_ymnografos"].ToString();
+                        string symplirwsi_akolouth = dataReader["Symplirwsi_akolouthias_ymnografos"].ToString();
+                        string ekdot_paragwg = dataReader["Ekdotiki_paragwgh"].ToString();
+
+                        saint = new Agios(idNumber, onom, proper, foto, cel_date, mikros, megas, orthros, elect, theia_leitourg, ymnos, xairet, egkwmi, eulogitar,
                                                 euxs, mousik, apofas, approve, eiko_eks, titloss, publisher, publish_place, publish_date, disc, phototypia_fyllada, posot,
-                                                Metathesi_Eortis, synakss, user_dimi);
+                                                Metathesi_Eortis, synakss, user_dimi,liti,typikon,megalynaria,synaksarion,symplirwsi_akolouth,ekdot_paragwg);
                     }
                 }
             }
@@ -164,7 +172,8 @@ namespace Web_Origin
         internal Boolean UpdateAgios(int idNumber, string onom, string proper, string foto, string cel_date, string mikros, string megas, string orthros, string elect,
             string theia_leitourg, string ymnos, string xairet, string egkwmi, string eulogitar,string euxes, string mousik, string apofas, string approve, string eiko_eks,
             string titloss, string publisher, string publish_place, string publish_date, string disc, string phototypia_fyllada,int posot,string Metathesi_Eortis, string synakss
-            ,string xristis_dimiourgias)
+            ,string xristis_dimiourgias,string Liti, string Typikon_akolouthias, string Megalynaria_ymnografos, string Synaksarion_ymnografos,
+            string Symplirwsh_akolouthias_ymnografos, string Ekdotiki_paragwgh)
         {
             bool flag = false;
 
@@ -179,7 +188,9 @@ namespace Web_Origin
                ",Apofasi='" + apofas + "',Egkrisi= '" + approve + "',Eikona_ekswfyllou='" + eiko_eks + "',Plhrhs_titlos='" + titloss + "'" +
                ",Ekdotis='" + publisher + "',Topos_ekdosis= '" + publish_place + "',Posotita='" + posot + "',CD='" + disc + "'" +
                ",Phototypia='" + phototypia_fyllada + "',Date_ekdosis= '" + publish_date + "',Metathesi_eortis='" + Metathesi_Eortis + "',Mnimi_anakomidi_synaksi='" 
-               + synakss + "',Xristis_dhmiourgias= '" + xristis_dimiourgias + "' WHERE ID='" + idNumber + "'", connection);
+               + synakss + "',Xristis_dhmiourgias= '" + xristis_dimiourgias + "',Lith= '" + Liti + "',Typikon_akolouthias= '" + Typikon_akolouthias +
+               "',Megalynaria_ymnografos= '" + Megalynaria_ymnografos + "',Synaksarion_ymnografos= '" + Synaksarion_ymnografos +
+               "',Symplirwsi_akolouthias_ymnografos= '" + Symplirwsh_akolouthias_ymnografos + "',Ekdotiki_paragwgh= '" + Ekdotiki_paragwgh + "' WHERE ID='" + idNumber + "'", connection);
 
            
             SqlDataReader dataReader = cmd.ExecuteReader();
@@ -235,6 +246,7 @@ namespace Web_Origin
                 SqlDataReader dataReader;
                 dataReader = command.ExecuteReader();
                 List<Agios> agioi = new List<Agios>();
+                Agios saint = new Agios();
 
 
                 if (!dataReader.Equals(null))
@@ -272,9 +284,19 @@ namespace Web_Origin
                         string synakss = dataReader["Mnimi_anakomidi_synaksi"].ToString();
                         string user_dimi = dataReader["Xristis_dhmiourgias"].ToString();
 
-                        Agios saint = new Agios(id, onom, proper, foto, cel_date, mikros, megas, orthros, elect, theia_leitourg, ymnos, xairet, egkwmi, eulogitar,
+                        // new fields : 
+                        string liti = dataReader["Lith"].ToString();
+                        string typikon = dataReader["Typikon_akolouthias"].ToString();
+                        string megalynaria = dataReader["Megalynaria_ymnografos"].ToString();
+                        string synaksarion = dataReader["Synaksarion_ymnografos"].ToString();
+                        string symplirwsi_akolouth = dataReader["Symplirwsi_akolouthias_ymnografos"].ToString();
+                        string ekdot_paragwg = dataReader["Ekdotiki_paragwgh"].ToString();
+
+                        saint = new Agios(id, onom, proper, foto, cel_date, mikros, megas, orthros, elect, theia_leitourg, ymnos, xairet, egkwmi, eulogitar,
                                                 euxs, mousik, apofas, approve, eiko_eks, titloss, publisher, publish_place, publish_date, disc, phototypia_fyllada, posot,
-                                                Metathesi_Eortis, synakss, user_dimi);
+                                                Metathesi_Eortis, synakss, user_dimi, liti, typikon, megalynaria, synaksarion, symplirwsi_akolouth, ekdot_paragwg);
+
+
                         agioi.Add(saint);
                     }
                 }

@@ -36,7 +36,6 @@ namespace Web_Origin
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -59,10 +58,18 @@ namespace Web_Origin
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.columnHeader29 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader30 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader31 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader33 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader34 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader35 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // button5
@@ -100,7 +107,6 @@ namespace Web_Origin
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader27,
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7,
@@ -123,7 +129,15 @@ namespace Web_Origin
             this.columnHeader24,
             this.columnHeader25,
             this.columnHeader26,
-            this.columnHeader28});
+            this.columnHeader27,
+            this.columnHeader28,
+            this.columnHeader35,
+            this.columnHeader29,
+            this.columnHeader30,
+            this.columnHeader31,
+            this.columnHeader32,
+            this.columnHeader33,
+            this.columnHeader34});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
@@ -152,119 +166,97 @@ namespace Web_Origin
             // 
             this.columnHeader4.Text = "Εικόνα";
             // 
-            // columnHeader27
-            // 
-            this.columnHeader27.Text = "Μετάθεση Εορτής";
-            // 
             // columnHeader5
             // 
-            this.columnHeader5.DisplayIndex = 4;
             this.columnHeader5.Text = "Ημερομηνία Εορτής";
             // 
             // columnHeader6
             // 
-            this.columnHeader6.DisplayIndex = 5;
             this.columnHeader6.Text = "Μικρός Εσπερινός";
             // 
             // columnHeader7
             // 
-            this.columnHeader7.DisplayIndex = 6;
             this.columnHeader7.Text = "Μεγάλος Εσπερινός";
             // 
             // columnHeader8
             // 
-            this.columnHeader8.DisplayIndex = 7;
             this.columnHeader8.Text = "Όρθρος";
             // 
             // columnHeader9
             // 
-            this.columnHeader9.DisplayIndex = 8;
             this.columnHeader9.Text = "Εκλογή";
             // 
             // columnHeader10
             // 
-            this.columnHeader10.DisplayIndex = 9;
             this.columnHeader10.Text = "Θεία Λειτουργεία";
             // 
             // columnHeader11
             // 
-            this.columnHeader11.DisplayIndex = 10;
             this.columnHeader11.Text = "Υμνογράφος";
             // 
             // columnHeader12
             // 
-            this.columnHeader12.DisplayIndex = 11;
             this.columnHeader12.Text = "Χαιρετισμοί";
             // 
             // columnHeader13
             // 
-            this.columnHeader13.DisplayIndex = 12;
             this.columnHeader13.Text = "Εγκώμια";
             // 
             // columnHeader14
             // 
-            this.columnHeader14.DisplayIndex = 13;
             this.columnHeader14.Text = "Ευλογητάρια";
             // 
             // columnHeader15
             // 
-            this.columnHeader15.DisplayIndex = 14;
             this.columnHeader15.Text = "Ευχές";
             // 
             // columnHeader16
             // 
-            this.columnHeader16.DisplayIndex = 15;
             this.columnHeader16.Text = "Μουσικό Παράρτημα";
             // 
             // columnHeader17
             // 
-            this.columnHeader17.DisplayIndex = 16;
             this.columnHeader17.Text = "Απόφαση";
             // 
             // columnHeader18
             // 
-            this.columnHeader18.DisplayIndex = 17;
             this.columnHeader18.Text = "Έγκριση";
             // 
             // columnHeader19
             // 
-            this.columnHeader19.DisplayIndex = 18;
             this.columnHeader19.Text = "Εικόνα Εξ.";
             // 
             // columnHeader20
             // 
-            this.columnHeader20.DisplayIndex = 19;
             this.columnHeader20.Text = "Πλήρης Τίτλος";
             // 
             // columnHeader21
             // 
-            this.columnHeader21.DisplayIndex = 20;
             this.columnHeader21.Text = "Εκδότης";
             // 
             // columnHeader22
             // 
-            this.columnHeader22.DisplayIndex = 21;
             this.columnHeader22.Text = "Τόπος Έκδοσης";
             // 
             // columnHeader23
             // 
-            this.columnHeader23.DisplayIndex = 22;
             this.columnHeader23.Text = "Ημ/νια Έκδοσης";
             // 
             // columnHeader24
             // 
-            this.columnHeader24.DisplayIndex = 23;
             this.columnHeader24.Text = "Ψηφιακός Δίσκος";
             // 
             // columnHeader25
             // 
-            this.columnHeader25.DisplayIndex = 24;
             this.columnHeader25.Text = "Φωτοτυπία";
             // 
             // columnHeader26
             // 
-            this.columnHeader26.DisplayIndex = 25;
             this.columnHeader26.Text = "Ποσότητα";
+            // 
+            // columnHeader27
+            // 
+            this.columnHeader27.Text = "Μετάθεση Εορτής";
             // 
             // columnHeader28
             // 
@@ -314,6 +306,35 @@ namespace Web_Origin
             this.button4.Text = "Ψηφιακά Αρχεία";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // columnHeader29
+            // 
+            this.columnHeader29.Text = "Λιτή";
+            // 
+            // columnHeader30
+            // 
+            this.columnHeader30.Text = "Τυπικόν Ακολουθίας";
+            // 
+            // columnHeader31
+            // 
+            this.columnHeader31.Text = "Μεγαλυνάρια Υμνογράφος";
+            // 
+            // columnHeader32
+            // 
+            this.columnHeader32.Text = "Συναξάριον Υμνογράφος";
+            // 
+            // columnHeader33
+            // 
+            this.columnHeader33.Text = "Συμπλήρωση Ακολουθλίας";
+            // 
+            // columnHeader34
+            // 
+            this.columnHeader34.Text = "Εκδοτική Παραγωγή";
+            // 
+            // columnHeader35
+            // 
+            this.columnHeader35.DisplayIndex = 34;
+            this.columnHeader35.Text = "Χρήστης Δημιουργίας";
             // 
             // SearchResult
             // 
@@ -368,5 +389,12 @@ namespace Web_Origin
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ColumnHeader columnHeader29;
+        private System.Windows.Forms.ColumnHeader columnHeader30;
+        private System.Windows.Forms.ColumnHeader columnHeader31;
+        private System.Windows.Forms.ColumnHeader columnHeader32;
+        private System.Windows.Forms.ColumnHeader columnHeader33;
+        private System.Windows.Forms.ColumnHeader columnHeader34;
+        private System.Windows.Forms.ColumnHeader columnHeader35;
     }
 }

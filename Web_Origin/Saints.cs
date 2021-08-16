@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
@@ -11,6 +12,8 @@ namespace Web_Origin
         public static OpenFileDialog nasPath { get; set; }
         public int selectedIdNumber { get; set; }
         public Services ss { get; set; }
+        private int sortColumn = -1;
+
         public Saints()
         {
             InitializeComponent();
@@ -32,7 +35,8 @@ namespace Web_Origin
                 agios.Mikros_esperinos.ToString(),agios.Megalos_esperinos.ToString(),agios.Orthros.ToString(),agios.Eklogi.ToString(),agios.Theia_leitourgeia.ToString(),
                 agios.Ymnografos,agios.Xairetismoi,agios.Egkomia,agios.Eulogitaria,agios.Eyxes,agios.Mousiko_parartima,agios.Apofasi.ToString(),agios.Egkrisi.ToString(),
                 agios.Eikona_ekswfyllou.ToString(),agios.Plhrhs_titlos,agios.Ekdotis,agios.Topos_ekdosis,agios.Date_ekdosis.ToString(),agios.CD.ToString(),
-                agios.Phototypia.ToString(), agios.Posotita.ToString(),agios.Metathesi_eortis,agios.Mnimi_anakomidi_synaksi,agios.Xristis_dhmiourgias};
+                agios.Phototypia.ToString(), agios.Posotita.ToString(),agios.Metathesi_eortis,agios.Mnimi_anakomidi_synaksi,agios.Xristis_dhmiourgias,agios.Liti,agios.Typikon_akolouthias
+                ,agios.Megalynaria_ymnografos,agios.Synaksarion_ymnografos,agios.Symplirwsh_akolouthias_ymnografos,agios.Ekdotiki_paragwgh};
 
                 var lvi = new ListViewItem(row);
                 lvi.Tag = agios;
@@ -102,12 +106,11 @@ namespace Web_Origin
             if (selectedIdNumber != 0)
             {
                 nasPath = new OpenFileDialog();
-                nasPath.InitialDirectory = "Ζ:\\PsifiakiMorfi\\";
+                nasPath.InitialDirectory = "Z:\\PsifiakiMorfi\\";
 
                 string folderName = selectedIdNumber.ToString();
 
                 DirectoryInfo dir = new DirectoryInfo(nasPath.InitialDirectory + folderName);
-
 
                 try
                 {
@@ -119,6 +122,8 @@ namespace Web_Origin
                     {
                         dir.Create();
                         MessageBox.Show("Folder created ");
+                        nasPath.InitialDirectory = nasPath.InitialDirectory + folderName;
+                        nasPath.ShowDialog();
                     }
                 }
                 catch (Exception)
@@ -127,12 +132,68 @@ namespace Web_Origin
                     MessageBox.Show("Folder could not be created ");
                 }
 
-                nasPath.InitialDirectory = nasPath.InitialDirectory + folderName;
-                nasPath.ShowDialog();
+               
             }
             else { MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες."); }
 
 
         }
+
+        private void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            // Determine whether the column is the same as the last column clicked.
+            if (e.Column != sortColumn)
+            {
+                // Set the sort column to the new column.
+                sortColumn = e.Column;
+                // Set the sort order to ascending by default.
+                listView1.Sorting = SortOrder.Ascending;
+            }
+            else
+            {
+                // Determine what the last sort order was and change it.
+                if (listView1.Sorting == SortOrder.Ascending)
+                    listView1.Sorting = SortOrder.Descending;
+                else
+                    listView1.Sorting = SortOrder.Ascending;
+            }
+
+            // Call the sort method to manually sort.
+            listView1.Sort();
+            // Set the ListViewItemSorter property to a new ListViewItemComparer
+            // object.
+            this.listView1.ListViewItemSorter = new ListViewItemComparer(e.Column,listView1.Sorting);
+        }
+
+        public class ListViewItemComparer : IComparer
+        {
+
+            private int col;
+            private SortOrder order;
+            public ListViewItemComparer()
+            {
+                col = 0;
+                order = SortOrder.Ascending;
+            }
+            public ListViewItemComparer(int column, SortOrder order)
+            {
+                col = column;
+                this.order = order;
+            }
+            public int Compare(object x, object y)
+            {
+                int returnVal = -1;
+                returnVal = String.Compare(((ListViewItem)x).SubItems[col].Text,
+                                ((ListViewItem)y).SubItems[col].Text);
+                // Determine whether the sort order is descending.
+                if (order == SortOrder.Descending)
+                    // Invert the value returned by String.Compare.
+                    returnVal *= -1;
+                return returnVal;
+            }
+
+
+        }
+
     }
 }

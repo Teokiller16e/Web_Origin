@@ -47,7 +47,8 @@ namespace Web_Origin
                 agios.Mikros_esperinos.ToString(),agios.Megalos_esperinos.ToString(),agios.Orthros.ToString(),agios.Eklogi.ToString(),agios.Theia_leitourgeia.ToString(),
                 agios.Ymnografos,agios.Xairetismoi,agios.Egkomia,agios.Eulogitaria,agios.Eyxes,agios.Mousiko_parartima,agios.Apofasi.ToString(),agios.Egkrisi.ToString(),
                 agios.Eikona_ekswfyllou.ToString(),agios.Plhrhs_titlos,agios.Ekdotis,agios.Topos_ekdosis,agios.Date_ekdosis.ToString(),agios.CD.ToString(),
-                agios.Phototypia.ToString(), agios.Posotita.ToString(),agios.Metathesi_eortis,agios.Mnimi_anakomidi_synaksi};
+                agios.Phototypia.ToString(), agios.Posotita.ToString(),agios.Metathesi_eortis,agios.Mnimi_anakomidi_synaksi,agios.Xristis_dhmiourgias,agios.Liti,agios.Typikon_akolouthias
+                ,agios.Megalynaria_ymnografos,agios.Synaksarion_ymnografos,agios.Symplirwsh_akolouthias_ymnografos,agios.Ekdotiki_paragwgh};
 
                 var lvi = new ListViewItem(row);
                 lvi.Tag = agios;
@@ -112,12 +113,11 @@ namespace Web_Origin
             if (selectedIdNumber != 0)
             {
                 nasPath = new OpenFileDialog();
-                nasPath.InitialDirectory = "Ζ:\\PsifiakiMorfi\\";
+                nasPath.InitialDirectory = "Z:\\PsifiakiMorfi\\";
 
                 string folderName = selectedIdNumber.ToString();
 
                 DirectoryInfo dir = new DirectoryInfo(nasPath.InitialDirectory + folderName);
-
 
                 try
                 {
@@ -129,6 +129,8 @@ namespace Web_Origin
                     {
                         dir.Create();
                         MessageBox.Show("Folder created ");
+                        nasPath.InitialDirectory = nasPath.InitialDirectory + folderName;
+                        nasPath.ShowDialog();
                     }
                 }
                 catch (Exception)
@@ -137,8 +139,7 @@ namespace Web_Origin
                     MessageBox.Show("Folder could not be created ");
                 }
 
-                nasPath.InitialDirectory = nasPath.InitialDirectory + folderName;
-                nasPath.ShowDialog();
+
             }
             else { MessageBox.Show("Δεν έχετε επιλέξει κανέναν από τους παραπάνω χρήστες."); }
         }

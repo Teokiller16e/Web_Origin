@@ -46,8 +46,8 @@
         public Agios(int ID, string Onoma, string Idiotita, string Eikona, string Date_Eortis, string Mikros_esperinos, string Megalos_esperinos, string Orthros, string Eklogi,
             string Theia_leitourgeia,string Ymnografos, string Xairetismoi, string Egkomia,string Eulogitaria, string Eyxes, string Mousiko_parartima, string Apofasi, string Egkrisi,
             string Eikona_ekswfyllou, string Plhrhs_titlos, string Ekdotis,string Topos_ekdosis, string Date_ekdosis, string CD, string Phototypia, int Posotita,string Metathesi_eortis,
-            string Mnimi_anakomidi_synaksi,string Xristis_dhmiourgias /*,string Liti, string Typikon_akolouthias, string Megalynaria_ymnografos, string Synaksarion_ymnografos,
-            string Symplirwsh_akolouthias_ymnografos, string Ekdotiki_paragwgh*/)
+            string Mnimi_anakomidi_synaksi,string Xristis_dhmiourgias ,string Liti, string Typikon_akolouthias, string Megalynaria_ymnografos, string Synaksarion_ymnografos,
+            string Symplirwsh_akolouthias_ymnografos, string Ekdotiki_paragwgh)
         {
             this.ID = ID;
             this.Onoma = Onoma;
@@ -78,14 +78,14 @@
             this.Metathesi_eortis = Metathesi_eortis;
             this.Mnimi_anakomidi_synaksi = Mnimi_anakomidi_synaksi;
             this.Xristis_dhmiourgias = Xristis_dhmiourgias;
-            /*
+            
             this.Liti = Liti;
             this.Typikon_akolouthias = Typikon_akolouthias;
             this.Megalynaria_ymnografos = Megalynaria_ymnografos;
             this.Synaksarion_ymnografos = Synaksarion_ymnografos;
             this.Symplirwsh_akolouthias_ymnografos = Symplirwsh_akolouthias_ymnografos;
             this.Ekdotiki_paragwgh = Ekdotiki_paragwgh;
-            */
+            
         }
 
 

@@ -5,6 +5,7 @@ namespace Web_Origin
 {
     public partial class SimpleUserForm : Form
     {
+        public static string UserLoggedName {get;set;}
         public SimpleUserForm()
         {
             InitializeComponent();
@@ -15,6 +16,7 @@ namespace Web_Origin
             Services test = new Services();
             NumOfAgioi.Text = (test.getSaints().Count).ToString();
             nameOfUser.Text = (test.GetUser(Usemanagement.userID)).Firstname;
+            UserLoggedName = nameOfUser.Text;
         }
         private void button1_Click(object sender, EventArgs e)
         {

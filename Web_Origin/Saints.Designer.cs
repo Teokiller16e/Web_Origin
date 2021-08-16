@@ -58,6 +58,13 @@ namespace Web_Origin
             this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader35 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader29 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader30 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader31 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader33 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader34 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -70,7 +77,6 @@ namespace Web_Origin
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader27,
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7,
@@ -93,7 +99,15 @@ namespace Web_Origin
             this.columnHeader24,
             this.columnHeader25,
             this.columnHeader26,
-            this.columnHeader28});
+            this.columnHeader27,
+            this.columnHeader28,
+            this.columnHeader35,
+            this.columnHeader29,
+            this.columnHeader30,
+            this.columnHeader31,
+            this.columnHeader32,
+            this.columnHeader33,
+            this.columnHeader34});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
@@ -102,6 +116,7 @@ namespace Web_Origin
             this.listView1.TabIndex = 15;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView1_ColumnClick);
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             this.listView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseClick);
             // 
@@ -218,6 +233,34 @@ namespace Web_Origin
             // 
             this.columnHeader28.Text = "Μνήμη-Ανακ-Σύναξη";
             // 
+            // columnHeader35
+            // 
+            this.columnHeader35.Text = "Χρήστης Δημιουργίας";
+            // 
+            // columnHeader29
+            // 
+            this.columnHeader29.Text = "Λιτη";
+            // 
+            // columnHeader30
+            // 
+            this.columnHeader30.Text = "Τυπικόν Ακολουθίας";
+            // 
+            // columnHeader31
+            // 
+            this.columnHeader31.Text = "Μεγαλυνάρια Υμνογραφός";
+            // 
+            // columnHeader32
+            // 
+            this.columnHeader32.Text = "Συναξάριον Υμνογράφος";
+            // 
+            // columnHeader33
+            // 
+            this.columnHeader33.Text = "Συμπλήρωση Ακολουθίας";
+            // 
+            // columnHeader34
+            // 
+            this.columnHeader34.Text = "Εκδοτική Παραγωγή";
+            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
@@ -313,5 +356,12 @@ namespace Web_Origin
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColumnHeader columnHeader29;
+        private System.Windows.Forms.ColumnHeader columnHeader30;
+        private System.Windows.Forms.ColumnHeader columnHeader31;
+        private System.Windows.Forms.ColumnHeader columnHeader32;
+        private System.Windows.Forms.ColumnHeader columnHeader33;
+        private System.Windows.Forms.ColumnHeader columnHeader34;
+        private System.Windows.Forms.ColumnHeader columnHeader35;
     }
 }
