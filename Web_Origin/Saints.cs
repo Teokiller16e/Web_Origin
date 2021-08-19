@@ -116,12 +116,17 @@ namespace Web_Origin
                 {
                     if (dir.Exists)
                     {
-                        MessageBox.Show("This folder already exists ");
+                        if(MessageBox.Show("Αυτός ο φάκελος υπάρχει ήδη, θέλετε να τον ανοίξετε ;  ","Υπάρχον φάκελος",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+                        {
+                            // Open the already existing file : 
+                            nasPath.InitialDirectory = nasPath.InitialDirectory + folderName;
+                            nasPath.ShowDialog();
+                        }
                     }
                     else
                     {
                         dir.Create();
-                        MessageBox.Show("Folder created ");
+                        MessageBox.Show("Ο φάκελος δημιουργήθηκε με επιτυχία ! ");
                         nasPath.InitialDirectory = nasPath.InitialDirectory + folderName;
                         nasPath.ShowDialog();
                     }
@@ -129,7 +134,7 @@ namespace Web_Origin
                 catch (Exception)
                 {
                     Console.ForegroundColor = System.ConsoleColor.Red;
-                    MessageBox.Show("Folder could not be created ");
+                    MessageBox.Show("Υπήρξε σφάλμα και ο φάκελος δεν δημιουργήθηκε, παρακαλώ προσπαθήστε ξανά. ");
                 }
 
                
