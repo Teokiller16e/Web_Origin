@@ -62,6 +62,7 @@ namespace Web_Origin
                 {
                     if (textBox1.Text == xristes[i].Username && textBox2.Text == xristes[i].Password && xristes[i].Administrator.Equals(true))
                     {
+                        userID = xristes[i].ID;
                         this.Hide();
                         AdminForm wForm = new AdminForm();
                         wForm.Show();

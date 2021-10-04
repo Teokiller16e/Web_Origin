@@ -29,7 +29,7 @@ namespace Web_Origin
             Services test = new Services();
             NumOfAgioi.Text = ((test.getSaints()).Count).ToString();
             NumOfUsers.Text = ((test.getUsers()).Count).ToString();
-            AdminLoggedName = "Admin";
+            AdminLoggedName = (test.GetUser(Usemanagement.userID)).Firstname; ;
         }
         private void button5_Click(object sender, EventArgs e)
         {
