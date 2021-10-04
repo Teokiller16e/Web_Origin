@@ -171,7 +171,7 @@ namespace Web_Origin
 
         internal Boolean UpdateAgios(int idNumber, string onom, string proper, string foto, string cel_date, string mikros, string megas, string orthros, string elect,
             string theia_leitourg, string ymnos, string xairet, string egkwmi, string eulogitar,string euxes, string mousik, string apofas, string approve, string eiko_eks,
-            string titloss, string publisher, string publish_place, string publish_date, string disc, string phototypia_fyllada,int posot,string Metathesi_Eortis, string synakss
+            string titloss, string publisher, string publish_date, string publish_place, string disc, string phototypia_fyllada,int posot,string Metathesi_Eortis, string synakss
             ,string xristis_dimiourgias,string Liti, string Typikon_akolouthias, string Megalynaria_ymnografos, string Synaksarion_ymnografos,
             string Symplirwsh_akolouthias_ymnografos, string Ekdotiki_paragwgh)
         {

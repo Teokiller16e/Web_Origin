@@ -163,7 +163,7 @@ namespace Web_Origin
             // 
             // columnHeader11
             // 
-            this.columnHeader11.Text = "Υμνογράφος";
+            this.columnHeader11.Text = "Ιερά Παράκλησις";
             // 
             // columnHeader12
             // 
@@ -268,7 +268,7 @@ namespace Web_Origin
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(1112, 739);
+            this.button5.Location = new System.Drawing.Point(1112, 958);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(148, 35);
             this.button5.TabIndex = 16;
@@ -283,7 +283,7 @@ namespace Web_Origin
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(798, 739);
+            this.button2.Location = new System.Drawing.Point(798, 958);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 35);
             this.button2.TabIndex = 17;
@@ -298,7 +298,7 @@ namespace Web_Origin
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(502, 739);
+            this.button1.Location = new System.Drawing.Point(502, 958);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 35);
             this.button1.TabIndex = 18;
